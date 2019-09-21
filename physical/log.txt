@@ -1,0 +1,19 @@
+
+06/09/2019 20:39:04 - Servidor criado.
+06/09/2019 20:39:04 - Servidor iniciado.
+06/09/2019 20:39:04 - Servidor de IP: 192.168.0.101 ouvindo a porta: 5000
+06/09/2019 20:39:11 - Cliente criado.
+06/09/2019 20:39:11 - Cliente não detecta colisão.
+06/09/2019 20:39:11 - Cliente se conecta no servidor.
+06/09/2019 20:39:11 - Servidor aceita conexão com cliente: 192.168.0.100
+06/09/2019 20:39:12 - Cliente converte MAC de origem.
+06/09/2019 20:39:12 - Cliente converte MAC de destino.
+06/09/2019 20:39:12 - Cliente converte tamanho do payload.
+06/09/2019 20:39:12 - Cliente converte payload.
+06/09/2019 20:39:12 - Servidor converte MAC de origem. (B8:3A:08:3F:F3:A0)
+06/09/2019 20:39:12 - Servidor converte MAC de destino. (68:C4:4D:7B:15:D9)
+06/09/2019 20:39:12 - Servidor converte tamanho do payload. (8)
+06/09/2019 20:39:12 - Servidor converte payload. (sandrord)
+06/09/2019 20:39:12 - Cliente encerra a conexão.
+06/09/2019 20:39:12 - Servidor encerra conexao com o cliente.
+06/09/2019 20:39:12 - Servidor de IP: 192.168.0.101 ouvindo a porta: 5000
