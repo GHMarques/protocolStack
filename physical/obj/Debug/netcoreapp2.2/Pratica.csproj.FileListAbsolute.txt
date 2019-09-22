@@ -42,3 +42,14 @@ C:/Users/mathe/Desktop/CamadaFisica/obj/Debug/netcoreapp2.2/Pratica.pdb
 /home/gustavo/Software/redes/CamadaFisica/obj/Debug/netcoreapp2.2/Pratica.AssemblyInfo.cs
 /home/gustavo/Software/redes/CamadaFisica/obj/Debug/netcoreapp2.2/Pratica.dll
 /home/gustavo/Software/redes/CamadaFisica/obj/Debug/netcoreapp2.2/Pratica.pdb
+/home/gustavo/Documents/projetos/protocolStack/physical/bin/Debug/netcoreapp2.2/Pratica.deps.json
+/home/gustavo/Documents/projetos/protocolStack/physical/bin/Debug/netcoreapp2.2/Pratica.runtimeconfig.json
+/home/gustavo/Documents/projetos/protocolStack/physical/bin/Debug/netcoreapp2.2/Pratica.runtimeconfig.dev.json
+/home/gustavo/Documents/projetos/protocolStack/physical/bin/Debug/netcoreapp2.2/Pratica.dll
+/home/gustavo/Documents/projetos/protocolStack/physical/bin/Debug/netcoreapp2.2/Pratica.pdb
+/home/gustavo/Documents/projetos/protocolStack/physical/obj/Debug/netcoreapp2.2/Pratica.csprojAssemblyReference.cache
+/home/gustavo/Documents/projetos/protocolStack/physical/obj/Debug/netcoreapp2.2/Pratica.csproj.CoreCompileInputs.cache
+/home/gustavo/Documents/projetos/protocolStack/physical/obj/Debug/netcoreapp2.2/Pratica.AssemblyInfoInputs.cache
+/home/gustavo/Documents/projetos/protocolStack/physical/obj/Debug/netcoreapp2.2/Pratica.AssemblyInfo.cs
+/home/gustavo/Documents/projetos/protocolStack/physical/obj/Debug/netcoreapp2.2/Pratica.dll
+/home/gustavo/Documents/projetos/protocolStack/physical/obj/Debug/netcoreapp2.2/Pratica.pdb

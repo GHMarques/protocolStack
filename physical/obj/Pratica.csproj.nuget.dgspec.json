@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/gustavo/Software/redes/CamadaFisica/Pratica.csproj": {}
+    "/home/gustavo/Documents/projetos/protocolStack/physical/Pratica.csproj": {}
   },
   "projects": {
-    "/home/gustavo/Software/redes/CamadaFisica/Pratica.csproj": {
+    "/home/gustavo/Documents/projetos/protocolStack/physical/Pratica.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/gustavo/Software/redes/CamadaFisica/Pratica.csproj",
+        "projectUniqueName": "/home/gustavo/Documents/projetos/protocolStack/physical/Pratica.csproj",
         "projectName": "Pratica",
-        "projectPath": "/home/gustavo/Software/redes/CamadaFisica/Pratica.csproj",
+        "projectPath": "/home/gustavo/Documents/projetos/protocolStack/physical/Pratica.csproj",
         "packagesPath": "/home/gustavo/.nuget/packages/",
-        "outputPath": "/home/gustavo/Software/redes/CamadaFisica/obj/",
+        "outputPath": "/home/gustavo/Documents/projetos/protocolStack/physical/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/share/dotnet/sdk/NuGetFallbackFolder"

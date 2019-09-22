@@ -10,8 +10,9 @@ namespace Pratica{
   class Client{
     const int PORT_NO = 5000;
     const int COLISION_PERCENTAGE = 10;
-    const string SERVER_IP = "192.168.0.101";
-    const string FILE_PATH = "teste.txt";
+    const string SERVER_IP = "192.168.0.102";
+    const string CLIENT_IP = "192.168.0.100";
+    const string FILE_PATH = "fileToSend.txt";
     const string FILE_PATH_PDU_BITS = "pduBits.txt";
     string macOrigem = "";
     string macDestino = "";
@@ -34,12 +35,12 @@ namespace Pratica{
             NetworkStream nwStream = tcpClient.GetStream();
             Console.WriteLine("\n\nConexão estabelecida:");
             //Pega Mac do destino e origem.
-            macOrigem = GetMacAddress("192.168.0.100");
-            macDestino = GetMacAddress("192.168.0.101");
+            macOrigem = GetClientMacAddress();
+            macDestino = GetServerMacAddress(CLIENT_IP);
             // macOrigem = "41:7f:83:e8:5e:ff";
             // macDestino = "41:7f:33:0e:65:b2";
-            // Console.WriteLine(macOrigem);
-            // Console.WriteLine(macDestino);
+            Console.WriteLine(macOrigem);
+            Console.WriteLine(macDestino);
             string content = System.IO.File.ReadAllText(FILE_PATH);
 
             //Converte Head para byte.
@@ -49,19 +50,17 @@ namespace Pratica{
             Log.WriteLog(Log.CLIENT_CONVERT_MAC_DESTINY);
             byte[] payloadSizeByte = BitConverter.GetBytes(Convert.ToInt16(content.Length));
             Log.WriteLog(Log.CLIENT_CONVERT_PAYLOAD_SIZE);
-
             //Converte Payload para byte.
             byte[] payloadByte = ASCIIEncoding.ASCII.GetBytes(content);
             Log.WriteLog(Log.CLIENT_CONVERT_PAYLOAD);
 
             //Concatena o Head.
-            byte[] bytesToSend = Concat(Concat(macOrigemByte,macDestinoByte),payloadSizeByte);
+            byte[] bytesToSend = Concat(macOrigemByte,macDestinoByte);
 
             //Concate o Head com o Payload
-            bytesToSend = Concat(bytesToSend,payloadByte);
-
-            
             var pduBits = string.Concat(bytesToSend.Select(b => Convert.ToString(b, 2).PadLeft(8, '0')));
+            pduBits += Convert.ToString(content.Length, 2).PadLeft(16, '0') + string.Concat(payloadByte.Select(b => Convert.ToString(b, 2).PadLeft(8, '0')));
+            
 
             if(!File.Exists(FILE_PATH_PDU_BITS))
               File.Create(FILE_PATH_PDU_BITS).Close();
@@ -75,7 +74,8 @@ namespace Pratica{
             Console.WriteLine("\tPDU completa em bits: {0}", pduBits);
 
             //Faz o envio dos bits
-            nwStream.Write(bytesToSend, 0, bytesToSend.Length);
+            byte[] byData = System.Text.Encoding.ASCII.GetBytes(pduBits);
+            nwStream.Write(byData, 0, byData.Length);
 
             //Encerra a conexao
             tcpClient.Close();
@@ -94,34 +94,62 @@ namespace Pratica{
           var sleepTime = random.Next(0, 100);
           Thread.Sleep(sleepTime);
           Console.WriteLine("Erro, tempo de espera é de : " + sleepTime + "ms");
+        } catch (Exception ex) {
+          Console.WriteLine("Erro! " + ex.ToString());
+          outLoop = true;
         }
       } 
     }
-    //Mac address
-    public string GetMacAddress(string ipAddress){
-        string macAddress = string.Empty;
-        System.Diagnostics.Process ppProcess = new System.Diagnostics.Process();
-        ppProcess.StartInfo.FileName = "ping";
-        ppProcess.StartInfo.Arguments = "-c 4 " + ipAddress;
-        ppProcess.StartInfo.UseShellExecute = false;
-        ppProcess.StartInfo.RedirectStandardOutput = true;
-        ppProcess.StartInfo.CreateNoWindow = true;
-        ppProcess.Start();
-        Thread.Sleep(100);
-        System.Diagnostics.Process pProcess = new System.Diagnostics.Process();
-        pProcess.StartInfo.FileName = "arp";
-        pProcess.StartInfo.Arguments = "-a " + ipAddress;
-        pProcess.StartInfo.UseShellExecute = false;
-        pProcess.StartInfo.RedirectStandardOutput = true;
-        pProcess.StartInfo.CreateNoWindow = true;
-        pProcess.Start();
-        string strOutput = pProcess.StandardOutput.ReadToEnd();
-        string[] substrings = strOutput.Split(' ');
-        if (substrings[3].Length > 0){
-          return substrings[3];
+    public void PingServer(string ipAddress){
+      System.Diagnostics.Process pProcess = new System.Diagnostics.Process();
+      pProcess.StartInfo.FileName = "ping";
+      pProcess.StartInfo.Arguments = "-c 4 " + ipAddress;
+      pProcess.StartInfo.UseShellExecute = false;
+      pProcess.StartInfo.RedirectStandardOutput = true;
+      pProcess.StartInfo.CreateNoWindow = true;
+      pProcess.Start();
+      Thread.Sleep(100);
+    }
+    //Server Mac address
+    public string GetServerMacAddress(string ipAddress){
+      string macAddress = string.Empty;
+      System.Diagnostics.Process pProcess = new System.Diagnostics.Process();
+      pProcess.StartInfo.FileName = "arp";
+      pProcess.StartInfo.Arguments = "-a " + ipAddress;
+      pProcess.StartInfo.UseShellExecute = false;
+      pProcess.StartInfo.RedirectStandardOutput = true;
+      pProcess.StartInfo.CreateNoWindow = true;
+      pProcess.Start();
+      string strOutput = pProcess.StandardOutput.ReadToEnd();
+      string[] substrings = strOutput.Split(' ');
+      if (substrings[3].Length > 0){
+        if(substrings[3] == "entries"){
+          PingServer(ipAddress);
+          return GetServerMacAddress(ipAddress);
         } else {
-          return "MAC Address não encontrado.";
+          return substrings[3];
         }
+      } else {
+        return "MAC Address do servidor não encontrado.";
+      }
+    }
+    //Get client mac address
+    public string GetClientMacAddress(){
+      string macAddress = string.Empty;
+      System.Diagnostics.Process pProcess = new System.Diagnostics.Process();
+      pProcess.StartInfo.FileName = "/bin/bash";
+      pProcess.StartInfo.Arguments = "-c \" ifconfig | grep ether \"";
+      pProcess.StartInfo.UseShellExecute = false;
+      pProcess.StartInfo.RedirectStandardOutput = true;
+      pProcess.StartInfo.CreateNoWindow = true;
+      pProcess.Start();
+      string strOutput = pProcess.StandardOutput.ReadToEnd().Trim(' ');
+      string[] substrings = strOutput.Split(' ');
+      if (substrings[1].Length > 0){
+        return substrings[1];
+      } else {
+        return "MAC Address do cliente não encontrado.";
+      }
     }
 
     //Concatena bytes

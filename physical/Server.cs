@@ -10,7 +10,10 @@ namespace Pratica{
   class Server{
     const string FILE_PATH_PDU_BITS = "pduBitsReceive.txt";
     const int PORT_NO = 5000;
-    const string SERVER_IP = "192.168.0.101";
+    const string SERVER_IP = "192.168.0.102";
+    const int BINARY_SIZE = 8;
+    const int MAC_ADDRESS_SIZE = 6;
+    const int PAYLOAD_SIZE = 2;
     public void receive(){
       IPHostEntry ipHostInfo = Dns.GetHostEntry(Dns.GetHostName());  
       IPAddress ipAddress = IPAddress.Parse(SERVER_IP);
@@ -31,18 +34,23 @@ namespace Pratica{
         byte[] buffer = new byte[client.ReceiveBufferSize];
         //Lê o que foi recebido
         int bytesRead = nwStream.Read(buffer, 0, client.ReceiveBufferSize);
+        string dataReceived = Encoding.ASCII.GetString(buffer, 0, bytesRead);
         byte[] bytesReceive = buffer.Take(bytesRead).ToArray();
         //mac origem: 0-5 para hexa
-        string macOrigem = BitConverter.ToString(bytesReceive.Take(6).ToArray()).Replace("-",":");
+        string macOrigem = convertMacAddress(dataReceived.Substring(0, BINARY_SIZE * MAC_ADDRESS_SIZE));
         Log.WriteLog(Log.SERVER_CONVERT_MAC_SOURCE + " (" + macOrigem + ")");
         //mac destino: 6-11 para hexa
-        string macDestino = BitConverter.ToString(bytesReceive.Skip(6).Take(6).ToArray()).Replace("-",":");
+        string macDestino = convertMacAddress(dataReceived.Substring(BINARY_SIZE * MAC_ADDRESS_SIZE, BINARY_SIZE * MAC_ADDRESS_SIZE));
         Log.WriteLog(Log.SERVER_CONVERT_MAC_DESTINY + " (" + macDestino + ")");
         //Converte de 12-13 Bytes para int
-        int payloadSize = BitConverter.ToInt16(bytesReceive.Skip(12).Take(2).ToArray());
+        string strPayloadSize = dataReceived.Substring(BINARY_SIZE*MAC_ADDRESS_SIZE*2, BINARY_SIZE*PAYLOAD_SIZE);
+        int payloadSize = Convert.ToInt32(strPayloadSize, 2);
         Log.WriteLog(Log.SERVER_CONVERT_PAYLOAD_SIZE + " (" + payloadSize + ")");
         //Converte 14-sizeReceive para string
-        string payload = ASCIIEncoding.ASCII.GetString((bytesReceive.Skip(14).Take(bytesRead-14).ToArray()));
+        //string payload = ASCIIEncoding.ASCII.GetString((bytesReceive.Skip(14).Take(bytesRead-14).ToArray()));
+        int size = BINARY_SIZE*MAC_ADDRESS_SIZE*2+BINARY_SIZE*PAYLOAD_SIZE;
+        string payloadBits = dataReceived.Substring(size, dataReceived.Length-size);
+        string payload = binaryToString(payloadBits);
         Log.WriteLog(Log.SERVER_CONVERT_PAYLOAD + " (" + payload + ")");
         //Salva o arquivo
         var pduBits = string.Concat(bytesReceive.Select(b => Convert.ToString(b, 2).PadLeft(8, '0')));
@@ -57,8 +65,34 @@ namespace Pratica{
         //Encerra conexao
         client.Close();
         listener.Stop();
+        Console.WriteLine("\nConexão encerrada.");
         Log.WriteLog(Log.SERVER_CLOSE_CLIENT);
       }
+    }
+    //convert string binary to hex
+    protected string convertMacAddress(string binary){
+      string toReturn = "";
+      int exitLoop = 0;
+      while(exitLoop < binary.Length){
+        toReturn += Convert.ToByte(binary.Substring(exitLoop, 8),2).ToString("X2");
+        exitLoop += 8;
+        if(exitLoop != binary.Length)
+          toReturn += ":";
+      }
+      return toReturn;
+    }
+
+    public string binaryToString(string receive){ 	
+      // use your encoding here
+      Encoding  encode = System.Text.Encoding.UTF8;                
+      string binaryString = receive.Replace(" ","");
+      var bytes = new byte[binaryString.Length / 8];
+      var ilen = (int)(binaryString.Length / 8);			                
+      for (var aux = 0; aux < ilen; aux++){                                       
+        bytes[aux] = Convert.ToByte(binaryString.Substring(aux*8, 8), 2);
+      }
+      string str = encode.GetString(bytes);
+      return str;
     }
   }
 }
