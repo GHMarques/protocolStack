@@ -1,0 +1,6 @@
+log.txt
+pduBits.txt
+pduBitsReceive.txt
+fileToSend.txt
+.vscode/
+*.[Cc]ache
