@@ -1,0 +1,17 @@
+.container {
+    width: 500px;
+    clear: both;
+    align-content: center;
+}
+  
+.container input {
+    width: 100%;
+    clear: both;
+}
+
+.center {
+    margin: auto;
+    width: 40%;
+    border: 3px solid grey;
+    padding: 10px;
+}
