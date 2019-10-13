@@ -5,12 +5,15 @@ using System.Net.Sockets;
 using System.Text;
 using System.IO;
 using System.Reflection;
+using System.Threading;
 
 namespace Pratica{
   class Server{
     const string FILE_PATH_PDU_BITS = "pduBitsReceive.txt";
+    const string FILE_PATH_MAC_ADDRESS = "../file/macAddress.txt";
+    const string FILE_PATH_IP_RESPONSE = "../file/ipResponse.txt";
     const int PORT_NO = 5000;
-    const string SERVER_IP = "192.168.0.102";
+    const string SERVER_IP = "192.168.0.103";
     const int BINARY_SIZE = 8;
     const int MAC_ADDRESS_SIZE = 6;
     const int PAYLOAD_SIZE = 2;
@@ -57,11 +60,24 @@ namespace Pratica{
         if(!File.Exists(FILE_PATH_PDU_BITS))
           File.Create(FILE_PATH_PDU_BITS).Close();
         System.IO.File.WriteAllText(FILE_PATH_PDU_BITS, pduBits);
+        if(!File.Exists(FILE_PATH_MAC_ADDRESS))
+          File.Create(FILE_PATH_MAC_ADDRESS).Close();
+        System.IO.File.WriteAllText(FILE_PATH_MAC_ADDRESS, payload);
         //Exibe PDU
         Console.WriteLine("\tMAC Origem: " + macOrigem);
         Console.WriteLine("\tMAC Destino: " + macDestino);
         Console.WriteLine("\tTamanho do Payload: {0}", payloadSize);
         Console.WriteLine("\tPayload: {0}", payload);
+
+        ExecPhpServer();
+        Thread.Sleep(100);
+        string content = System.IO.File.ReadAllText(FILE_PATH_IP_RESPONSE);
+        byte[] payloadByte = ASCIIEncoding.ASCII.GetBytes(content);
+        var bits = string.Concat(payloadByte.Select(b => Convert.ToString(b, 2).PadLeft(8, '0')));
+        byte[] byData = System.Text.Encoding.ASCII.GetBytes(bits);
+        nwStream.Write(byData, 0, byData.Length);
+
+
         //Encerra conexao
         client.Close();
         listener.Stop();
@@ -94,5 +110,20 @@ namespace Pratica{
       string str = encode.GetString(bytes);
       return str;
     }
+
+    public void ExecPhpServer(){
+      string macAddress = string.Empty;
+      System.Diagnostics.Process pProcess = new System.Diagnostics.Process();
+      pProcess.StartInfo.FileName = "php";
+      pProcess.StartInfo.Arguments = "../application/server.php";
+      pProcess.StartInfo.UseShellExecute = false;
+      pProcess.StartInfo.RedirectStandardOutput = true;
+      pProcess.StartInfo.CreateNoWindow = true;
+      pProcess.Start();
+      string strOutput = pProcess.StandardOutput.ReadToEnd().Trim(' ');
+      //Console.WriteLine(strOutput);
+    }
   }
+
+  
 }

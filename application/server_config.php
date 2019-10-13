@@ -6,7 +6,7 @@
 		$strRouter = $_POST['router'];
 
 		//create config file
-		$strFileName = 'server_config.txt';
+		$strFileName = '../file/server_config.txt';
 		$file = fopen($strFileName, 'w') or die('Cannot open file:  '.$strFileName);
 
 		//create string
@@ -32,7 +32,7 @@
 		<div class="center">
 			<h1>DHCP Configuration</h1>
 			<div class="container">
-				<form action="index.php" method="post" name="formDhcp">
+				<form action="server_config.php" method="post" name="formDhcp">
 					<p>Subnet mask: <input type="text" name="mask" /></p>
 					<p>DNS IP: <input type="text" name="dns" /></p>
 					<p>Router IP: <input type="text" name="router" /></p>

@@ -2533,3 +2533,236 @@
 9/21/19 9:49:24 PM - Cliente não detecta colisão.
 9/21/19 9:49:24 PM - Servidor aceita conexão com cliente: 192.168.0.102
 9/21/19 9:49:29 PM - Cliente converte MAC de origem.
+10/13/19 11:56:43 AM - Servidor criado.
+10/13/19 11:56:43 AM - Servidor iniciado.
+10/13/19 11:56:52 AM - Servidor criado.
+10/13/19 11:56:52 AM - Servidor iniciado.
+10/13/19 11:58:18 AM - Servidor criado.
+10/13/19 11:58:18 AM - Servidor iniciado.
+10/13/19 11:58:18 AM - Servidor de IP: 192.168.0.103 ouvindo a porta: 5000
+10/13/19 11:58:34 AM - Cliente criado.
+10/13/19 11:58:34 AM - Cliente não detecta colisão.
+10/13/19 11:59:09 AM - Cliente criado.
+10/13/19 11:59:09 AM - Cliente não detecta colisão.
+10/13/19 12:01:19 PM - Cliente não conseguiu se conectar.
+10/13/19 12:01:20 PM - Cliente não detecta colisão.
+10/13/19 12:01:47 PM - Cliente criado.
+10/13/19 12:01:47 PM - Cliente não detecta colisão.
+10/13/19 12:01:47 PM - Cliente se conecta no servidor.
+10/13/19 12:01:47 PM - Servidor aceita conexão com cliente: 192.168.0.103
+10/13/19 12:01:47 PM - Cliente converte MAC de origem.
+10/13/19 12:01:47 PM - Cliente converte MAC de destino.
+10/13/19 12:01:47 PM - Cliente converte tamanho do payload.
+10/13/19 12:01:47 PM - Cliente converte payload.
+10/13/19 12:01:47 PM - Cliente encerra a conexão.
+10/13/19 12:02:12 PM - Servidor criado.
+10/13/19 12:02:12 PM - Servidor iniciado.
+10/13/19 12:02:12 PM - Servidor de IP: 192.168.0.103 ouvindo a porta: 5000
+10/13/19 12:02:21 PM - Cliente criado.
+10/13/19 12:02:21 PM - Cliente não detecta colisão.
+10/13/19 12:02:21 PM - Cliente se conecta no servidor.
+10/13/19 12:02:21 PM - Servidor aceita conexão com cliente: 192.168.0.103
+10/13/19 12:02:21 PM - Cliente converte MAC de origem.
+10/13/19 12:02:21 PM - Cliente converte MAC de destino.
+10/13/19 12:02:21 PM - Cliente converte tamanho do payload.
+10/13/19 12:02:21 PM - Cliente converte payload.
+10/13/19 12:02:21 PM - Servidor converte MAC de origem. (24:F5:AA:F7:AA:07)
+10/13/19 12:02:21 PM - Servidor converte MAC de destino. (3C:8D:20:50:6A:26)
+10/13/19 12:02:21 PM - Servidor converte tamanho do payload. (8)
+10/13/19 12:02:21 PM - Servidor converte payload. (sandrord)
+10/13/19 12:02:21 PM - Cliente encerra a conexão.
+10/13/19 12:02:21 PM - Servidor encerra conexao com o cliente.
+10/13/19 12:02:21 PM - Servidor de IP: 192.168.0.103 ouvindo a porta: 5000
+10/13/19 12:07:46 PM - Servidor criado.
+10/13/19 12:07:46 PM - Servidor iniciado.
+10/13/19 12:07:46 PM - Servidor de IP: 192.168.0.103 ouvindo a porta: 5000
+10/13/19 12:07:54 PM - Cliente criado.
+10/13/19 12:07:54 PM - Cliente não detecta colisão.
+10/13/19 12:07:54 PM - Cliente se conecta no servidor.
+10/13/19 12:07:54 PM - Servidor aceita conexão com cliente: 192.168.0.103
+10/13/19 12:07:54 PM - Cliente converte MAC de origem.
+10/13/19 12:07:54 PM - Cliente converte MAC de destino.
+10/13/19 12:07:54 PM - Cliente converte tamanho do payload.
+10/13/19 12:07:54 PM - Cliente converte payload.
+10/13/19 12:07:54 PM - Servidor converte MAC de origem. (24:F5:AA:F7:AA:07)
+10/13/19 12:07:54 PM - Servidor converte MAC de destino. (3C:8D:20:50:6A:26)
+10/13/19 12:07:54 PM - Servidor converte tamanho do payload. (8)
+10/13/19 12:07:54 PM - Servidor converte payload. (sandrord)
+10/13/19 12:07:54 PM - Cliente encerra a conexão.
+10/13/19 12:07:54 PM - Servidor encerra conexao com o cliente.
+10/13/19 12:07:54 PM - Servidor de IP: 192.168.0.103 ouvindo a porta: 5000
+10/13/2019 2:11:27 PM - Servidor criado.
+10/13/2019 2:11:27 PM - Servidor iniciado.
+10/13/2019 2:11:27 PM - Servidor de IP: 192.168.0.103 ouvindo a porta: 5000
+10/13/2019 2:17:26 PM - Servidor criado.
+10/13/2019 2:17:26 PM - Servidor iniciado.
+10/13/2019 2:17:30 PM - Servidor criado.
+10/13/2019 2:17:30 PM - Servidor iniciado.
+10/13/2019 2:18:05 PM - Servidor criado.
+10/13/2019 2:18:06 PM - Servidor iniciado.
+10/13/2019 2:21:25 PM - Servidor criado.
+10/13/2019 2:21:25 PM - Servidor iniciado.
+10/13/2019 2:21:25 PM - Servidor de IP: 192.168.0.103 ouvindo a porta: 5000
+10/13/2019 2:22:07 PM - Cliente criado.
+10/13/2019 2:22:07 PM - Cliente não detecta colisão.
+10/13/2019 2:22:07 PM - Cliente se conecta no servidor.
+10/13/2019 2:22:07 PM - Servidor aceita conexão com cliente: 192.168.0.103
+10/13/2019 2:22:12 PM - Cliente converte MAC de origem.
+10/13/2019 2:22:12 PM - Cliente converte MAC de destino.
+10/13/2019 2:22:12 PM - Cliente converte tamanho do payload.
+10/13/2019 2:22:12 PM - Cliente converte payload.
+10/13/2019 2:22:12 PM - Cliente encerra a conexão.
+10/13/2019 2:22:12 PM - Servidor converte MAC de origem. (24:F5:AA:F7:AA:07)
+10/13/2019 2:22:12 PM - Servidor converte MAC de destino. (3C:8D:20:50:6A:26)
+10/13/2019 2:22:12 PM - Servidor converte tamanho do payload. (8)
+10/13/2019 2:22:12 PM - Servidor converte payload. (sandrord)
+10/13/2019 2:22:12 PM - Servidor encerra conexao com o cliente.
+10/13/2019 2:22:12 PM - Servidor de IP: 192.168.0.103 ouvindo a porta: 5000
+10/13/2019 2:23:33 PM - Cliente criado.
+10/13/2019 2:23:33 PM - Cliente não detecta colisão.
+10/13/2019 2:23:33 PM - Servidor aceita conexão com cliente: 192.168.0.103
+10/13/2019 2:23:33 PM - Cliente se conecta no servidor.
+10/13/2019 2:23:38 PM - Cliente converte MAC de origem.
+10/13/2019 2:23:38 PM - Cliente converte MAC de destino.
+10/13/2019 2:23:38 PM - Cliente converte tamanho do payload.
+10/13/2019 2:23:38 PM - Cliente converte payload.
+10/13/2019 2:23:38 PM - Servidor converte MAC de origem. (24:F5:AA:F7:AA:07)
+10/13/2019 2:23:38 PM - Servidor converte MAC de destino. (3C:8D:20:50:6A:26)
+10/13/2019 2:23:38 PM - Servidor converte tamanho do payload. (8)
+10/13/2019 2:23:38 PM - Servidor converte payload. (sandrord)
+10/13/2019 2:23:38 PM - Servidor encerra conexao com o cliente.
+10/13/2019 2:23:38 PM - Servidor de IP: 192.168.0.103 ouvindo a porta: 5000
+10/13/2019 2:23:38 PM - Cliente encerra a conexão.
+10/13/19 2:48:56 PM - Servidor criado.
+10/13/19 2:48:56 PM - Servidor iniciado.
+10/13/19 2:48:56 PM - Servidor de IP: 192.168.0.103 ouvindo a porta: 5000
+10/13/19 2:49:13 PM - Cliente criado.
+10/13/19 2:49:13 PM - Cliente não detecta colisão.
+10/13/19 2:49:13 PM - Cliente se conecta no servidor.
+10/13/19 2:49:13 PM - Servidor aceita conexão com cliente: 192.168.0.103
+10/13/19 2:50:03 PM - Servidor criado.
+10/13/19 2:50:03 PM - Servidor iniciado.
+10/13/19 2:50:03 PM - Servidor de IP: 192.168.0.103 ouvindo a porta: 5000
+10/13/19 2:50:07 PM - Cliente criado.
+10/13/19 2:50:07 PM - Cliente não detecta colisão.
+10/13/19 2:50:07 PM - Cliente se conecta no servidor.
+10/13/19 2:50:07 PM - Servidor aceita conexão com cliente: 192.168.0.103
+10/13/19 2:50:12 PM - Cliente converte MAC de origem.
+10/13/19 2:50:12 PM - Cliente converte MAC de destino.
+10/13/19 2:50:12 PM - Cliente converte tamanho do payload.
+10/13/19 2:50:12 PM - Cliente converte payload.
+10/13/19 2:50:12 PM - Servidor converte MAC de origem. (24:F5:AA:F7:AA:07)
+10/13/19 2:50:12 PM - Servidor converte MAC de destino. (3C:8D:20:50:6A:26)
+10/13/19 2:50:12 PM - Servidor converte tamanho do payload. (8)
+10/13/19 2:50:12 PM - Servidor converte payload. (sandrord)
+10/13/19 2:50:12 PM - Cliente encerra a conexão.
+10/13/19 2:50:12 PM - Servidor encerra conexao com o cliente.
+10/13/19 2:50:12 PM - Servidor de IP: 192.168.0.103 ouvindo a porta: 5000
+10/13/19 2:52:28 PM - Servidor criado.
+10/13/19 2:52:28 PM - Servidor iniciado.
+10/13/19 2:52:28 PM - Servidor de IP: 192.168.0.103 ouvindo a porta: 5000
+10/13/19 2:52:33 PM - Cliente criado.
+10/13/19 2:52:33 PM - Cliente não detecta colisão.
+10/13/19 2:52:33 PM - Cliente se conecta no servidor.
+10/13/19 2:52:33 PM - Servidor aceita conexão com cliente: 192.168.0.103
+10/13/19 2:52:38 PM - Cliente converte MAC de origem.
+10/13/19 2:52:38 PM - Cliente converte MAC de destino.
+10/13/19 2:52:38 PM - Cliente converte tamanho do payload.
+10/13/19 2:52:38 PM - Cliente converte payload.
+10/13/19 2:52:38 PM - Servidor converte MAC de origem. (24:F5:AA:F7:AA:07)
+10/13/19 2:52:38 PM - Servidor converte MAC de destino. (3C:8D:20:50:6A:26)
+10/13/19 2:52:38 PM - Servidor converte tamanho do payload. (17)
+10/13/19 2:52:38 PM - Servidor converte payload. (24:f5:aa:f7:aa:07)
+10/13/19 2:52:38 PM - Cliente encerra a conexão.
+10/13/19 2:52:38 PM - Servidor encerra conexao com o cliente.
+10/13/19 2:52:38 PM - Servidor de IP: 192.168.0.103 ouvindo a porta: 5000
+10/13/19 2:54:00 PM - Servidor criado.
+10/13/19 2:54:00 PM - Servidor iniciado.
+10/13/19 2:54:00 PM - Servidor de IP: 192.168.0.103 ouvindo a porta: 5000
+10/13/19 2:54:07 PM - Cliente criado.
+10/13/19 2:54:07 PM - Cliente não detecta colisão.
+10/13/19 2:54:07 PM - Cliente se conecta no servidor.
+10/13/19 2:54:07 PM - Servidor aceita conexão com cliente: 192.168.0.103
+10/13/19 2:54:12 PM - Cliente converte MAC de origem.
+10/13/19 2:54:12 PM - Cliente converte MAC de destino.
+10/13/19 2:54:12 PM - Cliente converte tamanho do payload.
+10/13/19 2:54:12 PM - Cliente converte payload.
+10/13/19 2:54:12 PM - Servidor converte MAC de origem. (24:F5:AA:F7:AA:07)
+10/13/19 2:54:12 PM - Servidor converte MAC de destino. (3C:8D:20:50:6A:26)
+10/13/19 2:54:12 PM - Servidor converte tamanho do payload. (17)
+10/13/19 2:54:12 PM - Servidor converte payload. (24:f5:aa:f7:aa:07)
+10/13/19 2:54:12 PM - Cliente encerra a conexão.
+10/13/19 2:54:12 PM - Servidor encerra conexao com o cliente.
+10/13/19 2:54:12 PM - Servidor de IP: 192.168.0.103 ouvindo a porta: 5000
+10/13/19 2:58:39 PM - Servidor criado.
+10/13/19 2:58:39 PM - Servidor iniciado.
+10/13/19 2:58:39 PM - Servidor de IP: 192.168.0.103 ouvindo a porta: 5000
+10/13/19 2:58:46 PM - Cliente criado.
+10/13/19 2:58:46 PM - Cliente não detecta colisão.
+10/13/19 2:58:46 PM - Cliente se conecta no servidor.
+10/13/19 2:58:46 PM - Servidor aceita conexão com cliente: 192.168.0.103
+10/13/19 2:58:51 PM - Cliente converte MAC de origem.
+10/13/19 2:58:51 PM - Cliente converte MAC de destino.
+10/13/19 2:58:51 PM - Cliente converte tamanho do payload.
+10/13/19 2:58:51 PM - Cliente converte payload.
+10/13/19 2:58:51 PM - Servidor converte MAC de origem. (24:F5:AA:F7:AA:07)
+10/13/19 2:58:51 PM - Servidor converte MAC de destino. (3C:8D:20:50:6A:26)
+10/13/19 2:58:51 PM - Servidor converte tamanho do payload. (17)
+10/13/19 2:58:51 PM - Servidor converte payload. (24:f5:aa:f7:aa:07)
+10/13/19 2:58:51 PM - Cliente encerra a conexão.
+10/13/19 2:58:51 PM - Servidor encerra conexao com o cliente.
+10/13/19 2:58:51 PM - Servidor de IP: 192.168.0.103 ouvindo a porta: 5000
+10/13/19 3:23:27 PM - Servidor criado.
+10/13/19 3:23:27 PM - Servidor iniciado.
+10/13/19 3:23:27 PM - Servidor de IP: 192.168.0.103 ouvindo a porta: 5000
+10/13/19 3:23:34 PM - Cliente criado.
+10/13/19 3:23:34 PM - Cliente não detecta colisão.
+10/13/19 3:23:34 PM - Cliente se conecta no servidor.
+10/13/19 3:23:34 PM - Servidor aceita conexão com cliente: 192.168.0.103
+10/13/19 3:23:39 PM - Cliente converte MAC de origem.
+10/13/19 3:23:39 PM - Cliente converte MAC de destino.
+10/13/19 3:23:39 PM - Cliente converte tamanho do payload.
+10/13/19 3:23:39 PM - Cliente converte payload.
+10/13/19 3:23:39 PM - Servidor converte MAC de origem. (24:F5:AA:F7:AA:07)
+10/13/19 3:23:39 PM - Servidor converte MAC de destino. (3C:8D:20:50:6A:26)
+10/13/19 3:23:39 PM - Servidor converte tamanho do payload. (17)
+10/13/19 3:23:39 PM - Servidor converte payload. (24:f5:aa:f7:aa:07)
+10/13/19 3:23:39 PM - Servidor encerra conexao com o cliente.
+10/13/19 3:23:39 PM - Servidor de IP: 192.168.0.103 ouvindo a porta: 5000
+10/13/19 3:23:39 PM - Cliente encerra a conexão.
+10/13/19 3:31:20 PM - Servidor criado.
+10/13/19 3:31:20 PM - Servidor iniciado.
+10/13/19 3:31:20 PM - Servidor de IP: 192.168.0.103 ouvindo a porta: 5000
+10/13/19 3:31:28 PM - Cliente criado.
+10/13/19 3:31:28 PM - Cliente não detecta colisão.
+10/13/19 3:31:28 PM - Cliente se conecta no servidor.
+10/13/19 3:31:28 PM - Servidor aceita conexão com cliente: 192.168.0.103
+10/13/19 3:31:33 PM - Cliente converte MAC de origem.
+10/13/19 3:31:33 PM - Cliente converte MAC de destino.
+10/13/19 3:31:33 PM - Cliente converte tamanho do payload.
+10/13/19 3:31:33 PM - Cliente converte payload.
+10/13/19 3:31:33 PM - Servidor converte MAC de origem. (24:F5:AA:F7:AA:07)
+10/13/19 3:31:33 PM - Servidor converte MAC de destino. (3C:8D:20:50:6A:26)
+10/13/19 3:31:33 PM - Servidor converte tamanho do payload. (17)
+10/13/19 3:31:33 PM - Servidor converte payload. (24:f5:aa:f7:aa:07)
+10/13/19 3:31:34 PM - Servidor encerra conexao com o cliente.
+10/13/19 3:31:34 PM - Servidor de IP: 192.168.0.103 ouvindo a porta: 5000
+10/13/19 3:31:34 PM - Cliente encerra a conexão.
+10/13/2019 3:39:40 PM - Servidor criado.
+10/13/2019 3:39:40 PM - Servidor iniciado.
+10/13/2019 3:39:40 PM - Servidor de IP: 192.168.0.103 ouvindo a porta: 5000
+10/13/2019 3:40:07 PM - Cliente criado.
+10/13/2019 3:40:07 PM - Cliente não detecta colisão.
+10/13/2019 3:40:07 PM - Cliente se conecta no servidor.
+10/13/2019 3:40:07 PM - Servidor aceita conexão com cliente: 192.168.0.103
+10/13/2019 3:40:12 PM - Cliente converte MAC de origem.
+10/13/2019 3:40:12 PM - Cliente converte MAC de destino.
+10/13/2019 3:40:12 PM - Cliente converte tamanho do payload.
+10/13/2019 3:40:12 PM - Cliente converte payload.
+10/13/2019 3:40:12 PM - Servidor converte MAC de origem. (24:F5:AA:F7:AA:07)
+10/13/2019 3:40:12 PM - Servidor converte MAC de destino. (3C:8D:20:50:6A:26)
+10/13/2019 3:40:12 PM - Servidor converte tamanho do payload. (17)
+10/13/2019 3:40:12 PM - Servidor converte payload. (24:f5:aa:f7:aa:07)
+10/13/2019 3:40:12 PM - Servidor encerra conexao com o cliente.
+10/13/2019 3:40:12 PM - Servidor de IP: 192.168.0.103 ouvindo a porta: 5000
+10/13/2019 3:40:12 PM - Cliente encerra a conexão.

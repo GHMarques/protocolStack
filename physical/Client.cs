@@ -10,9 +10,10 @@ namespace Pratica{
   class Client{
     const int PORT_NO = 5000;
     const int COLISION_PERCENTAGE = 10;
-    const string SERVER_IP = "192.168.0.102";
+    const string SERVER_IP = "192.168.0.103";
     const string CLIENT_IP = "192.168.0.100";
-    const string FILE_PATH = "fileToSend.txt";
+    const string FILE_PATH = "../file/fileToSend.txt";
+    const string FILE_PATH_RESPONSE = "../file/DhcpResponseIp.txt";
     const string FILE_PATH_PDU_BITS = "pduBits.txt";
     string macOrigem = "";
     string macDestino = "";
@@ -39,8 +40,8 @@ namespace Pratica{
             macDestino = GetServerMacAddress(CLIENT_IP);
             // macOrigem = "41:7f:83:e8:5e:ff";
             // macDestino = "41:7f:33:0e:65:b2";
-            Console.WriteLine(macOrigem);
-            Console.WriteLine(macDestino);
+            // Console.WriteLine(macOrigem);
+            // Console.WriteLine(macDestino);
             string content = System.IO.File.ReadAllText(FILE_PATH);
 
             //Converte Head para byte.
@@ -76,6 +77,15 @@ namespace Pratica{
             //Faz o envio dos bits
             byte[] byData = System.Text.Encoding.ASCII.GetBytes(pduBits);
             nwStream.Write(byData, 0, byData.Length);
+
+            byte[] buffer = new byte[tcpClient.ReceiveBufferSize];
+            int bytesRead = nwStream.Read(buffer, 0, tcpClient.ReceiveBufferSize);
+            string dataReceived = Encoding.ASCII.GetString(buffer, 0, bytesRead);
+            byte[] bytesReceive = buffer.Take(bytesRead).ToArray();
+            string payload = binaryToString(dataReceived);
+            if(!File.Exists(FILE_PATH_RESPONSE))
+              File.Create(FILE_PATH_RESPONSE).Close();
+            System.IO.File.WriteAllText(FILE_PATH_RESPONSE, payload);
 
             //Encerra a conexao
             tcpClient.Close();
@@ -150,6 +160,19 @@ namespace Pratica{
       } else {
         return "MAC Address do cliente não encontrado.";
       }
+    }
+
+    public string binaryToString(string receive){ 	
+      // use your encoding here
+      Encoding  encode = System.Text.Encoding.UTF8;                
+      string binaryString = receive.Replace(" ","");
+      var bytes = new byte[binaryString.Length / 8];
+      var ilen = (int)(binaryString.Length / 8);			                
+      for (var aux = 0; aux < ilen; aux++){                                       
+        bytes[aux] = Convert.ToByte(binaryString.Substring(aux*8, 8), 2);
+      }
+      string str = encode.GetString(bytes);
+      return str;
     }
 
     //Concatena bytes
