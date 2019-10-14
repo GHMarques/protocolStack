@@ -1,12 +1,20 @@
 <?php
+function logMe($msg){
+    // Abre ou cria o arquivo log.txt
+    // "a" representa que o arquivo é aberto para ser escrito
+    $log = fopen("../file/log.txt", "a");
+    
+    fwrite($log, date("Y-m-d H:i:s")." - Servidor é requisitado \n");
     $configServerFile = "../file/server_config.txt";
     //file into array
     $configServerFileLines = @file($configServerFile);
     if($configServerFileLines != null){
+
         //if file exists, get values
         $mask = trim($configServerFileLines[0]);
         $dns = trim($configServerFileLines[1]);
         $router = trim($configServerFileLines[2]);
+        fwrite($log, date("Y-m-d H:i:s")." - Servidor obtém os valores associados a máscara, DNS e router \n");
         //get mac address
         $macAddressFilePath = "../file/macAddress.txt";
         $macAddressFile = @file($macAddressFilePath);
@@ -25,6 +33,7 @@
                     $countLines++;
                     $info = explode(" ", $line);
                     if($info[0] == $macAddress){
+                        fwrite($log, date("Y-m-d H:i:s")." - Servidor obtém IP associado ao cliente\n");
                         $ipToReturn = $info[1];
                         $exitLoop = true;
                     }
@@ -34,8 +43,10 @@
             if($ipToReturn == null){
                 $ipToReturn = generateIP($mask, $countLines, $line);
                 if($ipToReturn == null){
+                    fwrite($log, date("Y-m-d H:i:s")." - Servidor não possui IPs disponíveis\n");
                     echo "No ip available.";
                 } else {
+                    fwrite($log, date("Y-m-d H:i:s")." - Servidor obtém novo IP a ser associado ao cliente\n");
                     $fileAppend = fopen("../file/dhcp.txt", "a");
                     if($countLines != 0)
                         fwrite($fileAppend, "\n");
@@ -54,11 +65,13 @@
             fclose($fileResponse);
         } else {
             //file does not exist
+            fwrite($log, date("Y-m-d H:i:s")." - Servidor não consegue obter endereço MAC \n");
             echo "Mac Address file could not be opened.\n";
         }
     }
     else {
         //file does not exist
+        fwrite($log, date("Y-m-d H:i:s")." - Servidor não consegue obter as configurações do server \n");
         echo "Config server file could not be opened.\n";
     }
 
@@ -124,11 +137,6 @@
                 return null;
             }
         }
-        
-
-        
-
     }
-
-
+}
 ?>

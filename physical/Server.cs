@@ -113,6 +113,7 @@ namespace Pratica{
 
     public void ExecPhpServer(){
       string macAddress = string.Empty;
+      Log.WriteLog("Servidor Inicia aplicação DHCP");
       System.Diagnostics.Process pProcess = new System.Diagnostics.Process();
       pProcess.StartInfo.FileName = "php";
       pProcess.StartInfo.Arguments = "../application/server.php";

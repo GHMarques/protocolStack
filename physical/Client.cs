@@ -85,6 +85,8 @@ namespace Pratica{
             string payload = binaryToString(dataReceived);
             if(!File.Exists(FILE_PATH_RESPONSE))
               File.Create(FILE_PATH_RESPONSE).Close();
+
+            Log.WriteLog("Cliente salva payload recebido");
             System.IO.File.WriteAllText(FILE_PATH_RESPONSE, payload);
 
             //Encerra a conexao
