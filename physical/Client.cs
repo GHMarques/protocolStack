@@ -12,7 +12,7 @@ namespace Pratica{
     const int COLISION_PERCENTAGE = 10;
     const string SERVER_IP = "192.168.43.110";
     const string CLIENT_IP = "192.168.43.228";
-    const string FILE_PATH = "../file/fileToSend.txt";
+    const string FILE_PATH = "../file/macAddress.txt";
     const string FILE_PATH_RESPONSE = "../file/DhcpResponseIp.txt";
     const string FILE_PATH_PDU_BITS = "pduBits.txt";
     string macOrigem = "";

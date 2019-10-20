@@ -65,8 +65,9 @@ namespace Pratica{
         System.IO.File.WriteAllText(FILE_PATH_MAC_ADDRESS, payload);
         //Exibe PDU
         Console.WriteLine("\tMAC Origem: " + macOrigem);
+        Console.WriteLine("\tBits: {0}", payloadBits);
         Console.WriteLine("\tMAC Destino: " + macDestino);
-        Console.WriteLine("\tTamanho do Payload: {0}", payloadSize);
+        Console.WriteLine("\tPayload size: {0}", payloadSize);
         Console.WriteLine("\tPayload: {0}", payload);
 
         ExecPhpServer();
@@ -76,6 +77,8 @@ namespace Pratica{
         var bits = string.Concat(payloadByte.Select(b => Convert.ToString(b, 2).PadLeft(8, '0')));
         byte[] byData = System.Text.Encoding.ASCII.GetBytes(bits);
         nwStream.Write(byData, 0, byData.Length);
+
+        Console.WriteLine("\tDHCP Response: {0}", content);
 
 
         //Encerra conexao
