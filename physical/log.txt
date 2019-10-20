@@ -2766,3 +2766,941 @@
 10/13/2019 3:40:12 PM - Servidor encerra conexao com o cliente.
 10/13/2019 3:40:12 PM - Servidor de IP: 192.168.0.103 ouvindo a porta: 5000
 10/13/2019 3:40:12 PM - Cliente encerra a conexão.
+14/10/2019 09:19:57 - Cliente criado.
+14/10/2019 09:19:57 - Cliente não detecta colisão.
+14/10/2019 09:20:08 - Cliente criado.
+14/10/2019 09:20:08 - Cliente não detecta colisão.
+14/10/2019 09:21:10 - Cliente não conseguiu se conectar.
+14/10/2019 09:21:10 - Cliente detecta colisão.
+14/10/2019 09:21:10 - Cliente não detecta colisão.
+14/10/2019 09:22:12 - Cliente não conseguiu se conectar.
+14/10/2019 09:22:12 - Cliente não detecta colisão.
+14/10/2019 09:22:39 - Cliente criado.
+14/10/2019 09:22:39 - Cliente detecta colisão.
+14/10/2019 09:22:39 - Cliente não detecta colisão.
+14/10/2019 09:22:39 - Cliente se conecta no servidor.
+14/10/2019 09:22:39 - Cliente converte MAC de origem.
+10/14/2019 9:23:47 AM - Servidor criado.
+10/14/2019 9:23:48 AM - Servidor iniciado.
+10/14/2019 9:23:59 AM - Cliente criado.
+10/14/2019 9:23:59 AM - Cliente não detecta colisão.
+10/14/2019 9:23:59 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:23:59 AM - Cliente não detecta colisão.
+10/14/2019 9:23:59 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:23:59 AM - Cliente não detecta colisão.
+10/14/2019 9:23:59 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:23:59 AM - Cliente não detecta colisão.
+10/14/2019 9:23:59 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:23:59 AM - Cliente não detecta colisão.
+10/14/2019 9:23:59 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:23:59 AM - Cliente não detecta colisão.
+10/14/2019 9:23:59 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:23:59 AM - Cliente não detecta colisão.
+10/14/2019 9:23:59 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:23:59 AM - Cliente não detecta colisão.
+10/14/2019 9:23:59 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:23:59 AM - Cliente não detecta colisão.
+10/14/2019 9:23:59 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:00 AM - Cliente não detecta colisão.
+10/14/2019 9:24:00 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:00 AM - Cliente não detecta colisão.
+10/14/2019 9:24:00 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:00 AM - Cliente não detecta colisão.
+10/14/2019 9:24:00 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:00 AM - Cliente detecta colisão.
+10/14/2019 9:24:00 AM - Cliente não detecta colisão.
+10/14/2019 9:24:00 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:00 AM - Cliente não detecta colisão.
+10/14/2019 9:24:00 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:00 AM - Cliente não detecta colisão.
+10/14/2019 9:24:00 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:00 AM - Cliente não detecta colisão.
+10/14/2019 9:24:00 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:00 AM - Cliente detecta colisão.
+10/14/2019 9:24:00 AM - Cliente não detecta colisão.
+10/14/2019 9:24:00 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:00 AM - Cliente não detecta colisão.
+10/14/2019 9:24:00 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:00 AM - Cliente detecta colisão.
+10/14/2019 9:24:00 AM - Cliente não detecta colisão.
+10/14/2019 9:24:00 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:00 AM - Cliente não detecta colisão.
+10/14/2019 9:24:00 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:00 AM - Cliente não detecta colisão.
+10/14/2019 9:24:00 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:00 AM - Cliente detecta colisão.
+10/14/2019 9:24:00 AM - Cliente não detecta colisão.
+10/14/2019 9:24:00 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:00 AM - Cliente não detecta colisão.
+10/14/2019 9:24:01 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:01 AM - Cliente não detecta colisão.
+10/14/2019 9:24:01 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:01 AM - Cliente não detecta colisão.
+10/14/2019 9:24:01 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:01 AM - Cliente não detecta colisão.
+10/14/2019 9:24:01 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:01 AM - Cliente não detecta colisão.
+10/14/2019 9:24:01 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:01 AM - Cliente não detecta colisão.
+10/14/2019 9:24:01 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:01 AM - Cliente não detecta colisão.
+10/14/2019 9:24:01 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:01 AM - Cliente não detecta colisão.
+10/14/2019 9:24:01 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:01 AM - Cliente não detecta colisão.
+10/14/2019 9:24:01 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:01 AM - Cliente não detecta colisão.
+10/14/2019 9:24:01 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:01 AM - Cliente não detecta colisão.
+10/14/2019 9:24:01 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:01 AM - Cliente não detecta colisão.
+10/14/2019 9:24:01 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:01 AM - Cliente detecta colisão.
+10/14/2019 9:24:01 AM - Cliente não detecta colisão.
+10/14/2019 9:24:01 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:01 AM - Cliente não detecta colisão.
+10/14/2019 9:24:01 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:01 AM - Cliente não detecta colisão.
+10/14/2019 9:24:01 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:01 AM - Cliente detecta colisão.
+10/14/2019 9:24:01 AM - Cliente não detecta colisão.
+10/14/2019 9:24:01 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:01 AM - Cliente não detecta colisão.
+10/14/2019 9:24:01 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:02 AM - Cliente não detecta colisão.
+10/14/2019 9:24:02 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:02 AM - Cliente não detecta colisão.
+10/14/2019 9:24:02 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:02 AM - Cliente não detecta colisão.
+10/14/2019 9:24:02 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:02 AM - Cliente não detecta colisão.
+10/14/2019 9:24:02 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:02 AM - Cliente não detecta colisão.
+10/14/2019 9:24:02 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:02 AM - Cliente não detecta colisão.
+10/14/2019 9:24:02 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:02 AM - Cliente não detecta colisão.
+10/14/2019 9:24:02 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:02 AM - Cliente não detecta colisão.
+10/14/2019 9:24:02 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:02 AM - Cliente não detecta colisão.
+10/14/2019 9:24:02 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:02 AM - Cliente não detecta colisão.
+10/14/2019 9:24:02 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:02 AM - Cliente não detecta colisão.
+10/14/2019 9:24:02 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:02 AM - Cliente não detecta colisão.
+10/14/2019 9:24:02 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:02 AM - Cliente detecta colisão.
+10/14/2019 9:24:02 AM - Cliente não detecta colisão.
+10/14/2019 9:24:02 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:02 AM - Cliente não detecta colisão.
+10/14/2019 9:24:02 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:02 AM - Cliente não detecta colisão.
+10/14/2019 9:24:02 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:02 AM - Cliente não detecta colisão.
+10/14/2019 9:24:02 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:02 AM - Cliente não detecta colisão.
+10/14/2019 9:24:02 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:02 AM - Cliente não detecta colisão.
+10/14/2019 9:24:02 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:02 AM - Cliente não detecta colisão.
+10/14/2019 9:24:02 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:03 AM - Cliente não detecta colisão.
+10/14/2019 9:24:03 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:03 AM - Cliente detecta colisão.
+10/14/2019 9:24:03 AM - Cliente detecta colisão.
+10/14/2019 9:24:03 AM - Cliente não detecta colisão.
+10/14/2019 9:24:03 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:03 AM - Cliente detecta colisão.
+10/14/2019 9:24:03 AM - Cliente não detecta colisão.
+10/14/2019 9:24:03 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:03 AM - Cliente não detecta colisão.
+10/14/2019 9:24:03 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:03 AM - Cliente não detecta colisão.
+10/14/2019 9:24:03 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:03 AM - Cliente não detecta colisão.
+10/14/2019 9:24:03 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:03 AM - Cliente detecta colisão.
+10/14/2019 9:24:03 AM - Cliente não detecta colisão.
+10/14/2019 9:24:03 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:03 AM - Cliente não detecta colisão.
+10/14/2019 9:24:03 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:03 AM - Cliente não detecta colisão.
+10/14/2019 9:24:03 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:03 AM - Cliente não detecta colisão.
+10/14/2019 9:24:03 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:03 AM - Cliente não detecta colisão.
+10/14/2019 9:24:03 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:03 AM - Cliente não detecta colisão.
+10/14/2019 9:24:03 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:03 AM - Cliente não detecta colisão.
+10/14/2019 9:24:04 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:04 AM - Cliente detecta colisão.
+10/14/2019 9:24:04 AM - Cliente detecta colisão.
+10/14/2019 9:24:04 AM - Cliente não detecta colisão.
+10/14/2019 9:24:04 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:04 AM - Cliente não detecta colisão.
+10/14/2019 9:24:04 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:04 AM - Cliente não detecta colisão.
+10/14/2019 9:24:04 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:04 AM - Cliente não detecta colisão.
+10/14/2019 9:24:04 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:04 AM - Cliente não detecta colisão.
+10/14/2019 9:24:04 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:04 AM - Cliente não detecta colisão.
+10/14/2019 9:24:04 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:04 AM - Cliente não detecta colisão.
+10/14/2019 9:24:04 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:04 AM - Cliente não detecta colisão.
+10/14/2019 9:24:04 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:04 AM - Cliente não detecta colisão.
+10/14/2019 9:24:04 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:04 AM - Cliente não detecta colisão.
+10/14/2019 9:24:04 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:04 AM - Cliente não detecta colisão.
+10/14/2019 9:24:04 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:05 AM - Cliente não detecta colisão.
+10/14/2019 9:24:05 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:05 AM - Cliente detecta colisão.
+10/14/2019 9:24:05 AM - Cliente não detecta colisão.
+10/14/2019 9:24:05 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:05 AM - Cliente não detecta colisão.
+10/14/2019 9:24:05 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:05 AM - Cliente detecta colisão.
+10/14/2019 9:24:05 AM - Cliente não detecta colisão.
+10/14/2019 9:24:05 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:05 AM - Cliente não detecta colisão.
+10/14/2019 9:24:05 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:05 AM - Cliente não detecta colisão.
+10/14/2019 9:24:05 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:05 AM - Cliente não detecta colisão.
+10/14/2019 9:24:05 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:05 AM - Cliente não detecta colisão.
+10/14/2019 9:24:05 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:05 AM - Cliente não detecta colisão.
+10/14/2019 9:24:05 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:05 AM - Cliente não detecta colisão.
+10/14/2019 9:24:05 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:05 AM - Cliente não detecta colisão.
+10/14/2019 9:24:05 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:05 AM - Cliente não detecta colisão.
+10/14/2019 9:24:05 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:05 AM - Cliente não detecta colisão.
+10/14/2019 9:24:05 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:05 AM - Cliente não detecta colisão.
+10/14/2019 9:24:05 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:05 AM - Cliente não detecta colisão.
+10/14/2019 9:24:05 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:05 AM - Cliente não detecta colisão.
+10/14/2019 9:24:05 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:05 AM - Cliente não detecta colisão.
+10/14/2019 9:24:05 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:06 AM - Cliente não detecta colisão.
+10/14/2019 9:24:06 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:06 AM - Cliente detecta colisão.
+10/14/2019 9:24:06 AM - Cliente não detecta colisão.
+10/14/2019 9:24:06 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:06 AM - Cliente não detecta colisão.
+10/14/2019 9:24:06 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:06 AM - Cliente não detecta colisão.
+10/14/2019 9:24:06 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:06 AM - Cliente não detecta colisão.
+10/14/2019 9:24:06 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:06 AM - Cliente não detecta colisão.
+10/14/2019 9:24:06 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:06 AM - Cliente não detecta colisão.
+10/14/2019 9:24:06 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:06 AM - Cliente não detecta colisão.
+10/14/2019 9:24:06 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:06 AM - Cliente não detecta colisão.
+10/14/2019 9:24:06 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:06 AM - Cliente não detecta colisão.
+10/14/2019 9:24:06 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:06 AM - Cliente não detecta colisão.
+10/14/2019 9:24:06 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:06 AM - Cliente não detecta colisão.
+10/14/2019 9:24:06 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:06 AM - Cliente não detecta colisão.
+10/14/2019 9:24:06 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:06 AM - Cliente não detecta colisão.
+10/14/2019 9:24:06 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:07 AM - Cliente não detecta colisão.
+10/14/2019 9:24:07 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:07 AM - Cliente não detecta colisão.
+10/14/2019 9:24:07 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:07 AM - Cliente não detecta colisão.
+10/14/2019 9:24:07 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:07 AM - Cliente não detecta colisão.
+10/14/2019 9:24:07 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:07 AM - Cliente não detecta colisão.
+10/14/2019 9:24:07 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:07 AM - Cliente não detecta colisão.
+10/14/2019 9:24:07 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:07 AM - Cliente não detecta colisão.
+10/14/2019 9:24:07 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:07 AM - Cliente não detecta colisão.
+10/14/2019 9:24:07 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:07 AM - Cliente não detecta colisão.
+10/14/2019 9:24:07 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:07 AM - Cliente não detecta colisão.
+10/14/2019 9:24:07 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:07 AM - Cliente não detecta colisão.
+10/14/2019 9:24:07 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:07 AM - Cliente detecta colisão.
+10/14/2019 9:24:07 AM - Cliente não detecta colisão.
+10/14/2019 9:24:07 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:07 AM - Cliente não detecta colisão.
+10/14/2019 9:24:07 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:07 AM - Cliente não detecta colisão.
+10/14/2019 9:24:07 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:07 AM - Cliente não detecta colisão.
+10/14/2019 9:24:07 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:07 AM - Cliente não detecta colisão.
+10/14/2019 9:24:07 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:08 AM - Cliente não detecta colisão.
+10/14/2019 9:24:08 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:08 AM - Cliente não detecta colisão.
+10/14/2019 9:24:08 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:08 AM - Cliente não detecta colisão.
+10/14/2019 9:24:08 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:08 AM - Cliente não detecta colisão.
+10/14/2019 9:24:08 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:08 AM - Cliente não detecta colisão.
+10/14/2019 9:24:08 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:08 AM - Cliente não detecta colisão.
+10/14/2019 9:24:08 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:08 AM - Cliente não detecta colisão.
+10/14/2019 9:24:08 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:08 AM - Cliente detecta colisão.
+10/14/2019 9:24:08 AM - Cliente não detecta colisão.
+10/14/2019 9:24:08 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:08 AM - Cliente não detecta colisão.
+10/14/2019 9:24:08 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:08 AM - Cliente não detecta colisão.
+10/14/2019 9:24:08 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:08 AM - Cliente não detecta colisão.
+10/14/2019 9:24:08 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:08 AM - Cliente não detecta colisão.
+10/14/2019 9:24:08 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:08 AM - Cliente detecta colisão.
+10/14/2019 9:24:08 AM - Cliente não detecta colisão.
+10/14/2019 9:24:08 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:08 AM - Cliente não detecta colisão.
+10/14/2019 9:24:08 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:08 AM - Cliente não detecta colisão.
+10/14/2019 9:24:08 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:08 AM - Cliente não detecta colisão.
+10/14/2019 9:24:08 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:09 AM - Cliente não detecta colisão.
+10/14/2019 9:24:09 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:09 AM - Cliente não detecta colisão.
+10/14/2019 9:24:09 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:09 AM - Cliente não detecta colisão.
+10/14/2019 9:24:09 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:09 AM - Cliente não detecta colisão.
+10/14/2019 9:24:09 AM - Cliente não conseguiu se conectar.
+10/14/2019 9:24:09 AM - Cliente não detecta colisão.
+10/14/2019 9:24:09 AM - Cliente não conseguiu se conectar.
+14/10/2019 09:25:27 - Cliente criado.
+14/10/2019 09:25:28 - Cliente não detecta colisão.
+14/10/2019 09:25:29 - Cliente se conecta no servidor.
+14/10/2019 09:25:29 - Cliente converte MAC de origem.
+10/14/2019 9:27:39 AM - Servidor criado.
+10/14/2019 9:27:39 AM - Servidor iniciado.
+10/14/2019 9:27:39 AM - Servidor de IP: 192.168.43.228 ouvindo a porta: 5000
+10/14/2019 9:29:03 AM - Servidor aceita conexão com cliente: 192.168.43.110
+10/14/2019 9:31:25 AM - Servidor criado.
+10/14/2019 9:31:25 AM - Servidor iniciado.
+10/14/2019 9:31:25 AM - Servidor de IP: 192.168.43.228 ouvindo a porta: 5000
+10/14/2019 9:31:31 AM - Servidor aceita conexão com cliente: 192.168.43.110
+10/14/19 9:33:22 AM - Servidor criado.
+10/14/19 9:33:22 AM - Servidor iniciado.
+10/14/19 9:33:22 AM - Servidor de IP: 192.168.43.228 ouvindo a porta: 5000
+10/14/2019 9:36:11 AM - Servidor criado.
+10/14/2019 9:36:11 AM - Servidor iniciado.
+10/14/2019 9:36:11 AM - Servidor de IP: 192.168.43.228 ouvindo a porta: 5000
+10/14/2019 9:38:20 AM - Servidor aceita conexão com cliente: 192.168.43.110
+10/14/19 9:40:17 AM - Servidor criado.
+10/14/19 9:40:17 AM - Servidor iniciado.
+10/14/19 9:40:18 AM - Servidor de IP: 192.168.43.228 ouvindo a porta: 5000
+10/14/19 9:40:57 AM - Servidor aceita conexão com cliente: 192.168.43.110
+10/14/19 9:40:57 AM - Servidor converte MAC de origem. (41:7F:83:E8:5E:FF)
+10/14/19 9:40:57 AM - Servidor converte MAC de destino. (41:7F:33:0E:65:B2)
+10/14/19 9:40:57 AM - Servidor converte tamanho do payload. (17)
+10/14/19 9:40:57 AM - Servidor converte payload. (24:f5:aa:f7:aa:07)
+10/14/19 9:40:57 AM - Servidor Inicia aplicação DHCP
+10/14/19 9:40:57 AM - Servidor encerra conexao com o cliente.
+10/14/19 9:40:57 AM - Servidor de IP: 192.168.43.228 ouvindo a porta: 5000
+10/14/2019 9:41:47 AM - Servidor criado.
+10/14/2019 9:41:47 AM - Servidor iniciado.
+10/14/2019 9:41:47 AM - Servidor de IP: 192.168.43.228 ouvindo a porta: 5000
+10/14/2019 9:41:52 AM - Servidor aceita conexão com cliente: 192.168.43.110
+10/14/2019 9:41:52 AM - Servidor converte MAC de origem. (41:7F:83:E8:5E:FF)
+10/14/2019 9:41:52 AM - Servidor converte MAC de destino. (41:7F:33:0E:65:B2)
+10/14/2019 9:41:52 AM - Servidor converte tamanho do payload. (17)
+10/14/2019 9:41:52 AM - Servidor converte payload. (24:f5:aa:f7:aa:07)
+10/14/2019 9:41:52 AM - Servidor Inicia aplicação DHCP
+10/14/2019 9:41:52 AM - Servidor encerra conexao com o cliente.
+10/14/2019 9:41:52 AM - Servidor de IP: 192.168.43.228 ouvindo a porta: 5000
+10/14/2019 9:42:33 AM - Servidor aceita conexão com cliente: 192.168.43.110
+10/14/2019 9:42:33 AM - Servidor converte MAC de origem. (41:7F:83:E8:5E:FF)
+10/14/2019 9:42:33 AM - Servidor converte MAC de destino. (41:7F:33:0E:65:B2)
+10/14/2019 9:42:33 AM - Servidor converte tamanho do payload. (17)
+10/14/2019 9:42:33 AM - Servidor converte payload. (24:f5:aa:f7:aa:07)
+10/14/2019 9:42:33 AM - Servidor Inicia aplicação DHCP
+10/14/2019 9:42:33 AM - Servidor encerra conexao com o cliente.
+10/14/2019 9:42:33 AM - Servidor de IP: 192.168.43.228 ouvindo a porta: 5000
+10/14/2019 9:45:02 AM - Servidor criado.
+10/14/2019 9:45:02 AM - Servidor iniciado.
+10/14/2019 9:45:02 AM - Servidor de IP: 192.168.43.228 ouvindo a porta: 5000
+10/14/2019 9:45:08 AM - Servidor aceita conexão com cliente: 192.168.43.110
+10/14/2019 9:45:08 AM - Servidor converte MAC de origem. (41:7F:83:E8:5E:FF)
+10/14/2019 9:45:08 AM - Servidor converte MAC de destino. (41:7F:33:0E:65:B2)
+10/14/2019 9:45:08 AM - Servidor converte tamanho do payload. (17)
+10/14/2019 9:45:08 AM - Servidor converte payload. (24:f5:aa:f7:aa:07)
+10/14/2019 9:45:08 AM - Servidor Inicia aplicação DHCP
+10/14/2019 9:45:08 AM - Servidor encerra conexao com o cliente.
+10/14/2019 9:45:08 AM - Servidor de IP: 192.168.43.228 ouvindo a porta: 5000
+10/14/2019 9:47:26 AM - Servidor criado.
+10/14/2019 9:47:26 AM - Servidor iniciado.
+10/14/2019 9:48:59 AM - Cliente criado.
+10/14/2019 9:48:59 AM - Cliente não detecta colisão.
+10/14/2019 9:48:59 AM - Cliente se conecta no servidor.
+10/14/2019 9:48:59 AM - Cliente converte MAC de origem.
+10/14/2019 9:48:59 AM - Cliente converte MAC de destino.
+10/14/2019 9:48:59 AM - Cliente converte tamanho do payload.
+10/14/2019 9:48:59 AM - Cliente converte payload.
+10/14/2019 9:48:59 AM - Cliente salva payload recebido
+10/14/2019 9:48:59 AM - Cliente encerra a conexão.
+10/14/2019 9:53:04 AM - Cliente criado.
+10/14/2019 9:53:05 AM - Cliente não detecta colisão.
+10/14/2019 9:53:05 AM - Cliente se conecta no servidor.
+10/14/2019 9:53:05 AM - Cliente converte MAC de origem.
+10/14/2019 9:53:05 AM - Cliente converte MAC de destino.
+10/14/2019 9:53:05 AM - Cliente converte tamanho do payload.
+10/14/2019 9:53:05 AM - Cliente converte payload.
+10/14/2019 9:53:05 AM - Cliente salva payload recebido
+10/14/2019 9:53:05 AM - Cliente encerra a conexão.
+10/14/2019 9:53:15 AM - Cliente criado.
+10/14/2019 9:53:15 AM - Cliente não detecta colisão.
+10/14/2019 9:53:15 AM - Cliente se conecta no servidor.
+10/14/2019 9:53:15 AM - Cliente converte MAC de origem.
+10/14/2019 9:53:15 AM - Cliente converte MAC de destino.
+10/14/2019 9:53:15 AM - Cliente converte tamanho do payload.
+10/14/2019 9:53:15 AM - Cliente converte payload.
+10/14/2019 9:53:15 AM - Cliente salva payload recebido
+10/14/2019 9:53:15 AM - Cliente encerra a conexão.
+10/14/2019 9:53:31 AM - Cliente criado.
+10/14/2019 9:53:31 AM - Cliente não detecta colisão.
+10/14/2019 9:53:31 AM - Cliente se conecta no servidor.
+10/14/2019 9:53:31 AM - Cliente converte MAC de origem.
+10/14/2019 9:53:31 AM - Cliente converte MAC de destino.
+10/14/2019 9:53:31 AM - Cliente converte tamanho do payload.
+10/14/2019 9:53:31 AM - Cliente converte payload.
+10/14/2019 9:53:31 AM - Cliente salva payload recebido
+10/14/2019 9:53:31 AM - Cliente encerra a conexão.
+10/14/19 9:57:06 AM - Servidor criado.
+10/14/19 9:57:06 AM - Servidor iniciado.
+10/14/2019 9:58:45 AM - Servidor criado.
+10/14/2019 9:58:45 AM - Servidor iniciado.
+10/14/2019 9:59:13 AM - Servidor criado.
+10/14/2019 9:59:13 AM - Servidor iniciado.
+10/14/2019 9:59:45 AM - Servidor criado.
+10/14/2019 9:59:45 AM - Servidor iniciado.
+10/14/2019 10:00:09 AM - Cliente criado.
+10/14/2019 10:00:09 AM - Cliente não detecta colisão.
+10/14/2019 10:00:09 AM - Cliente se conecta no servidor.
+10/14/2019 10:00:09 AM - Cliente converte MAC de origem.
+10/14/2019 10:00:09 AM - Cliente converte MAC de destino.
+10/14/2019 10:00:09 AM - Cliente converte tamanho do payload.
+10/14/2019 10:00:09 AM - Cliente converte payload.
+10/14/2019 10:00:09 AM - Cliente salva payload recebido
+10/14/2019 10:00:09 AM - Cliente encerra a conexão.
+10/14/2019 10:03:07 AM - Cliente criado.
+10/14/2019 10:03:08 AM - Cliente não detecta colisão.
+10/14/2019 10:03:08 AM - Cliente se conecta no servidor.
+10/14/2019 10:03:08 AM - Cliente converte MAC de origem.
+10/14/2019 10:03:08 AM - Cliente converte MAC de destino.
+10/14/2019 10:03:08 AM - Cliente converte tamanho do payload.
+10/14/2019 10:03:08 AM - Cliente converte payload.
+10/14/2019 10:03:08 AM - Cliente salva payload recebido
+10/14/2019 10:03:08 AM - Cliente encerra a conexão.
+10/14/2019 10:03:45 AM - Cliente criado.
+10/14/2019 10:03:45 AM - Cliente não detecta colisão.
+10/14/2019 10:03:45 AM - Cliente se conecta no servidor.
+10/14/2019 10:03:45 AM - Cliente converte MAC de origem.
+10/14/2019 10:04:43 AM - Cliente criado.
+10/14/2019 10:04:43 AM - Cliente detecta colisão.
+10/14/2019 10:04:43 AM - Cliente não detecta colisão.
+10/14/2019 10:04:43 AM - Cliente não conseguiu se conectar.
+10/14/2019 10:04:43 AM - Cliente não detecta colisão.
+10/14/2019 10:04:43 AM - Cliente não conseguiu se conectar.
+10/14/2019 10:04:43 AM - Cliente detecta colisão.
+10/14/2019 10:04:43 AM - Cliente não detecta colisão.
+10/14/2019 10:04:44 AM - Cliente não conseguiu se conectar.
+10/14/2019 10:04:44 AM - Cliente detecta colisão.
+10/14/2019 10:04:44 AM - Cliente não detecta colisão.
+10/14/2019 10:04:44 AM - Cliente não conseguiu se conectar.
+10/14/2019 10:04:44 AM - Cliente não detecta colisão.
+10/14/2019 10:04:44 AM - Cliente não conseguiu se conectar.
+10/14/2019 10:04:44 AM - Cliente não detecta colisão.
+10/14/2019 10:04:44 AM - Cliente não conseguiu se conectar.
+10/14/2019 10:04:44 AM - Cliente detecta colisão.
+10/14/2019 10:04:44 AM - Cliente não detecta colisão.
+10/14/2019 10:04:44 AM - Cliente não conseguiu se conectar.
+10/14/2019 10:04:44 AM - Cliente detecta colisão.
+10/14/2019 10:04:44 AM - Cliente não detecta colisão.
+10/14/2019 10:04:44 AM - Cliente não conseguiu se conectar.
+10/14/2019 10:04:44 AM - Cliente detecta colisão.
+10/14/2019 10:04:44 AM - Cliente não detecta colisão.
+10/14/2019 10:04:44 AM - Cliente não conseguiu se conectar.
+10/14/2019 10:04:44 AM - Cliente não detecta colisão.
+10/14/2019 10:04:44 AM - Cliente não conseguiu se conectar.
+10/14/2019 10:04:44 AM - Cliente detecta colisão.
+10/14/2019 10:04:44 AM - Cliente não detecta colisão.
+10/14/2019 10:04:44 AM - Cliente não conseguiu se conectar.
+10/14/2019 10:04:44 AM - Cliente não detecta colisão.
+10/14/2019 10:04:44 AM - Cliente não conseguiu se conectar.
+10/14/2019 10:04:44 AM - Cliente não detecta colisão.
+10/14/2019 10:04:44 AM - Cliente não conseguiu se conectar.
+10/14/2019 10:04:44 AM - Cliente não detecta colisão.
+10/14/2019 10:04:44 AM - Cliente não conseguiu se conectar.
+10/14/2019 10:04:44 AM - Cliente não detecta colisão.
+10/14/2019 10:04:44 AM - Cliente não conseguiu se conectar.
+10/14/2019 10:04:45 AM - Cliente não detecta colisão.
+10/14/2019 10:04:45 AM - Cliente não conseguiu se conectar.
+10/14/2019 10:04:45 AM - Cliente detecta colisão.
+10/14/2019 10:04:45 AM - Cliente não detecta colisão.
+10/14/2019 10:04:45 AM - Cliente não conseguiu se conectar.
+10/14/2019 10:04:45 AM - Cliente não detecta colisão.
+10/14/2019 10:04:45 AM - Cliente não conseguiu se conectar.
+10/14/2019 10:04:45 AM - Cliente não detecta colisão.
+10/14/2019 10:04:45 AM - Cliente não conseguiu se conectar.
+10/14/2019 10:04:45 AM - Cliente detecta colisão.
+10/14/2019 10:04:45 AM - Cliente não detecta colisão.
+10/14/2019 10:04:45 AM - Cliente não conseguiu se conectar.
+10/14/2019 10:04:45 AM - Cliente não detecta colisão.
+10/14/2019 10:04:45 AM - Cliente não conseguiu se conectar.
+10/14/2019 10:04:45 AM - Cliente não detecta colisão.
+10/14/2019 10:04:45 AM - Cliente não conseguiu se conectar.
+10/14/2019 10:04:45 AM - Cliente não detecta colisão.
+10/14/2019 10:04:45 AM - Cliente não conseguiu se conectar.
+10/14/2019 10:04:45 AM - Cliente não detecta colisão.
+10/14/2019 10:04:45 AM - Cliente não conseguiu se conectar.
+10/14/2019 10:04:45 AM - Cliente não detecta colisão.
+10/14/2019 10:04:45 AM - Cliente não conseguiu se conectar.
+10/14/2019 10:04:45 AM - Cliente não detecta colisão.
+10/14/2019 10:04:45 AM - Cliente não conseguiu se conectar.
+10/14/2019 10:04:45 AM - Cliente não detecta colisão.
+10/14/2019 10:04:45 AM - Cliente não conseguiu se conectar.
+10/14/2019 10:04:45 AM - Cliente não detecta colisão.
+10/14/2019 10:04:45 AM - Cliente não conseguiu se conectar.
+10/14/2019 10:04:45 AM - Cliente não detecta colisão.
+10/14/2019 10:04:45 AM - Cliente não conseguiu se conectar.
+10/14/2019 10:04:45 AM - Cliente não detecta colisão.
+10/14/2019 10:04:45 AM - Cliente não conseguiu se conectar.
+10/14/2019 10:04:45 AM - Cliente não detecta colisão.
+10/14/2019 10:04:45 AM - Cliente não conseguiu se conectar.
+10/14/2019 10:04:45 AM - Cliente não detecta colisão.
+10/14/2019 10:04:45 AM - Cliente não conseguiu se conectar.
+10/14/2019 10:04:45 AM - Cliente não detecta colisão.
+10/14/2019 10:04:45 AM - Cliente não conseguiu se conectar.
+10/14/2019 10:04:45 AM - Cliente detecta colisão.
+10/14/2019 10:04:45 AM - Cliente não detecta colisão.
+10/14/2019 10:04:45 AM - Cliente não conseguiu se conectar.
+10/14/2019 10:04:45 AM - Cliente não detecta colisão.
+10/14/2019 10:04:45 AM - Cliente não conseguiu se conectar.
+10/14/2019 10:04:46 AM - Cliente não detecta colisão.
+10/14/2019 10:04:46 AM - Cliente não conseguiu se conectar.
+10/14/2019 10:04:46 AM - Cliente não detecta colisão.
+10/14/2019 10:04:46 AM - Cliente não conseguiu se conectar.
+10/14/2019 10:04:46 AM - Cliente não detecta colisão.
+10/14/2019 10:04:46 AM - Cliente não conseguiu se conectar.
+10/14/2019 10:04:46 AM - Cliente não detecta colisão.
+10/14/2019 10:04:46 AM - Cliente não conseguiu se conectar.
+10/14/2019 10:04:46 AM - Cliente não detecta colisão.
+10/14/2019 10:04:46 AM - Cliente não conseguiu se conectar.
+10/14/2019 10:04:46 AM - Cliente não detecta colisão.
+10/14/2019 10:04:46 AM - Cliente não conseguiu se conectar.
+10/14/2019 10:04:46 AM - Cliente não detecta colisão.
+10/14/2019 10:04:46 AM - Cliente não conseguiu se conectar.
+10/14/2019 10:04:46 AM - Cliente não detecta colisão.
+10/14/2019 10:04:46 AM - Cliente não conseguiu se conectar.
+10/14/2019 10:04:46 AM - Cliente não detecta colisão.
+10/14/2019 10:04:46 AM - Cliente não conseguiu se conectar.
+10/14/2019 10:04:46 AM - Cliente não detecta colisão.
+10/14/2019 10:04:46 AM - Cliente não conseguiu se conectar.
+10/14/2019 10:04:46 AM - Cliente não detecta colisão.
+10/14/2019 10:04:46 AM - Cliente não conseguiu se conectar.
+10/14/2019 10:04:46 AM - Cliente não detecta colisão.
+10/14/2019 10:04:46 AM - Cliente não conseguiu se conectar.
+10/14/2019 10:04:46 AM - Cliente não detecta colisão.
+10/14/2019 10:04:46 AM - Cliente não conseguiu se conectar.
+10/14/2019 10:04:46 AM - Cliente não detecta colisão.
+10/14/2019 10:04:46 AM - Cliente não conseguiu se conectar.
+10/14/2019 10:04:46 AM - Cliente detecta colisão.
+10/14/2019 10:04:46 AM - Cliente não detecta colisão.
+10/14/2019 10:04:46 AM - Cliente não conseguiu se conectar.
+10/14/2019 10:04:46 AM - Cliente não detecta colisão.
+10/14/2019 10:04:46 AM - Cliente não conseguiu se conectar.
+10/14/2019 10:04:47 AM - Cliente não detecta colisão.
+10/14/2019 10:04:47 AM - Cliente não conseguiu se conectar.
+10/14/2019 10:04:51 AM - Cliente criado.
+10/14/2019 10:04:51 AM - Cliente não detecta colisão.
+10/14/2019 10:04:51 AM - Cliente se conecta no servidor.
+10/14/2019 10:04:51 AM - Cliente converte MAC de origem.
+10/14/2019 10:04:51 AM - Cliente converte MAC de destino.
+10/14/2019 10:04:51 AM - Cliente converte tamanho do payload.
+10/14/2019 10:04:51 AM - Cliente converte payload.
+10/14/2019 10:04:51 AM - Cliente salva payload recebido
+10/14/2019 10:04:51 AM - Cliente encerra a conexão.
+10/14/19 10:09:58 AM - Cliente criado.
+10/14/19 10:09:58 AM - Cliente não detecta colisão.
+10/14/19 10:09:58 AM - Cliente se conecta no servidor.
+10/14/19 10:09:58 AM - Cliente converte MAC de origem.
+10/14/19 10:09:58 AM - Cliente converte MAC de destino.
+10/14/19 10:09:58 AM - Cliente converte tamanho do payload.
+10/14/19 10:09:58 AM - Cliente converte payload.
+10/14/19 10:09:59 AM - Cliente salva payload recebido
+10/14/19 10:09:59 AM - Cliente encerra a conexão.
+10/14/19 10:10:30 AM - Cliente criado.
+10/14/19 10:10:30 AM - Cliente não detecta colisão.
+10/14/19 10:10:30 AM - Cliente se conecta no servidor.
+10/14/19 10:10:31 AM - Cliente converte MAC de origem.
+10/14/19 10:10:31 AM - Cliente converte MAC de destino.
+10/14/19 10:10:31 AM - Cliente converte tamanho do payload.
+10/14/19 10:10:31 AM - Cliente converte payload.
+10/14/19 10:10:31 AM - Cliente salva payload recebido
+10/14/19 10:10:31 AM - Cliente encerra a conexão.
+10/14/19 10:10:47 AM - Cliente criado.
+10/14/19 10:10:47 AM - Cliente não detecta colisão.
+10/14/19 10:10:47 AM - Cliente se conecta no servidor.
+10/14/19 10:10:47 AM - Cliente converte MAC de origem.
+10/14/19 10:10:47 AM - Cliente converte MAC de destino.
+10/14/19 10:10:47 AM - Cliente converte tamanho do payload.
+10/14/19 10:10:47 AM - Cliente converte payload.
+10/14/19 10:10:47 AM - Cliente salva payload recebido
+10/14/19 10:10:47 AM - Cliente encerra a conexão.
+10/14/19 10:11:03 AM - Cliente criado.
+10/14/19 10:11:03 AM - Cliente não detecta colisão.
+10/14/19 10:11:03 AM - Cliente se conecta no servidor.
+10/14/19 10:11:03 AM - Cliente converte MAC de origem.
+10/14/19 10:11:03 AM - Cliente converte MAC de destino.
+10/14/19 10:11:03 AM - Cliente converte tamanho do payload.
+10/14/19 10:11:03 AM - Cliente converte payload.
+10/14/19 10:11:04 AM - Cliente salva payload recebido
+10/14/19 10:11:04 AM - Cliente encerra a conexão.
+10/14/19 10:11:52 AM - Cliente criado.
+10/14/19 10:11:52 AM - Cliente não detecta colisão.
+10/14/19 10:11:52 AM - Cliente se conecta no servidor.
+10/14/19 10:11:52 AM - Cliente converte MAC de origem.
+10/14/19 10:11:52 AM - Cliente converte MAC de destino.
+10/14/19 10:11:52 AM - Cliente converte tamanho do payload.
+10/14/19 10:11:52 AM - Cliente converte payload.
+10/14/19 10:11:53 AM - Cliente salva payload recebido
+10/14/19 10:11:53 AM - Cliente encerra a conexão.
+10/14/19 10:16:14 AM - Cliente criado.
+10/14/19 10:16:14 AM - Cliente não detecta colisão.
+10/14/19 10:16:14 AM - Cliente se conecta no servidor.
+10/14/19 10:16:14 AM - Cliente converte MAC de origem.
+10/14/19 10:16:14 AM - Cliente converte MAC de destino.
+10/14/19 10:16:14 AM - Cliente converte tamanho do payload.
+10/14/19 10:16:14 AM - Cliente converte payload.
+10/14/19 10:16:14 AM - Cliente salva payload recebido
+10/14/19 10:16:14 AM - Cliente encerra a conexão.
+10/14/19 10:16:28 AM - Cliente criado.
+10/14/19 10:16:28 AM - Cliente não detecta colisão.
+10/14/19 10:16:28 AM - Cliente se conecta no servidor.
+10/14/19 10:16:28 AM - Cliente converte MAC de origem.
+10/14/19 10:16:28 AM - Cliente converte MAC de destino.
+10/14/19 10:16:28 AM - Cliente converte tamanho do payload.
+10/14/19 10:16:28 AM - Cliente converte payload.
+10/14/19 10:16:29 AM - Cliente salva payload recebido
+10/14/19 10:16:29 AM - Cliente encerra a conexão.
+10/14/19 10:16:42 AM - Cliente criado.
+10/14/19 10:16:42 AM - Cliente não detecta colisão.
+10/14/19 10:16:45 AM - Cliente se conecta no servidor.
+10/14/19 10:16:45 AM - Cliente converte MAC de origem.
+10/14/19 10:16:45 AM - Cliente converte MAC de destino.
+10/14/19 10:16:45 AM - Cliente converte tamanho do payload.
+10/14/19 10:16:45 AM - Cliente converte payload.
+10/14/19 10:16:46 AM - Cliente salva payload recebido
+10/14/19 10:16:46 AM - Cliente encerra a conexão.
+10/14/19 10:16:56 AM - Cliente criado.
+10/14/19 10:16:56 AM - Cliente detecta colisão.
+10/14/19 10:16:56 AM - Cliente não detecta colisão.
+10/14/19 10:16:59 AM - Cliente se conecta no servidor.
+10/14/19 10:16:59 AM - Cliente converte MAC de origem.
+10/14/19 10:16:59 AM - Cliente converte MAC de destino.
+10/14/19 10:16:59 AM - Cliente converte tamanho do payload.
+10/14/19 10:16:59 AM - Cliente converte payload.
+10/14/19 10:16:59 AM - Cliente salva payload recebido
+10/14/19 10:16:59 AM - Cliente encerra a conexão.
+10/14/2019 10:18:51 AM - Cliente criado.
+10/14/2019 10:18:52 AM - Cliente não detecta colisão.
+10/14/2019 10:18:52 AM - Cliente se conecta no servidor.
+10/14/2019 10:18:52 AM - Cliente converte MAC de origem.
+10/14/2019 10:18:52 AM - Cliente converte MAC de destino.
+10/14/2019 10:18:52 AM - Cliente converte tamanho do payload.
+10/14/2019 10:18:52 AM - Cliente converte payload.
+10/14/2019 10:18:52 AM - Cliente salva payload recebido
+10/14/2019 10:18:52 AM - Cliente encerra a conexão.
+10/15/2019 8:55:56 AM - Cliente criado.
+10/15/2019 8:55:57 AM - Cliente não detecta colisão.
+10/15/2019 8:56:06 AM - Cliente criado.
+10/15/2019 8:56:06 AM - Cliente não detecta colisão.
+10/15/2019 8:56:33 AM - Cliente criado.
+10/15/2019 8:56:33 AM - Cliente não detecta colisão.
+10/15/2019 8:57:02 AM - Cliente criado.
+10/15/2019 8:57:02 AM - Cliente não detecta colisão.
+10/15/2019 8:57:02 AM - Cliente se conecta no servidor.
+10/15/2019 8:57:12 AM - Cliente converte MAC de origem.
+10/15/2019 8:57:12 AM - Cliente converte MAC de destino.
+10/15/2019 8:57:12 AM - Cliente converte tamanho do payload.
+10/15/2019 8:57:12 AM - Cliente converte payload.
+10/15/2019 8:57:13 AM - Cliente salva payload recebido
+10/15/2019 8:57:13 AM - Cliente encerra a conexão.
+10/15/2019 9:08:06 AM - Cliente criado.
+10/15/2019 9:08:06 AM - Cliente não detecta colisão.
+10/15/2019 9:08:58 AM - Cliente criado.
+10/15/2019 9:08:58 AM - Cliente detecta colisão.
+10/15/2019 9:08:58 AM - Cliente não detecta colisão.
+10/15/2019 9:08:58 AM - Cliente não conseguiu se conectar.
+10/15/2019 9:08:58 AM - Cliente não detecta colisão.
+10/15/2019 9:08:58 AM - Cliente não conseguiu se conectar.
+10/15/2019 9:08:58 AM - Cliente detecta colisão.
+10/15/2019 9:08:58 AM - Cliente não detecta colisão.
+10/15/2019 9:08:58 AM - Cliente não conseguiu se conectar.
+10/15/2019 9:08:58 AM - Cliente não detecta colisão.
+10/15/2019 9:08:58 AM - Cliente não conseguiu se conectar.
+10/15/2019 9:08:58 AM - Cliente não detecta colisão.
+10/15/2019 9:08:58 AM - Cliente não conseguiu se conectar.
+10/15/2019 9:08:58 AM - Cliente não detecta colisão.
+10/15/2019 9:08:58 AM - Cliente não conseguiu se conectar.
+10/15/2019 9:08:58 AM - Cliente detecta colisão.
+10/15/2019 9:08:59 AM - Cliente não detecta colisão.
+10/15/2019 9:08:59 AM - Cliente não conseguiu se conectar.
+10/15/2019 9:08:59 AM - Cliente não detecta colisão.
+10/15/2019 9:08:59 AM - Cliente não conseguiu se conectar.
+10/15/2019 9:08:59 AM - Cliente não detecta colisão.
+10/15/2019 9:08:59 AM - Cliente não conseguiu se conectar.
+10/15/2019 9:08:59 AM - Cliente não detecta colisão.
+10/15/2019 9:08:59 AM - Cliente não conseguiu se conectar.
+10/15/2019 9:08:59 AM - Cliente não detecta colisão.
+10/15/2019 9:08:59 AM - Cliente não conseguiu se conectar.
+10/15/2019 9:08:59 AM - Cliente detecta colisão.
+10/15/2019 9:08:59 AM - Cliente não detecta colisão.
+10/15/2019 9:08:59 AM - Cliente não conseguiu se conectar.
+10/15/2019 9:08:59 AM - Cliente não detecta colisão.
+10/15/2019 9:08:59 AM - Cliente não conseguiu se conectar.
+10/15/2019 9:08:59 AM - Cliente não detecta colisão.
+10/15/2019 9:08:59 AM - Cliente não conseguiu se conectar.
+10/15/2019 9:08:59 AM - Cliente não detecta colisão.
+10/15/2019 9:08:59 AM - Cliente não conseguiu se conectar.
+10/15/2019 9:08:59 AM - Cliente não detecta colisão.
+10/15/2019 9:08:59 AM - Cliente não conseguiu se conectar.
+10/15/2019 9:08:59 AM - Cliente não detecta colisão.
+10/15/2019 9:08:59 AM - Cliente não conseguiu se conectar.
+10/15/2019 9:08:59 AM - Cliente não detecta colisão.
+10/15/2019 9:08:59 AM - Cliente não conseguiu se conectar.
+10/15/2019 9:08:59 AM - Cliente não detecta colisão.
+10/15/2019 9:08:59 AM - Cliente não conseguiu se conectar.
+10/15/2019 9:08:59 AM - Cliente não detecta colisão.
+10/15/2019 9:08:59 AM - Cliente não conseguiu se conectar.
+10/15/2019 9:08:59 AM - Cliente detecta colisão.
+10/15/2019 9:08:59 AM - Cliente não detecta colisão.
+10/15/2019 9:08:59 AM - Cliente não conseguiu se conectar.
+10/15/2019 9:08:59 AM - Cliente não detecta colisão.
+10/15/2019 9:08:59 AM - Cliente não conseguiu se conectar.
+10/15/2019 9:08:59 AM - Cliente não detecta colisão.
+10/15/2019 9:08:59 AM - Cliente não conseguiu se conectar.
+10/15/2019 9:09:00 AM - Cliente não detecta colisão.
+10/15/2019 9:09:00 AM - Cliente não conseguiu se conectar.
+10/15/2019 9:09:00 AM - Cliente não detecta colisão.
+10/15/2019 9:09:00 AM - Cliente não conseguiu se conectar.
+10/15/2019 9:09:00 AM - Cliente não detecta colisão.
+10/15/2019 9:09:00 AM - Cliente não conseguiu se conectar.
+10/15/2019 9:09:00 AM - Cliente não detecta colisão.
+10/15/2019 9:09:00 AM - Cliente não conseguiu se conectar.
+10/15/2019 9:09:00 AM - Cliente não detecta colisão.
+10/15/2019 9:09:00 AM - Cliente não conseguiu se conectar.
+10/15/2019 9:09:00 AM - Cliente não detecta colisão.
+10/15/2019 9:09:00 AM - Cliente se conecta no servidor.
+10/15/2019 9:09:00 AM - Cliente converte MAC de origem.
+10/15/2019 9:09:00 AM - Cliente converte MAC de destino.
+10/15/2019 9:09:00 AM - Cliente converte tamanho do payload.
+10/15/2019 9:09:00 AM - Cliente converte payload.
+10/15/2019 9:09:00 AM - Cliente salva payload recebido
+10/15/2019 9:09:00 AM - Cliente encerra a conexão.
+10/15/2019 9:12:15 AM - Cliente criado.
+10/15/2019 9:12:15 AM - Cliente não detecta colisão.
+10/15/2019 9:12:15 AM - Cliente se conecta no servidor.
+10/15/2019 9:12:15 AM - Cliente converte MAC de origem.
+10/15/2019 9:12:15 AM - Cliente converte MAC de destino.
+10/15/2019 9:12:15 AM - Cliente converte tamanho do payload.
+10/15/2019 9:12:15 AM - Cliente converte payload.
+10/15/2019 9:12:16 AM - Cliente salva payload recebido
+10/15/2019 9:12:16 AM - Cliente encerra a conexão.
+10/15/2019 9:13:31 AM - Cliente criado.
+10/15/2019 9:13:31 AM - Cliente não detecta colisão.
+10/15/2019 9:13:31 AM - Cliente se conecta no servidor.
+10/15/2019 9:13:31 AM - Cliente converte MAC de origem.
+10/15/2019 9:13:31 AM - Cliente converte MAC de destino.
+10/15/2019 9:13:31 AM - Cliente converte tamanho do payload.
+10/15/2019 9:13:31 AM - Cliente converte payload.
+10/15/2019 9:13:32 AM - Cliente salva payload recebido
+10/15/2019 9:13:32 AM - Cliente encerra a conexão.
+10/15/2019 9:13:49 AM - Cliente criado.
+10/15/2019 9:13:49 AM - Cliente não detecta colisão.
+10/15/2019 9:13:49 AM - Cliente se conecta no servidor.
+10/15/2019 9:13:49 AM - Cliente converte MAC de origem.
+10/15/2019 9:13:49 AM - Cliente converte MAC de destino.
+10/15/2019 9:13:49 AM - Cliente converte tamanho do payload.
+10/15/2019 9:13:49 AM - Cliente converte payload.
+10/15/2019 9:13:49 AM - Cliente salva payload recebido
+10/15/2019 9:13:49 AM - Cliente encerra a conexão.
+10/15/2019 9:16:47 AM - Cliente criado.
+10/15/2019 9:16:47 AM - Cliente não detecta colisão.
+10/15/2019 9:16:47 AM - Cliente se conecta no servidor.
+10/15/2019 9:16:47 AM - Cliente converte MAC de origem.
+10/15/2019 9:16:47 AM - Cliente converte MAC de destino.
+10/15/2019 9:16:47 AM - Cliente converte tamanho do payload.
+10/15/2019 9:16:47 AM - Cliente converte payload.
+10/15/2019 9:16:47 AM - Cliente salva payload recebido
+10/15/2019 9:16:47 AM - Cliente encerra a conexão.
+10/15/2019 9:17:19 AM - Cliente criado.
+10/15/2019 9:17:19 AM - Cliente não detecta colisão.
+10/15/2019 9:17:19 AM - Cliente se conecta no servidor.
+10/15/2019 9:17:19 AM - Cliente converte MAC de origem.
+10/15/2019 9:17:19 AM - Cliente converte MAC de destino.
+10/15/2019 9:17:19 AM - Cliente converte tamanho do payload.
+10/15/2019 9:17:19 AM - Cliente converte payload.
+10/15/2019 9:17:19 AM - Cliente salva payload recebido
+10/15/2019 9:17:19 AM - Cliente encerra a conexão.
+10/15/2019 9:24:54 AM - Cliente criado.
+10/15/2019 9:24:54 AM - Cliente não detecta colisão.
+10/15/2019 9:24:54 AM - Cliente se conecta no servidor.
+10/15/2019 9:24:54 AM - Cliente converte MAC de origem.
+10/15/2019 9:24:54 AM - Cliente converte MAC de destino.
+10/15/2019 9:24:54 AM - Cliente converte tamanho do payload.
+10/15/2019 9:24:54 AM - Cliente converte payload.
+10/15/2019 9:24:55 AM - Cliente salva payload recebido
+10/15/2019 9:24:55 AM - Cliente encerra a conexão.
+10/15/2019 9:28:24 AM - Cliente criado.
+10/15/2019 9:28:24 AM - Cliente não detecta colisão.
+10/15/2019 9:28:24 AM - Cliente se conecta no servidor.
+10/15/2019 9:28:24 AM - Cliente converte MAC de origem.
+10/15/2019 9:28:24 AM - Cliente converte MAC de destino.
+10/15/2019 9:28:24 AM - Cliente converte tamanho do payload.
+10/15/2019 9:28:24 AM - Cliente converte payload.
+10/15/2019 9:28:24 AM - Cliente salva payload recebido
+10/15/2019 9:28:24 AM - Cliente encerra a conexão.
+10/15/2019 9:30:41 AM - Cliente criado.
+10/15/2019 9:30:41 AM - Cliente não detecta colisão.
+10/15/2019 9:30:41 AM - Cliente se conecta no servidor.
+10/15/2019 9:30:41 AM - Cliente converte MAC de origem.
+10/15/2019 9:30:41 AM - Cliente converte MAC de destino.
+10/15/2019 9:30:41 AM - Cliente converte tamanho do payload.
+10/15/2019 9:30:41 AM - Cliente converte payload.
+10/15/2019 9:30:41 AM - Cliente salva payload recebido
+10/15/2019 9:30:41 AM - Cliente encerra a conexão.
+10/15/2019 9:31:32 AM - Cliente criado.
+10/15/2019 9:31:32 AM - Cliente não detecta colisão.
+10/15/2019 9:31:32 AM - Cliente se conecta no servidor.
+10/15/2019 9:31:32 AM - Cliente converte MAC de origem.
+10/15/2019 9:31:32 AM - Cliente converte MAC de destino.
+10/15/2019 9:31:32 AM - Cliente converte tamanho do payload.
+10/15/2019 9:31:32 AM - Cliente converte payload.
+10/15/2019 9:31:33 AM - Cliente salva payload recebido
+10/15/2019 9:31:33 AM - Cliente encerra a conexão.
+10/15/2019 9:31:40 AM - Cliente criado.
+10/15/2019 9:31:40 AM - Cliente não detecta colisão.
+10/15/2019 9:31:40 AM - Cliente se conecta no servidor.
+10/15/2019 9:31:40 AM - Cliente converte MAC de origem.
+10/15/2019 9:31:40 AM - Cliente converte MAC de destino.
+10/15/2019 9:31:40 AM - Cliente converte tamanho do payload.
+10/15/2019 9:31:40 AM - Cliente converte payload.
+10/15/2019 9:31:40 AM - Cliente salva payload recebido
+10/15/2019 9:31:40 AM - Cliente encerra a conexão.
+10/15/2019 9:31:58 AM - Cliente criado.
+10/15/2019 9:31:58 AM - Cliente não detecta colisão.
+10/15/2019 9:31:58 AM - Cliente se conecta no servidor.
+10/15/2019 9:31:59 AM - Cliente converte MAC de origem.
+10/15/2019 9:31:59 AM - Cliente converte MAC de destino.
+10/15/2019 9:31:59 AM - Cliente converte tamanho do payload.
+10/15/2019 9:31:59 AM - Cliente converte payload.
+10/15/2019 9:31:59 AM - Cliente salva payload recebido
+10/15/2019 9:31:59 AM - Cliente encerra a conexão.
+10/15/2019 9:32:11 AM - Cliente criado.
+10/15/2019 9:32:11 AM - Cliente não detecta colisão.
+10/15/2019 9:32:11 AM - Cliente se conecta no servidor.
+10/15/2019 9:32:11 AM - Cliente converte MAC de origem.
+10/15/2019 9:32:11 AM - Cliente converte MAC de destino.
+10/15/2019 9:32:11 AM - Cliente converte tamanho do payload.
+10/15/2019 9:32:11 AM - Cliente converte payload.
+10/15/2019 9:32:11 AM - Cliente salva payload recebido
+10/15/2019 9:32:11 AM - Cliente encerra a conexão.
+10/15/2019 9:32:23 AM - Cliente criado.
+10/15/2019 9:32:23 AM - Cliente não detecta colisão.
+10/15/2019 9:32:23 AM - Cliente se conecta no servidor.
+10/15/2019 9:32:23 AM - Cliente converte MAC de origem.
+10/15/2019 9:32:23 AM - Cliente converte MAC de destino.
+10/15/2019 9:32:23 AM - Cliente converte tamanho do payload.
+10/15/2019 9:32:23 AM - Cliente converte payload.
+10/15/2019 9:32:23 AM - Cliente salva payload recebido
+10/15/2019 9:32:23 AM - Cliente encerra a conexão.
+10/15/2019 9:32:40 AM - Cliente criado.
+10/15/2019 9:32:40 AM - Cliente não detecta colisão.
+10/15/2019 9:32:40 AM - Cliente se conecta no servidor.
+10/15/2019 9:32:40 AM - Cliente converte MAC de origem.
+10/15/2019 9:32:40 AM - Cliente converte MAC de destino.
+10/15/2019 9:32:40 AM - Cliente converte tamanho do payload.
+10/15/2019 9:32:40 AM - Cliente converte payload.
+10/15/2019 9:32:41 AM - Cliente salva payload recebido
+10/15/2019 9:32:41 AM - Cliente encerra a conexão.
+10/15/2019 9:34:11 AM - Cliente criado.
+10/15/2019 9:34:11 AM - Cliente não detecta colisão.
+10/15/2019 9:34:11 AM - Cliente se conecta no servidor.
+10/15/2019 9:34:12 AM - Cliente converte MAC de origem.
+10/15/2019 9:34:12 AM - Cliente converte MAC de destino.
+10/15/2019 9:34:12 AM - Cliente converte tamanho do payload.
+10/15/2019 9:34:12 AM - Cliente converte payload.
+10/15/2019 9:34:12 AM - Cliente salva payload recebido
+10/15/2019 9:34:12 AM - Cliente encerra a conexão.
+10/15/2019 9:35:08 AM - Cliente criado.
+10/15/2019 9:35:09 AM - Cliente não detecta colisão.
+10/15/2019 9:35:09 AM - Cliente se conecta no servidor.
+10/15/2019 9:35:09 AM - Cliente converte MAC de origem.
+10/15/2019 9:35:09 AM - Cliente converte MAC de destino.
+10/15/2019 9:35:09 AM - Cliente converte tamanho do payload.
+10/15/2019 9:35:09 AM - Cliente converte payload.
+10/15/2019 9:35:09 AM - Cliente salva payload recebido
+10/15/2019 9:35:09 AM - Cliente encerra a conexão.
+10/15/2019 9:35:49 AM - Cliente criado.
+10/15/2019 9:35:49 AM - Cliente não detecta colisão.
+10/15/2019 9:35:49 AM - Cliente se conecta no servidor.
+10/15/2019 9:35:49 AM - Cliente converte MAC de origem.
+10/15/2019 9:35:49 AM - Cliente converte MAC de destino.
+10/15/2019 9:35:49 AM - Cliente converte tamanho do payload.
+10/15/2019 9:35:49 AM - Cliente converte payload.
+10/15/2019 9:35:49 AM - Cliente salva payload recebido
+10/15/2019 9:35:49 AM - Cliente encerra a conexão.
+10/15/2019 10:26:41 AM - Cliente criado.
+10/15/2019 10:26:41 AM - Cliente não detecta colisão.
+10/15/2019 10:26:41 AM - Cliente se conecta no servidor.
+10/15/2019 10:26:41 AM - Cliente converte MAC de origem.
+10/15/2019 10:26:41 AM - Cliente converte MAC de destino.
+10/15/2019 10:26:41 AM - Cliente converte tamanho do payload.
+10/15/2019 10:26:41 AM - Cliente converte payload.
+10/15/2019 10:26:42 AM - Cliente salva payload recebido
+10/15/2019 10:26:42 AM - Cliente encerra a conexão.
+10/15/2019 10:28:46 AM - Cliente criado.
+10/15/2019 10:28:46 AM - Cliente não detecta colisão.
+10/15/2019 10:28:47 AM - Cliente se conecta no servidor.
+10/15/2019 10:28:47 AM - Cliente converte MAC de origem.
+10/15/2019 10:28:47 AM - Cliente converte MAC de destino.
+10/15/2019 10:28:47 AM - Cliente converte tamanho do payload.
+10/15/2019 10:28:47 AM - Cliente converte payload.
+10/15/2019 10:28:47 AM - Cliente salva payload recebido
+10/15/2019 10:28:47 AM - Cliente encerra a conexão.

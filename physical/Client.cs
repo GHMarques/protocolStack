@@ -10,8 +10,8 @@ namespace Pratica{
   class Client{
     const int PORT_NO = 5000;
     const int COLISION_PERCENTAGE = 10;
-    const string SERVER_IP = "192.168.0.103";
-    const string CLIENT_IP = "192.168.0.100";
+    const string SERVER_IP = "192.168.43.110";
+    const string CLIENT_IP = "192.168.43.228";
     const string FILE_PATH = "../file/fileToSend.txt";
     const string FILE_PATH_RESPONSE = "../file/DhcpResponseIp.txt";
     const string FILE_PATH_PDU_BITS = "pduBits.txt";
@@ -37,9 +37,9 @@ namespace Pratica{
             Console.WriteLine("\n\nConexão estabelecida:");
             //Pega Mac do destino e origem.
             macOrigem = GetClientMacAddress();
-            macDestino = GetServerMacAddress(CLIENT_IP);
-            // macOrigem = "41:7f:83:e8:5e:ff";
-            // macDestino = "41:7f:33:0e:65:b2";
+            macDestino = GetServerMacAddress(SERVER_IP);
+            //macOrigem = "41:7f:83:e8:5e:ff";
+            //macDestino = "41:7f:33:0e:65:b2";
             // Console.WriteLine(macOrigem);
             // Console.WriteLine(macDestino);
             string content = System.IO.File.ReadAllText(FILE_PATH);
@@ -85,6 +85,8 @@ namespace Pratica{
             string payload = binaryToString(dataReceived);
             if(!File.Exists(FILE_PATH_RESPONSE))
               File.Create(FILE_PATH_RESPONSE).Close();
+
+            Log.WriteLog("Cliente salva payload recebido");
             System.IO.File.WriteAllText(FILE_PATH_RESPONSE, payload);
 
             //Encerra a conexao
@@ -155,8 +157,10 @@ namespace Pratica{
       pProcess.Start();
       string strOutput = pProcess.StandardOutput.ReadToEnd().Trim(' ');
       string[] substrings = strOutput.Split(' ');
-      if (substrings[1].Length > 0){
-        return substrings[1];
+      var macs = substrings.Where(f => f.Contains(":")).ToArray();
+
+      if (macs.LastOrDefault().Length > 0){
+        return macs.LastOrDefault();
       } else {
         return "MAC Address do cliente não encontrado.";
       }

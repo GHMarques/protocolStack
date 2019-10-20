@@ -13,7 +13,7 @@ namespace Pratica{
     const string FILE_PATH_MAC_ADDRESS = "../file/macAddress.txt";
     const string FILE_PATH_IP_RESPONSE = "../file/ipResponse.txt";
     const int PORT_NO = 5000;
-    const string SERVER_IP = "192.168.0.103";
+    const string SERVER_IP = "192.168.43.110";
     const int BINARY_SIZE = 8;
     const int MAC_ADDRESS_SIZE = 6;
     const int PAYLOAD_SIZE = 2;
@@ -113,6 +113,7 @@ namespace Pratica{
 
     public void ExecPhpServer(){
       string macAddress = string.Empty;
+      Log.WriteLog("Servidor Inicia aplicação DHCP");
       System.Diagnostics.Process pProcess = new System.Diagnostics.Process();
       pProcess.StartInfo.FileName = "php";
       pProcess.StartInfo.Arguments = "../application/server.php";
