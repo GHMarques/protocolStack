@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "/home/gustavo/Documents/projetos/protocolStack/physical/Pratica.csproj": {}
+    "/home/matheus/Documentos/protocolStack/physical/Pratica.csproj": {}
   },
   "projects": {
-    "/home/gustavo/Documents/projetos/protocolStack/physical/Pratica.csproj": {
+    "/home/matheus/Documentos/protocolStack/physical/Pratica.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/gustavo/Documents/projetos/protocolStack/physical/Pratica.csproj",
+        "projectUniqueName": "/home/matheus/Documentos/protocolStack/physical/Pratica.csproj",
         "projectName": "Pratica",
-        "projectPath": "/home/gustavo/Documents/projetos/protocolStack/physical/Pratica.csproj",
-        "packagesPath": "/home/gustavo/.nuget/packages/",
-        "outputPath": "/home/gustavo/Documents/projetos/protocolStack/physical/obj/",
+        "projectPath": "/home/matheus/Documentos/protocolStack/physical/Pratica.csproj",
+        "packagesPath": "/home/matheus/.nuget/packages/",
+        "outputPath": "/home/matheus/Documentos/protocolStack/physical/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/share/dotnet/sdk/NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "/home/gustavo/.nuget/NuGet/NuGet.Config"
+          "/home/matheus/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.2"
