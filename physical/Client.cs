@@ -10,9 +10,9 @@ namespace Pratica{
   class Client{
     const int PORT_NO = 5000;
     const int COLISION_PERCENTAGE = 10;
-    const string SERVER_IP = "192.168.0.103";
-    const string CLIENT_IP = "192.168.0.100";
-    const string FILE_PATH = "../file/fileToSend.txt";
+    const string SERVER_IP = "192.168.43.110";
+    const string CLIENT_IP = "192.168.43.228";
+    const string FILE_PATH = "../file/macAddress.txt";
     const string FILE_PATH_RESPONSE = "../file/DhcpResponseIp.txt";
     const string FILE_PATH_PDU_BITS = "pduBits.txt";
     string macOrigem = "";
@@ -38,8 +38,12 @@ namespace Pratica{
             //Pega Mac do destino e origem.
             macOrigem = GetClientMacAddress();
             macDestino = GetServerMacAddress(CLIENT_IP);
-            // macOrigem = "41:7f:83:e8:5e:ff";
-            // macDestino = "41:7f:33:0e:65:b2";
+            Console.WriteLine(macDestino);
+
+            //macOrigem = GetServerMacAddress(CLIENT_IP);
+            //macDestino = GetClientMacAddress();
+            //macOrigem = "41:7f:83:e8:5e:ff";
+            macDestino = "41:7f:33:0e:65:b2";
             // Console.WriteLine(macOrigem);
             // Console.WriteLine(macDestino);
             string content = System.IO.File.ReadAllText(FILE_PATH);

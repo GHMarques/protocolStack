@@ -1,5 +1,5 @@
 <?php
-function logMe($msg){
+//function logMe($msg){
     // Abre ou cria o arquivo log.txt
     // "a" representa que o arquivo é aberto para ser escrito
     $log = fopen("../file/log.txt", "a");
@@ -40,6 +40,7 @@ function logMe($msg){
                 }
                 fclose($dhcpFile);
             }
+            
             if($ipToReturn == null){
                 $ipToReturn = generateIP($mask, $countLines, $line);
                 if($ipToReturn == null){
@@ -138,5 +139,5 @@ function logMe($msg){
             }
         }
     }
-}
+//}
 ?>
