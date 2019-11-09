@@ -8,13 +8,16 @@ using System.Reflection;
 
 namespace Pratica{
   class Client{
-    const int PORT_NO = 5000;
     const int COLISION_PERCENTAGE = 10;
     const string SERVER_IP = "192.168.43.110";
     const string CLIENT_IP = "192.168.43.228";
     const string FILE_PATH = "../file/macAddress.txt";
     const string FILE_PATH_RESPONSE = "../file/DhcpResponseIp.txt";
     const string FILE_PATH_PDU_BITS = "pduBits.txt";
+    
+    const string FILE_PATH_Transport_PDU_BITS = "../file/pduTransportLayer.txt";
+    
+    const int PORT_NO = 5000;
     string macOrigem = "";
     string macDestino = "";
     public void send(){
@@ -52,8 +55,12 @@ namespace Pratica{
             byte[] payloadSizeByte = BitConverter.GetBytes(Convert.ToInt16(content.Length));
             Log.WriteLog(Log.CLIENT_CONVERT_PAYLOAD_SIZE);
             //Converte Payload para byte.
-            byte[] payloadByte = ASCIIEncoding.ASCII.GetBytes(content);
-            Log.WriteLog(Log.CLIENT_CONVERT_PAYLOAD);
+            if(!File.Exists(FILE_PATH_Transport_PDU_BITS))
+              File.Create(FILE_PATH_Transport_PDU_BITS).Close();
+
+            byte[] payloadByte =  Encoding.ASCII.GetBytes(System.IO.File.ReadAllText(FILE_PATH_Transport_PDU_BITS));
+            //byte[] payloadByte = ASCIIEncoding.ASCII.GetBytes(content);
+            //Log.WriteLog(Log.CLIENT_CONVERT_PAYLOAD);
 
             //Concatena o Head.
             byte[] bytesToSend = Concat(macOrigemByte,macDestinoByte);
