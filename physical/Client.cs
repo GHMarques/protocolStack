@@ -9,14 +9,12 @@ using System.Reflection;
 namespace Pratica{
   class Client{
     const int COLISION_PERCENTAGE = 10;
-    const string SERVER_IP = "192.168.43.110";
-    const string CLIENT_IP = "192.168.43.228";
+    const string SERVER_IP = "192.168.25.95";
+    const string CLIENT_IP = "192.168.25.95";
     const string FILE_PATH = "../file/macAddress.txt";
     const string FILE_PATH_RESPONSE = "../file/DhcpResponseIp.txt";
-    const string FILE_PATH_PDU_BITS = "pduBits.txt";
-    
-    const string FILE_PATH_Transport_PDU_BITS = "../file/pduTransportLayer.txt";
-    
+    const string FILE_PATH_PDU_BITS = "pduBits.txt"; 
+    const string FILE_PATH_Transport_PDU_BITS = "../file/pduTransportLayer.txt";   
     const int PORT_NO = 5000;
     string macOrigem = "";
     string macDestino = "";
@@ -40,25 +38,28 @@ namespace Pratica{
             Console.WriteLine("\n\nConexão estabelecida:");
             //Pega Mac do destino e origem.
             macOrigem = GetClientMacAddress();
-            macDestino = GetServerMacAddress(SERVER_IP);
+            //macDestino = GetServerMacAddress(SERVER_IP);
             //macOrigem = "41:7f:83:e8:5e:ff";
-            //macDestino = "41:7f:33:0e:65:b2";
-            // Console.WriteLine(macOrigem);
-            // Console.WriteLine(macDestino);
-            string content = System.IO.File.ReadAllText(FILE_PATH);
+            macDestino = "41:7f:33:0e:65:b2";
+
+            //string content = System.IO.File.ReadAllText(FILE_PATH);
+            if(!File.Exists(FILE_PATH_Transport_PDU_BITS))
+              File.Create(FILE_PATH_Transport_PDU_BITS).Close();
+            
+            var payloadText = System.IO.File.ReadAllText(FILE_PATH_Transport_PDU_BITS);
 
             //Converte Head para byte.
             byte[] macOrigemByte = macOrigem.Split(':').Select(x => Convert.ToByte(x, 16)).ToArray();
             Log.WriteLog(Log.CLIENT_CONVERT_MAC_SOURCE);
+
             byte[] macDestinoByte = macDestino.Split(':').Select(x => Convert.ToByte(x, 16)).ToArray();
             Log.WriteLog(Log.CLIENT_CONVERT_MAC_DESTINY);
-            byte[] payloadSizeByte = BitConverter.GetBytes(Convert.ToInt16(content.Length));
+            
+            byte[] payloadSizeByte = BitConverter.GetBytes(Convert.ToInt16(payloadText.Length));
             Log.WriteLog(Log.CLIENT_CONVERT_PAYLOAD_SIZE);
             //Converte Payload para byte.
-            if(!File.Exists(FILE_PATH_Transport_PDU_BITS))
-              File.Create(FILE_PATH_Transport_PDU_BITS).Close();
-
-            byte[] payloadByte =  Encoding.ASCII.GetBytes(System.IO.File.ReadAllText(FILE_PATH_Transport_PDU_BITS));
+            
+            byte[] payloadByte =  Encoding.ASCII.GetBytes(payloadText);
             //byte[] payloadByte = ASCIIEncoding.ASCII.GetBytes(content);
             //Log.WriteLog(Log.CLIENT_CONVERT_PAYLOAD);
 
@@ -67,7 +68,7 @@ namespace Pratica{
 
             //Concate o Head com o Payload
             var pduBits = string.Concat(bytesToSend.Select(b => Convert.ToString(b, 2).PadLeft(8, '0')));
-            pduBits += Convert.ToString(content.Length, 2).PadLeft(16, '0') + string.Concat(payloadByte.Select(b => Convert.ToString(b, 2).PadLeft(8, '0')));
+            pduBits += Convert.ToString(payloadText.Length, 2).PadLeft(16, '0') + string.Concat(payloadByte.Select(b => Convert.ToString(b, 2).PadLeft(8, '0')));
             
 
             if(!File.Exists(FILE_PATH_PDU_BITS))
@@ -77,8 +78,8 @@ namespace Pratica{
             //Exibe PDU
             Console.WriteLine("\tMAC Origem: {0}", macOrigem);
             Console.WriteLine("\tMAC Destino: {0}", macDestino);
-            Console.WriteLine("\tTamanho do payload: {0}", content.Length);
-            Console.WriteLine("\tPayload: " + content);
+            Console.WriteLine("\tTamanho do payload: {0}", payloadText.Length);
+            Console.WriteLine("\tPayload: " + payloadText);
             Console.WriteLine("\tPDU completa em bits: {0}", pduBits);
 
             //Faz o envio dos bits

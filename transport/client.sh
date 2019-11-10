@@ -5,7 +5,7 @@ convertDecimalTo16Bits=({0..1}{0..1}{0..1}{0..1}{0..1}{0..1}{0..1}{0..1}{0..1}{0
 logFilePath='../file/logTransportLayer.txt';
 pduFilePath='../file/pduTransportLayer.txt';
 fileToSend='../file/fileToSend.txt';
-lenght='0000000000000000'
+
 #functions
 : '
     log function
@@ -51,7 +51,7 @@ udp(){
     dstPort=${convertDecimalTo16Bits[5000]};
     log "mensagem";
 
-    sum=$(Sum $srcPort $dstPort);
+    sum=$(Sum $lenght $(Sum $srcPort $dstPort))
     checksum=$(TwosComplement $sum);
     payload="";
     file=$(cat $fileToSend | tr a-z A-Z);
@@ -61,14 +61,35 @@ udp(){
         fileBit=$(HexaToBit $i);
         payload=$payload$fileBit;
     done
+    size=$((8+$(echo $payload | wc -c)))
+    lenght=${convertDecimalTo16Bits[$size]};
+
     echo $srcPort$dstPort$lenght$checksum$payload > $pduFilePath;
 
-    send;
+    #send;
     
     }
 
 tcp(){
     echo "tcp function";
+    srcPort=${convertDecimalTo16Bits[5001]};
+    dstPort=${convertDecimalTo16Bits[5000]};
+    log "mensagem";
+
+    sum=$(Sum $lenght $(Sum $srcPort $dstPort))
+    checksum=$(TwosComplement $sum);
+    payload="";
+    file=$(cat $fileToSend | tr a-z A-Z);
+    IFS=':' read -ra my_array <<< "$file"
+    for i in "${my_array[@]}"
+    do
+        fileBit=$(HexaToBit $i);
+        payload=$payload$fileBit;
+    done
+    lenght=${convertDecimalTo16Bits[${#payload}]};
+    echo $srcPort$dstPort$lenght$checksum$payload > $pduFilePath;
+
+    send;
 }
 
 #Main

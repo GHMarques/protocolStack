@@ -63,3 +63,66 @@
 2019-10-15 10:26:42 - Ciente recebe a resposta da requisição 
 2019-10-15 10:28:46 - Cliente solicita requisição ao DHCP 
 2019-10-15 10:28:47 - Ciente recebe a resposta da requisição 
+2019-11-10 13:10:04 - Servidor é requisitado 
+2019-11-10 13:10:04 - Servidor obtém os valores associados a máscara, DNS e router 
+2019-11-10 13:10:04 - Servidor obtém novo IP a ser associado ao cliente
+2019-11-10 14:59:20 - Servidor é requisitado 
+2019-11-10 14:59:20 - Servidor obtém os valores associados a máscara, DNS e router 
+2019-11-10 14:59:20 - Servidor não consegue obter endereço MAC 
+2019-11-10 14:59:55 - Servidor é requisitado 
+2019-11-10 14:59:55 - Servidor obtém os valores associados a máscara, DNS e router 
+2019-11-10 14:59:55 - Servidor não consegue obter endereço MAC 
+2019-11-10 15:00:02 - Servidor é requisitado 
+2019-11-10 15:00:02 - Servidor obtém os valores associados a máscara, DNS e router 
+2019-11-10 15:00:02 - Servidor não consegue obter endereço MAC 
+2019-11-10 15:10:25 - Servidor é requisitado 
+2019-11-10 15:10:25 - Servidor obtém os valores associados a máscara, DNS e router 
+2019-11-10 15:10:25 - Servidor não consegue obter endereço MAC 
+2019-11-10 15:10:38 - Servidor é requisitado 
+2019-11-10 15:10:38 - Servidor obtém os valores associados a máscara, DNS e router 
+2019-11-10 15:10:38 - Servidor não consegue obter endereço MAC 
+2019-11-10 15:10:58 - Servidor é requisitado 
+2019-11-10 15:10:58 - Servidor obtém os valores associados a máscara, DNS e router 
+2019-11-10 15:10:58 - Servidor não consegue obter endereço MAC 
+2019-11-10 15:11:09 - Servidor é requisitado 
+2019-11-10 15:11:09 - Servidor obtém os valores associados a máscara, DNS e router 
+2019-11-10 15:11:09 - Servidor não consegue obter endereço MAC 
+2019-11-10 15:11:15 - Servidor é requisitado 
+2019-11-10 15:11:15 - Servidor obtém os valores associados a máscara, DNS e router 
+2019-11-10 15:11:15 - Servidor não consegue obter endereço MAC 
+2019-11-10 15:11:21 - Servidor é requisitado 
+2019-11-10 15:11:21 - Servidor obtém os valores associados a máscara, DNS e router 
+2019-11-10 15:11:21 - Servidor não consegue obter endereço MAC 
+2019-11-10 15:11:28 - Servidor é requisitado 
+2019-11-10 15:11:28 - Servidor obtém os valores associados a máscara, DNS e router 
+2019-11-10 15:11:28 - Servidor não consegue obter endereço MAC 
+2019-11-10 15:12:19 - Servidor é requisitado 
+2019-11-10 15:12:19 - Servidor obtém os valores associados a máscara, DNS e router 
+2019-11-10 15:12:19 - Servidor não consegue obter endereço MAC 
+2019-11-10 15:13:53 - Servidor é requisitado 
+2019-11-10 15:13:53 - Servidor obtém os valores associados a máscara, DNS e router 
+2019-11-10 15:13:53 - Servidor não consegue obter endereço MAC 
+2019-11-10 15:14:19 - Servidor é requisitado 
+2019-11-10 15:14:19 - Servidor obtém os valores associados a máscara, DNS e router 
+2019-11-10 15:14:19 - Servidor obtém novo IP a ser associado ao cliente
+2019-11-10 15:14:47 - Servidor é requisitado 
+2019-11-10 15:14:47 - Servidor obtém os valores associados a máscara, DNS e router 
+2019-11-10 15:14:47 - Servidor obtém novo IP a ser associado ao cliente
+2019-11-10 15:14:52 - Servidor é requisitado 
+2019-11-10 15:14:52 - Servidor obtém os valores associados a máscara, DNS e router 
+2019-11-10 15:14:52 - Servidor obtém IP associado ao cliente
+2019-11-10 15:14:54 - Servidor é requisitado 
+2019-11-10 15:14:54 - Servidor obtém os valores associados a máscara, DNS e router 
+2019-11-10 15:14:54 - Servidor obtém IP associado ao cliente
+2019-11-10 15:36:50 - Servidor é requisitado 
+2019-11-10 15:36:50 - Servidor obtém os valores associados a máscara, DNS e router 
+2019-11-10 15:36:50 - Servidor obtém IP associado ao cliente
+2019-11-10 15:37:27 - Servidor é requisitado 
+2019-11-10 15:37:27 - Servidor obtém os valores associados a máscara, DNS e router 
+2019-11-10 15:37:27 - Servidor obtém IP associado ao cliente
+2019-11-10 15:40:18 - Servidor é requisitado 
+2019-11-10 15:40:18 - Servidor obtém os valores associados a máscara, DNS e router 
+2019-11-10 15:40:18 - Servidor obtém IP associado ao cliente
+2019-11-10 15:40:38 - Servidor é requisitado 
+2019-11-10 15:40:38 - Servidor obtém os valores associados a máscara, DNS e router 
+2019-11-10 15:40:38 - Servidor obtém IP associado ao cliente

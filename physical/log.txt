@@ -4636,3 +4636,483 @@
 09/11/2019 16:45:21 - Cliente não detecta colisão.
 09/11/2019 16:49:45 - Cliente criado.
 09/11/2019 16:49:45 - Cliente não detecta colisão.
+10/11/2019 12:33:35 - Servidor criado.
+10/11/2019 12:33:36 - Servidor iniciado.
+10/11/2019 12:34:32 - Servidor criado.
+10/11/2019 12:34:32 - Servidor iniciado.
+10/11/2019 12:34:32 - Servidor de IP: 192.168.25.95 ouvindo a porta: 5000
+10/11/2019 12:34:49 - Cliente criado.
+10/11/2019 12:34:49 - Cliente não detecta colisão.
+10/11/2019 12:34:49 - Cliente se conecta no servidor.
+10/11/2019 12:34:49 - Servidor aceita conexão com cliente: 192.168.25.95
+10/11/2019 12:34:49 - Cliente converte MAC de origem.
+10/11/2019 12:38:39 - Servidor criado.
+10/11/2019 12:38:39 - Servidor iniciado.
+10/11/2019 12:38:39 - Servidor de IP: 192.168.25.95 ouvindo a porta: 5000
+10/11/2019 12:38:46 - Cliente criado.
+10/11/2019 12:38:46 - Cliente não detecta colisão.
+10/11/2019 12:38:46 - Cliente se conecta no servidor.
+10/11/2019 12:38:46 - Servidor aceita conexão com cliente: 192.168.25.95
+10/11/2019 12:38:46 - Cliente converte MAC de origem.
+10/11/2019 12:48:42 - Servidor criado.
+10/11/2019 12:48:42 - Servidor iniciado.
+10/11/2019 12:48:42 - Servidor de IP: 192.168.25.95 ouvindo a porta: 5000
+10/11/2019 12:48:52 - Servidor criado.
+10/11/2019 12:48:52 - Servidor iniciado.
+10/11/2019 12:48:52 - Servidor de IP: 192.168.25.95 ouvindo a porta: 5000
+10/11/2019 12:51:27 - Servidor criado.
+10/11/2019 12:51:27 - Servidor iniciado.
+10/11/2019 12:51:27 - Servidor de IP: 192.168.25.95 ouvindo a porta: 5000
+10/11/2019 12:52:28 - Servidor criado.
+10/11/2019 12:52:28 - Servidor iniciado.
+10/11/2019 12:52:28 - Servidor de IP: 192.168.25.95 ouvindo a porta: 5000
+10/11/2019 12:52:31 - Cliente criado.
+10/11/2019 12:52:31 - Cliente detecta colisão.
+10/11/2019 12:52:31 - Cliente não detecta colisão.
+10/11/2019 12:52:31 - Cliente se conecta no servidor.
+10/11/2019 12:52:31 - Servidor aceita conexão com cliente: 192.168.25.95
+10/11/2019 12:52:31 - Cliente converte MAC de origem.
+10/11/2019 12:52:56 - Servidor criado.
+10/11/2019 12:52:56 - Servidor iniciado.
+10/11/2019 12:52:56 - Servidor de IP: 192.168.25.95 ouvindo a porta: 5000
+10/11/2019 12:52:57 - Cliente criado.
+10/11/2019 12:52:57 - Cliente detecta colisão.
+10/11/2019 12:52:57 - Cliente não detecta colisão.
+10/11/2019 12:52:57 - Cliente se conecta no servidor.
+10/11/2019 12:52:57 - Servidor aceita conexão com cliente: 192.168.25.95
+10/11/2019 12:52:57 - Cliente converte MAC de origem.
+10/11/2019 12:53:20 - Servidor criado.
+10/11/2019 12:53:20 - Servidor iniciado.
+10/11/2019 12:53:20 - Servidor de IP: 192.168.25.95 ouvindo a porta: 5000
+10/11/2019 12:53:23 - Cliente criado.
+10/11/2019 12:53:23 - Cliente não detecta colisão.
+10/11/2019 12:53:23 - Cliente se conecta no servidor.
+10/11/2019 12:53:23 - Servidor aceita conexão com cliente: 192.168.25.95
+10/11/2019 12:53:23 - Cliente converte MAC de origem.
+10/11/2019 12:54:27 - Servidor criado.
+10/11/2019 12:54:27 - Servidor iniciado.
+10/11/2019 12:54:27 - Servidor de IP: 192.168.25.95 ouvindo a porta: 5000
+10/11/2019 12:54:29 - Cliente criado.
+10/11/2019 12:54:29 - Cliente não detecta colisão.
+10/11/2019 12:54:29 - Cliente se conecta no servidor.
+10/11/2019 12:54:29 - Servidor aceita conexão com cliente: 192.168.25.95
+10/11/2019 12:54:29 - Cliente converte MAC de origem.
+10/11/2019 12:55:10 - Servidor criado.
+10/11/2019 12:55:10 - Servidor iniciado.
+10/11/2019 12:55:10 - Servidor de IP: 192.168.25.95 ouvindo a porta: 5000
+10/11/2019 12:55:10 - Cliente criado.
+10/11/2019 12:55:11 - Cliente detecta colisão.
+10/11/2019 12:55:11 - Cliente não detecta colisão.
+10/11/2019 12:55:11 - Cliente se conecta no servidor.
+10/11/2019 12:55:11 - Servidor aceita conexão com cliente: 192.168.25.95
+10/11/2019 12:55:11 - Cliente converte MAC de origem.
+10/11/2019 12:56:23 - Servidor criado.
+10/11/2019 12:56:23 - Servidor iniciado.
+10/11/2019 12:56:23 - Servidor de IP: 192.168.25.95 ouvindo a porta: 5000
+10/11/2019 12:56:44 - Cliente criado.
+10/11/2019 12:56:44 - Cliente não detecta colisão.
+10/11/2019 12:56:44 - Cliente se conecta no servidor.
+10/11/2019 12:56:44 - Servidor aceita conexão com cliente: 192.168.25.95
+10/11/2019 12:56:44 - Cliente converte MAC de origem.
+10/11/2019 12:58:48 - Servidor criado.
+10/11/2019 12:58:48 - Servidor iniciado.
+10/11/2019 12:58:48 - Servidor de IP: 192.168.25.95 ouvindo a porta: 5000
+10/11/2019 12:58:51 - Cliente criado.
+10/11/2019 12:58:51 - Cliente não detecta colisão.
+10/11/2019 12:58:51 - Cliente se conecta no servidor.
+10/11/2019 12:58:51 - Servidor aceita conexão com cliente: 192.168.25.95
+10/11/2019 12:58:51 - Cliente converte MAC de origem.
+10/11/2019 13:01:33 - Servidor criado.
+10/11/2019 13:01:33 - Servidor iniciado.
+10/11/2019 13:01:33 - Servidor de IP: 192.168.25.95 ouvindo a porta: 5000
+10/11/2019 13:01:37 - Cliente criado.
+10/11/2019 13:01:37 - Cliente não detecta colisão.
+10/11/2019 13:01:37 - Cliente se conecta no servidor.
+10/11/2019 13:01:37 - Servidor aceita conexão com cliente: 192.168.25.95
+10/11/2019 13:01:37 - Cliente converte MAC de origem.
+10/11/2019 13:02:57 - Servidor criado.
+10/11/2019 13:02:57 - Servidor iniciado.
+10/11/2019 13:02:57 - Servidor de IP: 192.168.25.95 ouvindo a porta: 5000
+10/11/2019 13:03:01 - Cliente criado.
+10/11/2019 13:03:01 - Cliente não detecta colisão.
+10/11/2019 13:03:01 - Cliente se conecta no servidor.
+10/11/2019 13:03:01 - Servidor aceita conexão com cliente: 192.168.25.95
+10/11/2019 13:03:01 - Cliente converte MAC de origem.
+10/11/2019 13:03:21 - Servidor criado.
+10/11/2019 13:03:21 - Servidor iniciado.
+10/11/2019 13:03:21 - Servidor de IP: 192.168.25.95 ouvindo a porta: 5000
+10/11/2019 13:03:24 - Cliente criado.
+10/11/2019 13:03:24 - Cliente não detecta colisão.
+10/11/2019 13:03:24 - Cliente se conecta no servidor.
+10/11/2019 13:03:24 - Servidor aceita conexão com cliente: 192.168.25.95
+10/11/2019 13:03:24 - Cliente converte MAC de origem.
+10/11/2019 13:04:19 - Servidor criado.
+10/11/2019 13:04:19 - Servidor iniciado.
+10/11/2019 13:04:19 - Servidor de IP: 192.168.25.95 ouvindo a porta: 5000
+10/11/2019 13:04:23 - Cliente criado.
+10/11/2019 13:04:23 - Cliente não detecta colisão.
+10/11/2019 13:04:23 - Cliente se conecta no servidor.
+10/11/2019 13:04:23 - Servidor aceita conexão com cliente: 192.168.25.95
+10/11/2019 13:04:23 - Cliente converte MAC de origem.
+10/11/2019 13:04:36 - Servidor criado.
+10/11/2019 13:04:36 - Servidor iniciado.
+10/11/2019 13:04:36 - Servidor de IP: 192.168.25.95 ouvindo a porta: 5000
+10/11/2019 13:04:40 - Cliente criado.
+10/11/2019 13:04:40 - Cliente não detecta colisão.
+10/11/2019 13:04:40 - Cliente se conecta no servidor.
+10/11/2019 13:04:40 - Servidor aceita conexão com cliente: 192.168.25.95
+10/11/2019 13:04:40 - Cliente converte MAC de origem.
+10/11/2019 13:07:31 - Servidor criado.
+10/11/2019 13:07:31 - Servidor iniciado.
+10/11/2019 13:07:31 - Servidor de IP: 192.168.25.95 ouvindo a porta: 5000
+10/11/2019 13:07:35 - Cliente criado.
+10/11/2019 13:07:35 - Cliente não detecta colisão.
+10/11/2019 13:07:35 - Cliente se conecta no servidor.
+10/11/2019 13:07:35 - Servidor aceita conexão com cliente: 192.168.25.95
+10/11/2019 13:07:35 - Cliente converte MAC de origem.
+10/11/2019 13:08:03 - Servidor criado.
+10/11/2019 13:08:03 - Servidor iniciado.
+10/11/2019 13:08:03 - Servidor de IP: 192.168.25.95 ouvindo a porta: 5000
+10/11/2019 13:08:06 - Cliente criado.
+10/11/2019 13:08:06 - Cliente não detecta colisão.
+10/11/2019 13:08:06 - Cliente se conecta no servidor.
+10/11/2019 13:08:06 - Servidor aceita conexão com cliente: 192.168.25.95
+10/11/2019 13:08:06 - Cliente converte MAC de origem.
+10/11/2019 13:08:27 - Servidor criado.
+10/11/2019 13:08:27 - Servidor iniciado.
+10/11/2019 13:08:27 - Servidor de IP: 192.168.25.95 ouvindo a porta: 5000
+10/11/2019 13:08:31 - Cliente criado.
+10/11/2019 13:08:31 - Cliente não detecta colisão.
+10/11/2019 13:08:31 - Cliente se conecta no servidor.
+10/11/2019 13:08:31 - Servidor aceita conexão com cliente: 192.168.25.95
+10/11/2019 13:08:31 - Cliente converte MAC de origem.
+10/11/2019 13:08:58 - Servidor criado.
+10/11/2019 13:08:58 - Servidor iniciado.
+10/11/2019 13:08:58 - Servidor de IP: 192.168.25.95 ouvindo a porta: 5000
+10/11/2019 13:08:59 - Cliente criado.
+10/11/2019 13:08:59 - Cliente não detecta colisão.
+10/11/2019 13:08:59 - Cliente se conecta no servidor.
+10/11/2019 13:08:59 - Servidor aceita conexão com cliente: 192.168.25.95
+10/11/2019 13:08:59 - Cliente converte MAC de origem.
+10/11/2019 13:09:11 - Servidor criado.
+10/11/2019 13:09:11 - Servidor iniciado.
+10/11/2019 13:09:11 - Servidor de IP: 192.168.25.95 ouvindo a porta: 5000
+10/11/2019 13:09:12 - Cliente criado.
+10/11/2019 13:09:12 - Cliente não detecta colisão.
+10/11/2019 13:09:12 - Cliente se conecta no servidor.
+10/11/2019 13:09:12 - Servidor aceita conexão com cliente: 192.168.25.95
+10/11/2019 13:09:12 - Cliente converte MAC de origem.
+10/11/2019 13:09:59 - Servidor criado.
+10/11/2019 13:09:59 - Servidor iniciado.
+10/11/2019 13:09:59 - Servidor de IP: 192.168.25.95 ouvindo a porta: 5000
+10/11/2019 13:10:04 - Cliente criado.
+10/11/2019 13:10:04 - Cliente não detecta colisão.
+10/11/2019 13:10:04 - Cliente se conecta no servidor.
+10/11/2019 13:10:04 - Servidor aceita conexão com cliente: 192.168.25.95
+10/11/2019 13:10:04 - Cliente converte MAC de origem.
+10/11/2019 13:10:04 - Cliente converte MAC de destino.
+10/11/2019 13:10:04 - Cliente converte tamanho do payload.
+10/11/2019 13:10:04 - Servidor converte MAC de origem. (64:32:A8:2A:FA:6C)
+10/11/2019 13:10:04 - Servidor converte MAC de destino. (41:7F:33:0E:65:B2)
+10/11/2019 13:10:04 - Servidor converte tamanho do payload. (161)
+10/11/2019 13:10:04 - Servidor converte payload. (0001001110001001000100111000100000000000000000001101100011101111000000000110010000000000001100100000000010101000000000000010101000000000111110100000000001101100
+)
+10/11/2019 13:10:04 - Servidor Inicia aplicação DHCP
+10/11/2019 13:10:04 - Cliente salva payload recebido
+10/11/2019 13:10:05 - Servidor encerra conexao com o cliente.
+10/11/2019 13:10:05 - Servidor de IP: 192.168.25.95 ouvindo a porta: 5000
+10/11/2019 13:10:05 - Cliente encerra a conexão.
+10/11/2019 13:21:30 - Servidor criado.
+10/11/2019 13:21:30 - Servidor iniciado.
+10/11/2019 13:21:30 - Servidor de IP: 192.168.25.95 ouvindo a porta: 5000
+10/11/2019 13:21:35 - Cliente criado.
+10/11/2019 13:21:35 - Cliente não detecta colisão.
+10/11/2019 13:21:35 - Cliente se conecta no servidor.
+10/11/2019 13:21:35 - Servidor aceita conexão com cliente: 192.168.25.95
+10/11/2019 13:21:35 - Cliente converte MAC de origem.
+10/11/2019 13:21:35 - Cliente converte MAC de destino.
+10/11/2019 13:21:35 - Cliente converte tamanho do payload.
+10/11/2019 13:21:35 - Servidor converte MAC de origem. (64:32:A8:2A:FA:6C)
+10/11/2019 13:21:35 - Servidor converte MAC de destino. (41:7F:33:0E:65:B2)
+10/11/2019 13:21:35 - Servidor converte tamanho do payload. (161)
+10/11/2019 13:21:35 - Servidor converte payload. (0001001110001001000100111000100000000000000000001101100011101111000000000110010000000000001100100000000010101000000000000010101000000000111110100000000001101100
+)
+10/11/2019 13:21:35 - Sevidor Requisita a camada de transporte.
+10/11/2019 13:21:36 - Cliente salva payload recebido
+10/11/2019 13:21:36 - Servidor encerra conexao com o cliente.
+10/11/2019 13:21:36 - Servidor de IP: 192.168.25.95 ouvindo a porta: 5000
+10/11/2019 13:21:36 - Cliente encerra a conexão.
+10/11/2019 14:56:53 - Servidor criado.
+10/11/2019 14:56:53 - Servidor iniciado.
+10/11/2019 14:56:53 - Servidor de IP: 192.168.25.95 ouvindo a porta: 5000
+10/11/2019 14:57:16 - Cliente criado.
+10/11/2019 14:57:16 - Cliente detecta colisão.
+10/11/2019 14:57:16 - Cliente não detecta colisão.
+10/11/2019 14:57:16 - Cliente se conecta no servidor.
+10/11/2019 14:57:16 - Servidor aceita conexão com cliente: 192.168.25.95
+10/11/2019 14:57:16 - Cliente converte MAC de origem.
+10/11/2019 14:57:16 - Cliente converte MAC de destino.
+10/11/2019 14:57:16 - Cliente converte tamanho do payload.
+10/11/2019 14:57:16 - Servidor converte MAC de origem. (64:32:A8:2A:FA:6C)
+10/11/2019 14:57:16 - Servidor converte MAC de destino. (41:7F:33:0E:65:B2)
+10/11/2019 14:57:16 - Servidor converte tamanho do payload. (161)
+10/11/2019 14:57:16 - Servidor converte payload. (0001001110001001000100111000100000000000000000001101100011101111000000000110010000000000001100100000000010101000000000000010101000000000111110100000000001101100
+)
+10/11/2019 14:57:16 - Sevidor Requisita a camada de transporte.
+10/11/2019 14:57:16 - Cliente salva payload recebido
+10/11/2019 14:57:16 - Servidor encerra conexao com o cliente.
+10/11/2019 14:57:16 - Servidor de IP: 192.168.25.95 ouvindo a porta: 5000
+10/11/2019 14:57:17 - Cliente encerra a conexão.
+10/11/2019 15:36:58 - Cliente criado.
+10/11/2019 15:36:58 - Cliente não detecta colisão.
+10/11/2019 15:36:58 - Servidor aceita conexão com cliente: 192.168.25.95
+10/11/2019 15:36:58 - Cliente se conecta no servidor.
+10/11/2019 15:37:32 - Cliente criado.
+10/11/2019 15:37:32 - Cliente detecta colisão.
+10/11/2019 15:37:32 - Cliente não detecta colisão.
+10/11/2019 15:37:32 - Cliente não conseguiu se conectar.
+10/11/2019 15:37:32 - Cliente não detecta colisão.
+10/11/2019 15:37:32 - Cliente não conseguiu se conectar.
+10/11/2019 15:37:32 - Cliente não detecta colisão.
+10/11/2019 15:37:32 - Cliente não conseguiu se conectar.
+10/11/2019 15:37:32 - Cliente não detecta colisão.
+10/11/2019 15:37:32 - Cliente não conseguiu se conectar.
+10/11/2019 15:37:32 - Cliente não detecta colisão.
+10/11/2019 15:37:32 - Cliente não conseguiu se conectar.
+10/11/2019 15:37:32 - Cliente detecta colisão.
+10/11/2019 15:37:32 - Cliente não detecta colisão.
+10/11/2019 15:37:32 - Cliente não conseguiu se conectar.
+10/11/2019 15:37:32 - Cliente não detecta colisão.
+10/11/2019 15:37:32 - Cliente não conseguiu se conectar.
+10/11/2019 15:37:32 - Cliente não detecta colisão.
+10/11/2019 15:37:32 - Cliente não conseguiu se conectar.
+10/11/2019 15:37:32 - Cliente não detecta colisão.
+10/11/2019 15:37:32 - Cliente não conseguiu se conectar.
+10/11/2019 15:37:32 - Cliente não detecta colisão.
+10/11/2019 15:37:32 - Cliente não conseguiu se conectar.
+10/11/2019 15:37:32 - Cliente não detecta colisão.
+10/11/2019 15:37:32 - Cliente não conseguiu se conectar.
+10/11/2019 15:37:32 - Cliente não detecta colisão.
+10/11/2019 15:37:32 - Cliente não conseguiu se conectar.
+10/11/2019 15:37:32 - Cliente não detecta colisão.
+10/11/2019 15:37:32 - Cliente não conseguiu se conectar.
+10/11/2019 15:37:32 - Cliente não detecta colisão.
+10/11/2019 15:37:32 - Cliente não conseguiu se conectar.
+10/11/2019 15:37:32 - Cliente não detecta colisão.
+10/11/2019 15:37:32 - Cliente não conseguiu se conectar.
+10/11/2019 15:37:32 - Cliente detecta colisão.
+10/11/2019 15:37:32 - Cliente não detecta colisão.
+10/11/2019 15:37:32 - Cliente não conseguiu se conectar.
+10/11/2019 15:37:32 - Cliente detecta colisão.
+10/11/2019 15:37:32 - Cliente não detecta colisão.
+10/11/2019 15:37:32 - Cliente não conseguiu se conectar.
+10/11/2019 15:37:32 - Cliente não detecta colisão.
+10/11/2019 15:37:32 - Cliente não conseguiu se conectar.
+10/11/2019 15:37:32 - Cliente não detecta colisão.
+10/11/2019 15:37:32 - Cliente não conseguiu se conectar.
+10/11/2019 15:37:32 - Cliente não detecta colisão.
+10/11/2019 15:37:32 - Cliente não conseguiu se conectar.
+10/11/2019 15:37:32 - Cliente não detecta colisão.
+10/11/2019 15:37:32 - Cliente não conseguiu se conectar.
+10/11/2019 15:37:32 - Cliente não detecta colisão.
+10/11/2019 15:37:32 - Cliente não conseguiu se conectar.
+10/11/2019 15:37:32 - Cliente não detecta colisão.
+10/11/2019 15:37:32 - Cliente não conseguiu se conectar.
+10/11/2019 15:37:33 - Cliente não detecta colisão.
+10/11/2019 15:37:33 - Cliente não conseguiu se conectar.
+10/11/2019 15:37:33 - Cliente não detecta colisão.
+10/11/2019 15:37:33 - Cliente não conseguiu se conectar.
+10/11/2019 15:37:33 - Cliente não detecta colisão.
+10/11/2019 15:37:33 - Cliente não conseguiu se conectar.
+10/11/2019 15:37:33 - Cliente não detecta colisão.
+10/11/2019 15:37:33 - Cliente não conseguiu se conectar.
+10/11/2019 15:37:33 - Cliente não detecta colisão.
+10/11/2019 15:37:33 - Cliente não conseguiu se conectar.
+10/11/2019 15:37:33 - Cliente não detecta colisão.
+10/11/2019 15:37:33 - Cliente não conseguiu se conectar.
+10/11/2019 15:37:33 - Cliente não detecta colisão.
+10/11/2019 15:37:33 - Cliente não conseguiu se conectar.
+10/11/2019 15:37:44 - Cliente criado.
+10/11/2019 15:37:44 - Cliente não detecta colisão.
+10/11/2019 15:37:44 - Cliente não conseguiu se conectar.
+10/11/2019 15:37:44 - Cliente não detecta colisão.
+10/11/2019 15:37:44 - Cliente não conseguiu se conectar.
+10/11/2019 15:37:44 - Cliente não detecta colisão.
+10/11/2019 15:37:44 - Cliente não conseguiu se conectar.
+10/11/2019 15:37:44 - Cliente não detecta colisão.
+10/11/2019 15:37:44 - Cliente não conseguiu se conectar.
+10/11/2019 15:37:44 - Cliente não detecta colisão.
+10/11/2019 15:37:44 - Cliente não conseguiu se conectar.
+10/11/2019 15:37:44 - Cliente não detecta colisão.
+10/11/2019 15:37:44 - Cliente não conseguiu se conectar.
+10/11/2019 15:37:44 - Cliente não detecta colisão.
+10/11/2019 15:37:44 - Cliente não conseguiu se conectar.
+10/11/2019 15:37:44 - Cliente não detecta colisão.
+10/11/2019 15:37:44 - Cliente não conseguiu se conectar.
+10/11/2019 15:37:44 - Cliente não detecta colisão.
+10/11/2019 15:37:44 - Cliente não conseguiu se conectar.
+10/11/2019 15:37:44 - Cliente detecta colisão.
+10/11/2019 15:37:44 - Cliente não detecta colisão.
+10/11/2019 15:37:44 - Cliente não conseguiu se conectar.
+10/11/2019 15:37:44 - Cliente não detecta colisão.
+10/11/2019 15:37:44 - Cliente não conseguiu se conectar.
+10/11/2019 15:37:44 - Cliente não detecta colisão.
+10/11/2019 15:37:44 - Cliente não conseguiu se conectar.
+10/11/2019 15:37:44 - Cliente detecta colisão.
+10/11/2019 15:37:44 - Cliente não detecta colisão.
+10/11/2019 15:37:44 - Cliente não conseguiu se conectar.
+10/11/2019 15:37:44 - Cliente não detecta colisão.
+10/11/2019 15:37:44 - Cliente não conseguiu se conectar.
+10/11/2019 15:37:44 - Cliente não detecta colisão.
+10/11/2019 15:37:44 - Cliente não conseguiu se conectar.
+10/11/2019 15:37:44 - Cliente não detecta colisão.
+10/11/2019 15:37:44 - Cliente não conseguiu se conectar.
+10/11/2019 15:37:44 - Cliente não detecta colisão.
+10/11/2019 15:37:44 - Cliente não conseguiu se conectar.
+10/11/2019 15:38:00 - Cliente criado.
+10/11/2019 15:38:01 - Cliente não detecta colisão.
+10/11/2019 15:38:01 - Cliente não conseguiu se conectar.
+10/11/2019 15:38:01 - Cliente não detecta colisão.
+10/11/2019 15:38:01 - Cliente não conseguiu se conectar.
+10/11/2019 15:38:01 - Cliente detecta colisão.
+10/11/2019 15:38:01 - Cliente não detecta colisão.
+10/11/2019 15:38:01 - Cliente não conseguiu se conectar.
+10/11/2019 15:38:01 - Cliente detecta colisão.
+10/11/2019 15:38:01 - Cliente não detecta colisão.
+10/11/2019 15:38:01 - Cliente não conseguiu se conectar.
+10/11/2019 15:38:01 - Cliente não detecta colisão.
+10/11/2019 15:38:01 - Cliente não conseguiu se conectar.
+10/11/2019 15:38:01 - Cliente não detecta colisão.
+10/11/2019 15:38:01 - Cliente não conseguiu se conectar.
+10/11/2019 15:38:01 - Cliente não detecta colisão.
+10/11/2019 15:38:01 - Cliente não conseguiu se conectar.
+10/11/2019 15:38:01 - Cliente não detecta colisão.
+10/11/2019 15:38:01 - Cliente não conseguiu se conectar.
+10/11/2019 15:38:01 - Cliente não detecta colisão.
+10/11/2019 15:38:01 - Cliente não conseguiu se conectar.
+10/11/2019 15:38:14 - Cliente criado.
+10/11/2019 15:38:14 - Cliente não detecta colisão.
+10/11/2019 15:38:14 - Cliente não conseguiu se conectar.
+10/11/2019 15:38:14 - Cliente não detecta colisão.
+10/11/2019 15:38:14 - Cliente não conseguiu se conectar.
+10/11/2019 15:38:14 - Cliente não detecta colisão.
+10/11/2019 15:38:14 - Cliente não conseguiu se conectar.
+10/11/2019 15:38:14 - Cliente não detecta colisão.
+10/11/2019 15:38:14 - Cliente não conseguiu se conectar.
+10/11/2019 15:38:14 - Cliente detecta colisão.
+10/11/2019 15:38:14 - Cliente não detecta colisão.
+10/11/2019 15:38:14 - Cliente não conseguiu se conectar.
+10/11/2019 15:38:14 - Cliente não detecta colisão.
+10/11/2019 15:38:14 - Cliente não conseguiu se conectar.
+10/11/2019 15:38:14 - Cliente não detecta colisão.
+10/11/2019 15:38:14 - Cliente não conseguiu se conectar.
+10/11/2019 15:38:14 - Cliente não detecta colisão.
+10/11/2019 15:38:14 - Cliente não conseguiu se conectar.
+10/11/2019 15:38:14 - Cliente não detecta colisão.
+10/11/2019 15:38:14 - Cliente não conseguiu se conectar.
+10/11/2019 15:38:14 - Cliente não detecta colisão.
+10/11/2019 15:38:14 - Cliente não conseguiu se conectar.
+10/11/2019 15:38:14 - Cliente não detecta colisão.
+10/11/2019 15:38:14 - Cliente não conseguiu se conectar.
+10/11/2019 15:38:14 - Cliente não detecta colisão.
+10/11/2019 15:38:14 - Cliente não conseguiu se conectar.
+10/11/2019 15:38:15 - Cliente não detecta colisão.
+10/11/2019 15:38:15 - Cliente não conseguiu se conectar.
+10/11/2019 15:38:15 - Cliente não detecta colisão.
+10/11/2019 15:38:15 - Cliente não conseguiu se conectar.
+10/11/2019 15:38:18 - Cliente criado.
+10/11/2019 15:38:18 - Cliente não detecta colisão.
+10/11/2019 15:38:18 - Cliente não conseguiu se conectar.
+10/11/2019 15:38:18 - Cliente não detecta colisão.
+10/11/2019 15:38:18 - Cliente não conseguiu se conectar.
+10/11/2019 15:38:18 - Cliente não detecta colisão.
+10/11/2019 15:38:18 - Cliente não conseguiu se conectar.
+10/11/2019 15:38:18 - Cliente não detecta colisão.
+10/11/2019 15:38:18 - Cliente não conseguiu se conectar.
+10/11/2019 15:38:18 - Cliente não detecta colisão.
+10/11/2019 15:38:18 - Cliente não conseguiu se conectar.
+10/11/2019 15:38:18 - Cliente não detecta colisão.
+10/11/2019 15:38:18 - Cliente não conseguiu se conectar.
+10/11/2019 15:38:18 - Cliente não detecta colisão.
+10/11/2019 15:38:18 - Cliente não conseguiu se conectar.
+10/11/2019 15:38:18 - Cliente não detecta colisão.
+10/11/2019 15:38:18 - Cliente não conseguiu se conectar.
+10/11/2019 15:38:18 - Cliente não detecta colisão.
+10/11/2019 15:38:18 - Cliente não conseguiu se conectar.
+10/11/2019 15:38:18 - Cliente não detecta colisão.
+10/11/2019 15:38:18 - Cliente não conseguiu se conectar.
+10/11/2019 15:38:18 - Cliente não detecta colisão.
+10/11/2019 15:38:18 - Cliente não conseguiu se conectar.
+10/11/2019 15:38:40 - Cliente criado.
+10/11/2019 15:38:40 - Cliente não detecta colisão.
+10/11/2019 15:38:40 - Cliente não conseguiu se conectar.
+10/11/2019 15:38:41 - Cliente não detecta colisão.
+10/11/2019 15:38:41 - Cliente não conseguiu se conectar.
+10/11/2019 15:38:41 - Cliente não detecta colisão.
+10/11/2019 15:38:41 - Cliente não conseguiu se conectar.
+10/11/2019 15:38:41 - Cliente não detecta colisão.
+10/11/2019 15:38:41 - Cliente não conseguiu se conectar.
+10/11/2019 15:38:41 - Cliente não detecta colisão.
+10/11/2019 15:38:41 - Cliente não conseguiu se conectar.
+10/11/2019 15:38:41 - Cliente não detecta colisão.
+10/11/2019 15:38:41 - Cliente não conseguiu se conectar.
+10/11/2019 15:38:41 - Cliente não detecta colisão.
+10/11/2019 15:38:41 - Cliente não conseguiu se conectar.
+10/11/2019 15:38:41 - Cliente detecta colisão.
+10/11/2019 15:38:41 - Cliente não detecta colisão.
+10/11/2019 15:38:41 - Cliente não conseguiu se conectar.
+10/11/2019 15:38:41 - Cliente detecta colisão.
+10/11/2019 15:38:41 - Cliente não detecta colisão.
+10/11/2019 15:38:41 - Cliente não conseguiu se conectar.
+10/11/2019 15:38:41 - Cliente não detecta colisão.
+10/11/2019 15:38:41 - Cliente não conseguiu se conectar.
+10/11/2019 15:38:41 - Cliente não detecta colisão.
+10/11/2019 15:38:41 - Cliente não conseguiu se conectar.
+10/11/2019 15:38:41 - Cliente não detecta colisão.
+10/11/2019 15:38:41 - Cliente não conseguiu se conectar.
+10/11/2019 15:38:41 - Cliente não detecta colisão.
+10/11/2019 15:38:41 - Cliente não conseguiu se conectar.
+10/11/2019 15:38:41 - Cliente não detecta colisão.
+10/11/2019 15:38:41 - Cliente não conseguiu se conectar.
+10/11/2019 15:38:41 - Cliente detecta colisão.
+10/11/2019 15:38:41 - Cliente não detecta colisão.
+10/11/2019 15:38:41 - Cliente não conseguiu se conectar.
+10/11/2019 15:38:41 - Cliente não detecta colisão.
+10/11/2019 15:38:41 - Cliente não conseguiu se conectar.
+10/11/2019 15:38:41 - Cliente não detecta colisão.
+10/11/2019 15:38:41 - Cliente não conseguiu se conectar.
+10/11/2019 15:38:41 - Cliente não detecta colisão.
+10/11/2019 15:38:41 - Cliente não conseguiu se conectar.
+10/11/2019 15:38:41 - Cliente não detecta colisão.
+10/11/2019 15:38:41 - Cliente não conseguiu se conectar.
+10/11/2019 15:38:41 - Cliente não detecta colisão.
+10/11/2019 15:38:41 - Cliente não conseguiu se conectar.
+10/11/2019 15:38:41 - Cliente não detecta colisão.
+10/11/2019 15:38:41 - Cliente não conseguiu se conectar.
+10/11/2019 15:38:42 - Cliente não detecta colisão.
+10/11/2019 15:38:42 - Cliente não conseguiu se conectar.
+10/11/2019 15:38:42 - Cliente não detecta colisão.
+10/11/2019 15:38:42 - Cliente não conseguiu se conectar.
+10/11/2019 15:38:42 - Cliente não detecta colisão.
+10/11/2019 15:38:42 - Cliente não conseguiu se conectar.
+10/11/2019 15:38:42 - Cliente não detecta colisão.
+10/11/2019 15:38:42 - Cliente não conseguiu se conectar.
+10/11/2019 15:38:42 - Cliente não detecta colisão.
+10/11/2019 15:38:42 - Cliente não conseguiu se conectar.
+10/11/2019 15:38:42 - Cliente não detecta colisão.
+10/11/2019 15:38:42 - Cliente não conseguiu se conectar.
+10/11/2019 15:38:42 - Cliente não detecta colisão.
+10/11/2019 15:38:42 - Cliente não conseguiu se conectar.
+10/11/2019 15:38:42 - Cliente detecta colisão.
+10/11/2019 15:38:42 - Cliente não detecta colisão.
+10/11/2019 15:38:42 - Cliente não conseguiu se conectar.
+10/11/2019 15:38:42 - Cliente não detecta colisão.
+10/11/2019 15:38:42 - Cliente não conseguiu se conectar.
+10/11/2019 15:38:42 - Cliente não detecta colisão.
+10/11/2019 15:38:42 - Cliente não conseguiu se conectar.
+10/11/2019 15:38:42 - Cliente não detecta colisão.
+10/11/2019 15:38:42 - Cliente não conseguiu se conectar.
+10/11/2019 15:38:42 - Cliente não detecta colisão.
+10/11/2019 15:38:42 - Cliente não conseguiu se conectar.
+10/11/2019 15:38:42 - Cliente não detecta colisão.
+10/11/2019 15:38:42 - Cliente não conseguiu se conectar.
