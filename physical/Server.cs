@@ -13,7 +13,7 @@ namespace Pratica{
     const string FILE_PATH_PDU_Transport = "../file/pduTransportReceived.txt";
     const string FILE_PATH_IP_RESPONSE = "../file/ipResponse.txt";
     const int PORT_NO = 5000;
-    const string SERVER_IP = "192.168.25.95";
+    const string SERVER_IP = "172.16.254.136";
     const int BINARY_SIZE = 8;
     const int MAC_ADDRESS_SIZE = 6;
     const int PAYLOAD_SIZE = 2;

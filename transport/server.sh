@@ -4,6 +4,7 @@
 logFilePath='../file/logTransportLayer.txt';
 macAddressFilePath='../file/macAddress.txt';
 pduTransportReceived='../file/pduTransportReceived.txt';
+pduTransportResponse='../file/pduTransportResponse.txt';
 #functions
 : '
     log function
@@ -76,16 +77,17 @@ tcp(){
     echo "tcp function";
     #Converte a pdu para suas respectivas variaveis.
     pdu=$(cat $pduTransportReceived);
-    OrigemPort=${pdu:0:16};
-    DestinationPort=${pdu:16:16};
+    srcPort=${pdu:0:16};
+    dstPort=${pdu:16:16};
     seqReceived=${pdu:32:32};
     confirmation=${pdu:64:32};
-    flag=${pdu:96:10};
-    checkSum=${pdu:106:16};
-    payload=${pdu:112};
+    windows=${pdu:96:10};
+    flag=${pdu:106:6};
+    checkSum=${pdu:112:16};
+    payload=${pdu:128};
     
     #Verifica checkSum
-    sum=$(Sum $OrigemPort $DestinationPort);
+    sum=$(Sum $srcPort $dstPort);
     check=$(Sum $sum $checkSum);
 
     if [ ${check:1:16} -ne 0 ]
@@ -94,16 +96,21 @@ tcp(){
     fi
 
     seqReceivedDecimal=$(echo "obase=10;ibase=2; $seqReceived" | bc)
-    seq=$(($seqReceivedDecimal+${#pdu}))
-    confirmationDecimal=$(echo "obase=10;ibase=2; $confirmation" | bc)
-
-    if [ $confirmationDecimal -eq $seqReceivedDecimal ]
-    then
-        
-    fi
-    
-    echo $(payloadToMacAddress $payload) > $macAddressFilePath;
-    callServer;
+    seq=$(($seqReceivedDecimal+${#payload}));
+    seqBits=$(printf '%032d' $( echo "obase=2; $seq"| bc));
+    case $flag in
+        000010)
+            confirmationSeqBits=$seqReceived;
+            echo "response";
+            flag="0100010";
+            echo $srcPort$dstPort$seqBits$confirmationSeqBits$windows$flag$checksum$payload > $pduTransportResponse;
+            ;;
+        010000)
+            echo "call DHCP";    
+            echo $(payloadToMacAddress $payload) > $macAddressFilePath;
+            callServer;
+            ;;
+    esac
 }
 
 #Main

@@ -5676,3 +5676,79 @@
 10/11/2019 22:08:36 - Servidor de IP: 192.168.25.95 ouvindo a porta: 5000
 10/11/2019 22:08:36 - Cliente salva payload recebido
 10/11/2019 22:08:36 - Cliente encerra a conexão.
+11/11/2019 10:20:16 - Cliente criado.
+11/11/2019 10:21:00 - Servidor criado.
+11/11/2019 10:21:00 - Servidor iniciado.
+11/11/2019 10:22:27 - Cliente criado.
+11/11/2019 10:22:28 - Cliente não detecta colisão.
+11/11/2019 10:22:28 - Cliente não conseguiu se conectar.
+11/11/2019 10:22:28 - Cliente não detecta colisão.
+11/11/2019 10:22:28 - Cliente não conseguiu se conectar.
+11/11/2019 10:22:28 - Cliente não detecta colisão.
+11/11/2019 10:22:28 - Cliente não conseguiu se conectar.
+11/11/2019 10:22:28 - Cliente não detecta colisão.
+11/11/2019 10:22:28 - Cliente não conseguiu se conectar.
+11/11/2019 10:22:28 - Cliente não detecta colisão.
+11/11/2019 10:22:28 - Cliente não conseguiu se conectar.
+11/11/2019 10:22:28 - Cliente não detecta colisão.
+11/11/2019 10:22:28 - Cliente não conseguiu se conectar.
+11/11/2019 10:22:28 - Cliente não detecta colisão.
+11/11/2019 10:22:28 - Cliente não conseguiu se conectar.
+11/11/2019 10:22:28 - Cliente não detecta colisão.
+11/11/2019 10:22:28 - Cliente não conseguiu se conectar.
+11/11/2019 10:22:28 - Cliente não detecta colisão.
+11/11/2019 10:22:28 - Cliente não conseguiu se conectar.
+11/11/2019 10:22:28 - Cliente não detecta colisão.
+11/11/2019 10:22:28 - Cliente não conseguiu se conectar.
+11/11/2019 10:22:28 - Cliente não detecta colisão.
+11/11/2019 10:22:28 - Cliente não conseguiu se conectar.
+11/11/2019 10:22:28 - Cliente não detecta colisão.
+11/11/2019 10:22:28 - Cliente não conseguiu se conectar.
+11/11/2019 10:22:28 - Cliente não detecta colisão.
+11/11/2019 10:22:28 - Cliente não conseguiu se conectar.
+11/11/2019 10:22:28 - Cliente não detecta colisão.
+11/11/2019 10:22:28 - Cliente não conseguiu se conectar.
+11/11/2019 10:22:29 - Cliente não detecta colisão.
+11/11/2019 10:22:29 - Cliente não conseguiu se conectar.
+11/11/2019 10:22:29 - Cliente não detecta colisão.
+11/11/2019 10:22:29 - Cliente não conseguiu se conectar.
+11/11/2019 10:22:29 - Cliente detecta colisão.
+11/11/2019 10:22:29 - Cliente não detecta colisão.
+11/11/2019 10:22:29 - Cliente não conseguiu se conectar.
+11/11/2019 10:22:29 - Cliente não detecta colisão.
+11/11/2019 10:22:29 - Cliente não conseguiu se conectar.
+11/11/2019 10:22:29 - Cliente detecta colisão.
+11/11/2019 10:22:29 - Cliente não detecta colisão.
+11/11/2019 10:22:29 - Cliente não conseguiu se conectar.
+11/11/2019 10:22:29 - Cliente não detecta colisão.
+11/11/2019 10:22:29 - Cliente não conseguiu se conectar.
+11/11/2019 10:22:29 - Cliente não detecta colisão.
+11/11/2019 10:22:29 - Cliente não conseguiu se conectar.
+11/11/2019 10:22:29 - Cliente não detecta colisão.
+11/11/2019 10:22:29 - Cliente não conseguiu se conectar.
+11/11/2019 10:22:29 - Cliente não detecta colisão.
+11/11/2019 10:22:29 - Cliente não conseguiu se conectar.
+11/11/2019 10:22:29 - Cliente não detecta colisão.
+11/11/2019 10:22:29 - Cliente não conseguiu se conectar.
+11/11/2019 10:22:29 - Cliente não detecta colisão.
+11/11/2019 10:22:29 - Cliente não conseguiu se conectar.
+11/11/2019 10:22:34 - Servidor criado.
+11/11/2019 10:22:34 - Servidor iniciado.
+11/11/2019 10:22:34 - Servidor de IP: 172.16.254.136 ouvindo a porta: 5000
+11/11/2019 10:22:36 - Cliente criado.
+11/11/2019 10:22:37 - Cliente não detecta colisão.
+11/11/2019 10:22:37 - Cliente se conecta no servidor.
+11/11/2019 10:22:37 - Servidor aceita conexão com cliente: 172.16.254.136
+11/11/2019 10:22:37 - Cliente converte MAC de origem.
+11/11/2019 10:22:37 - Cliente converte MAC de destino.
+11/11/2019 10:22:37 - Cliente converte tamanho do payload.
+11/11/2019 10:22:37 - Servidor converte MAC de origem. (64:32:A8:2A:FA:6C)
+11/11/2019 10:22:37 - Servidor converte MAC de destino. (41:7F:33:0E:65:B2)
+11/11/2019 10:22:37 - Servidor converte tamanho do payload. (129)
+11/11/2019 10:22:37 - Servidor converte payload. (00010011100010010001001110001000000000000000000000000000000000010000000000000000000000000000000000000000000000101101100011101111
+)
+11/11/2019 10:22:37 - Sevidor Requisita a camada de transporte.
+11/11/2019 10:22:37 - Cliente salva payload recebido
+11/11/2019 10:22:37 - Cliente encerra a conexão.
+11/11/2019 10:22:37 - Servidor encerra conexao com o cliente.
+11/11/2019 10:22:37 - Servidor de IP: 172.16.254.136 ouvindo a porta: 5000

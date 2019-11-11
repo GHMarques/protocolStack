@@ -7,7 +7,8 @@ pduFilePath='../file/pduTransportLayer.txt';
 fileToSend='../file/fileToSend.txt';
 responseFile='../file/responseFile.txt';
 seq=1;
-flag='0000001010'
+windows='0000000000'
+flag='000010'
 
 #functions
 : '
@@ -89,11 +90,12 @@ tcp(){
     echo $checksum
     responseFile=$(cat $responseFile | tr a-z A-Z);
     payload="";
+
     # Verifica se existe um arquivo de resposta.
     if [ ${#responseFile} -ne 0 ]
     then
-        echo "entrou";
-        seqResponse=$(BitToDecimal ${responseFile:32:32}); 
+        seqResponse=$(BitToDecimal ${responseFile:32:32});
+        confirmationSeq=$(($seq+${#payload}));
         seq=$(($seqResponse+${#responseFile}));
         file=$(cat $fileToSend | tr a-z A-Z);
         IFS=':' read -ra my_array <<< "$file"
@@ -104,12 +106,9 @@ tcp(){
         done
     fi
     
-    payloadSize=${#payload};
-    sizeAtual=$((64+$payloadSize));
-    confirmationSeq=$(($seq+$sizeAtual));
     confirmationSeqBits=$(printf '%032d' $( echo "obase=2; $confirmationSeq"| bc));
     seqBits=$(printf '%032d' $( echo "obase=2; $seq"| bc));
-    echo $srcPort$dstPort$seqBits$confirmationSeqBits$flag$checksum$payload > $pduFilePath;
+    echo $srcPort$dstPort$seqBits$confirmationSeqBits$windows$flag$checksum$payload > $pduFilePath;
 
     send;
 }

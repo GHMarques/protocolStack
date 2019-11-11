@@ -9,8 +9,8 @@ using System.Reflection;
 namespace Pratica{
   class Client{
     const int COLISION_PERCENTAGE = 10;
-    const string SERVER_IP = "192.168.25.95";
-    const string CLIENT_IP = "192.168.25.95";
+    const string SERVER_IP = "172.16.254.136";
+    const string CLIENT_IP = "172.16.254.136";
     const string FILE_PATH = "../file/macAddress.txt";
     const string FILE_PATH_RESPONSE = "../file/DhcpResponseIp.txt";
     const string FILE_PATH_PDU_BITS = "pduBits.txt"; 
