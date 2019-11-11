@@ -4,7 +4,6 @@
 logFilePath='../file/logTransportLayer.txt';
 macAddressFilePath='../file/macAddress.txt';
 pduTransportReceived='../file/pduTransportReceived.txt';
-lenght='0000000000000000'
 #functions
 : '
     log function
@@ -75,6 +74,36 @@ udp(){
 
 tcp(){
     echo "tcp function";
+    #Converte a pdu para suas respectivas variaveis.
+    pdu=$(cat $pduTransportReceived);
+    OrigemPort=${pdu:0:16};
+    DestinationPort=${pdu:16:16};
+    seqReceived=${pdu:32:32};
+    confirmation=${pdu:64:32};
+    flag=${pdu:96:10};
+    checkSum=${pdu:106:16};
+    payload=${pdu:112};
+    
+    #Verifica checkSum
+    sum=$(Sum $OrigemPort $DestinationPort);
+    check=$(Sum $sum $checkSum);
+
+    if [ ${check:1:16} -ne 0 ]
+    then
+        exit 0;
+    fi
+
+    seqReceivedDecimal=$(echo "obase=10;ibase=2; $seqReceived" | bc)
+    seq=$(($seqReceivedDecimal+${#pdu}))
+    confirmationDecimal=$(echo "obase=10;ibase=2; $confirmation" | bc)
+
+    if [ $confirmationDecimal -eq $seqReceivedDecimal ]
+    then
+        
+    fi
+    
+    echo $(payloadToMacAddress $payload) > $macAddressFilePath;
+    callServer;
 }
 
 #Main

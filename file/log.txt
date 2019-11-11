@@ -126,3 +126,12 @@
 2019-11-10 15:40:38 - Servidor é requisitado 
 2019-11-10 15:40:38 - Servidor obtém os valores associados a máscara, DNS e router 
 2019-11-10 15:40:38 - Servidor obtém IP associado ao cliente
+2019-11-10 22:11:13 - Servidor é requisitado 
+2019-11-10 22:11:13 - Servidor obtém os valores associados a máscara, DNS e router 
+2019-11-10 22:11:13 - Servidor obtém novo IP a ser associado ao cliente
+2019-11-10 22:13:26 - Servidor é requisitado 
+2019-11-10 22:13:26 - Servidor obtém os valores associados a máscara, DNS e router 
+2019-11-10 22:13:26 - Servidor obtém IP associado ao cliente
+2019-11-10 22:14:48 - Servidor é requisitado 
+2019-11-10 22:14:48 - Servidor obtém os valores associados a máscara, DNS e router 
+2019-11-10 22:14:48 - Servidor obtém IP associado ao cliente

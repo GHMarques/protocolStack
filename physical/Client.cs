@@ -54,14 +54,10 @@ namespace Pratica{
 
             byte[] macDestinoByte = macDestino.Split(':').Select(x => Convert.ToByte(x, 16)).ToArray();
             Log.WriteLog(Log.CLIENT_CONVERT_MAC_DESTINY);
-            
-            byte[] payloadSizeByte = BitConverter.GetBytes(Convert.ToInt16(payloadText.Length));
-            Log.WriteLog(Log.CLIENT_CONVERT_PAYLOAD_SIZE);
+
             //Converte Payload para byte.
-            
+            Log.WriteLog(Log.CLIENT_CONVERT_PAYLOAD_SIZE);
             byte[] payloadByte =  Encoding.ASCII.GetBytes(payloadText);
-            //byte[] payloadByte = ASCIIEncoding.ASCII.GetBytes(content);
-            //Log.WriteLog(Log.CLIENT_CONVERT_PAYLOAD);
 
             //Concatena o Head.
             byte[] bytesToSend = Concat(macOrigemByte,macDestinoByte);
@@ -89,7 +85,6 @@ namespace Pratica{
             byte[] buffer = new byte[tcpClient.ReceiveBufferSize];
             int bytesRead = nwStream.Read(buffer, 0, tcpClient.ReceiveBufferSize);
             string dataReceived = Encoding.ASCII.GetString(buffer, 0, bytesRead);
-            byte[] bytesReceive = buffer.Take(bytesRead).ToArray();
             string payload = binaryToString(dataReceived);
             if(!File.Exists(FILE_PATH_RESPONSE))
               File.Create(FILE_PATH_RESPONSE).Close();
@@ -155,7 +150,6 @@ namespace Pratica{
     }
     //Get client mac address
     public string GetClientMacAddress(){
-      string macAddress = string.Empty;
       System.Diagnostics.Process pProcess = new System.Diagnostics.Process();
       pProcess.StartInfo.FileName = "/bin/bash";
       pProcess.StartInfo.Arguments = "-c \" ifconfig | grep ether \"";

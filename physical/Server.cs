@@ -141,7 +141,7 @@ namespace Pratica{
       Log.WriteLog("Sevidor Requisita a camada de transporte.");
       System.Diagnostics.Process pProcess = new System.Diagnostics.Process();
       pProcess.StartInfo.FileName = "sh";
-      pProcess.StartInfo.Arguments = "../transport/server.sh udp";
+      pProcess.StartInfo.Arguments = "../transport/server.sh tcp";
       pProcess.StartInfo.UseShellExecute = false;
       pProcess.StartInfo.RedirectStandardOutput = true;
       pProcess.StartInfo.CreateNoWindow = true;

@@ -5,6 +5,9 @@ convertDecimalTo16Bits=({0..1}{0..1}{0..1}{0..1}{0..1}{0..1}{0..1}{0..1}{0..1}{0
 logFilePath='../file/logTransportLayer.txt';
 pduFilePath='../file/pduTransportLayer.txt';
 fileToSend='../file/fileToSend.txt';
+responseFile='../file/responseFile.txt';
+seq=1;
+flag='0000001010'
 
 #functions
 : '
@@ -20,6 +23,11 @@ TwosComplement(){
     sum=$(Sum 1 $inverted)
 
     echo $sum
+}
+
+BitToDecimal(){
+    convertion=$(echo "obase=10; ibase=2; $1" | bc);
+    echo $convertion
 }
 
 HexaToBit(){
@@ -47,7 +55,7 @@ send(){
 
 udp(){
     echo "udp function";
-    srcPort=${convertDecimalTo16Bits[5001]};
+    srcPort=${convertDecimalTo16Bits[5000]};
     dstPort=${convertDecimalTo16Bits[5000]};
     log "mensagem";
 
@@ -68,7 +76,7 @@ udp(){
 
     #send;
     
-    }
+}
 
 tcp(){
     echo "tcp function";
@@ -76,18 +84,32 @@ tcp(){
     dstPort=${convertDecimalTo16Bits[5000]};
     log "mensagem";
 
-    sum=$(Sum $lenght $(Sum $srcPort $dstPort))
+    sum=$(Sum $srcPort $dstPort);
     checksum=$(TwosComplement $sum);
+    echo $checksum
+    responseFile=$(cat $responseFile | tr a-z A-Z);
     payload="";
-    file=$(cat $fileToSend | tr a-z A-Z);
-    IFS=':' read -ra my_array <<< "$file"
-    for i in "${my_array[@]}"
-    do
-        fileBit=$(HexaToBit $i);
-        payload=$payload$fileBit;
-    done
-    lenght=${convertDecimalTo16Bits[${#payload}]};
-    echo $srcPort$dstPort$lenght$checksum$payload > $pduFilePath;
+    # Verifica se existe um arquivo de resposta.
+    if [ ${#responseFile} -ne 0 ]
+    then
+        echo "entrou";
+        seqResponse=$(BitToDecimal ${responseFile:32:32}); 
+        seq=$(($seqResponse+${#responseFile}));
+        file=$(cat $fileToSend | tr a-z A-Z);
+        IFS=':' read -ra my_array <<< "$file"
+        for i in "${my_array[@]}"
+        do
+            fileBit=$(HexaToBit $i);
+            payload=$payload$fileBit;
+        done
+    fi
+    
+    payloadSize=${#payload};
+    sizeAtual=$((64+$payloadSize));
+    confirmationSeq=$(($seq+$sizeAtual));
+    confirmationSeqBits=$(printf '%032d' $( echo "obase=2; $confirmationSeq"| bc));
+    seqBits=$(printf '%032d' $( echo "obase=2; $seq"| bc));
+    echo $srcPort$dstPort$seqBits$confirmationSeqBits$flag$checksum$payload > $pduFilePath;
 
     send;
 }
