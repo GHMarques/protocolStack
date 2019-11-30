@@ -9,11 +9,11 @@ using System.Threading;
 
 namespace Pratica{
   class Server{
-    const string FILE_PATH_PDU_BITS = "pduBitsReceive.txt";
     const string FILE_PATH_PDU_Transport = "../file/pduTransportReceived.txt";
     const string FILE_PATH_IP_RESPONSE = "../file/ipResponse.txt";
+    const string FILE_PATH_TRANSPORT_RESPONSE = "../file/pduTransportResponse.txt";
     const int PORT_NO = 5000;
-    const string SERVER_IP = "192.168.25.95";
+    const string SERVER_IP = "192.168.0.104";
     const int BINARY_SIZE = 8;
     const int MAC_ADDRESS_SIZE = 6;
     const int PAYLOAD_SIZE = 2;
@@ -59,37 +59,33 @@ namespace Pratica{
         //Converte 14-sizeReceive para string
         //string payload = ASCIIEncoding.ASCII.GetString((bytesReceive.Skip(14).Take(bytesRead-14).ToArray()));
         int size = BINARY_SIZE*MAC_ADDRESS_SIZE*2+BINARY_SIZE*PAYLOAD_SIZE;
-        string payloadBits = dataReceived.Substring(size, dataReceived.Length-size);
-        string payload = binaryToString(payloadBits);
+        string payload = dataReceived.Substring(size, dataReceived.Length-size);
         Log.WriteLog(Log.SERVER_CONVERT_PAYLOAD + " (" + payload + ")");
         
         //Salva o arquivo
         var pduBits = string.Concat(bytesReceive.Select(b => Convert.ToString(b, 2).PadLeft(8, '0')));
-        if(!File.Exists(FILE_PATH_PDU_BITS))
-          File.Create(FILE_PATH_PDU_BITS).Close();
-        System.IO.File.WriteAllText(FILE_PATH_PDU_BITS, pduBits);
+        Log.WriteLog(Log.PHYSICAL_SERVER_PDU + pduBits);
         if(!File.Exists(FILE_PATH_PDU_Transport))
           File.Create(FILE_PATH_PDU_Transport).Close();
         System.IO.File.WriteAllText(FILE_PATH_PDU_Transport, payload);
         
         //Exibe PDU
         Console.WriteLine("\tMAC Origem: " + macOrigem);
-        Console.WriteLine("\tBits: {0}", payloadBits);
+        Console.WriteLine("\tBits: {0}", payload);
         Console.WriteLine("\tMAC Destino: " + macDestino);
         Console.WriteLine("\tPayload size: {0}", payloadSize);
         Console.WriteLine("\tPayload: {0}", payload);
 
         ExecTransportLayer();
-        Thread.Sleep(100);
-        string content = System.IO.File.ReadAllText(FILE_PATH_IP_RESPONSE);
-        byte[] payloadByte = ASCIIEncoding.ASCII.GetBytes(content);
-        var bits = string.Concat(payloadByte.Select(b => Convert.ToString(b, 2).PadLeft(8, '0')));
-        byte[] byData = System.Text.Encoding.ASCII.GetBytes(bits);
+        //Permanece no loop ate que a camada superior envie uma resposta
+        while(!File.Exists(FILE_PATH_TRANSPORT_RESPONSE)){}
+
+        string content = System.IO.File.ReadAllText(FILE_PATH_TRANSPORT_RESPONSE);
+        byte[] byData = System.Text.Encoding.ASCII.GetBytes(content);
+        File.Delete(FILE_PATH_TRANSPORT_RESPONSE);
         nwStream.Write(byData, 0, byData.Length);
 
-        Console.WriteLine("\tDHCP Response: {0}", content);
-
-
+        Console.WriteLine("\nTransport PDU: {0}", content);
         //Encerra conexao
         client.Close();
         listener.Stop();
@@ -140,14 +136,14 @@ namespace Pratica{
     public void ExecTransportLayer(){
       Log.WriteLog("Sevidor Requisita a camada de transporte.");
       System.Diagnostics.Process pProcess = new System.Diagnostics.Process();
-      pProcess.StartInfo.FileName = "sh";
-      pProcess.StartInfo.Arguments = "../transport/server.sh udp";
+      pProcess.StartInfo.FileName = "bash";
+      pProcess.StartInfo.Arguments = "../transport/server.sh tcp";
       pProcess.StartInfo.UseShellExecute = false;
       pProcess.StartInfo.RedirectStandardOutput = true;
       pProcess.StartInfo.CreateNoWindow = true;
       pProcess.Start();
       string strOutput = pProcess.StandardOutput.ReadToEnd().Trim(' ');
-      //Console.WriteLine(strOutput);
+      Console.WriteLine(strOutput);
     }
   }
 

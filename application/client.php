@@ -4,7 +4,7 @@
     $log = fopen("../file/log.txt", "a");
     fwrite($log, date("Y-m-d H:i:s")." - Cliente solicita requisição ao DHCP \n");
 
-    $output = shell_exec('cd ..; cd transport/; client.sh udp ');
+    $output = shell_exec('cd ..; cd transport/; client.sh tcp ');
     
     echo $output;
 

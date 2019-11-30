@@ -4,7 +4,7 @@ using System.Reflection;
 
 namespace Pratica{
   class Log{
-    private static String FILE_PATH = "log.txt";
+    private static String FILE_PATH = "../file/logPhysicalLayer.txt";
     //Mensagens
     //Server
     public static String SERVER_CREATE = "Servidor criado.";
@@ -27,6 +27,8 @@ namespace Pratica{
     public static String CLIENT_SEND_BITS = "Cliente envia a PDU em bits.";
     public static String CLIENT_CLOSE = "Cliente encerra a conexão.";
     public static String CLIENT_CONNECT_PROBLEM = "Cliente não conseguiu se conectar.";
+    public static String PHYSICAL_CLIENT_PDU = "PDU da camada física do cliente: ";
+    public static String PHYSICAL_SERVER_PDU = "PDU da camada física do servidor: ";
     public static void WriteLog(String message){
       try{
         if(!File.Exists(FILE_PATH))

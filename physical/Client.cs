@@ -9,12 +9,12 @@ using System.Reflection;
 namespace Pratica{
   class Client{
     const int COLISION_PERCENTAGE = 10;
-    const string SERVER_IP = "192.168.25.95";
-    const string CLIENT_IP = "192.168.25.95";
+    const string SERVER_IP = "192.168.0.104";
+    const string TEST_IP = "192.168.0.100";
+    const string CLIENT_IP = "192.168.0.100";
     const string FILE_PATH = "../file/macAddress.txt";
-    const string FILE_PATH_RESPONSE = "../file/DhcpResponseIp.txt";
-    const string FILE_PATH_PDU_BITS = "pduBits.txt"; 
-    const string FILE_PATH_Transport_PDU_BITS = "../file/pduTransportLayer.txt";   
+    const string FILE_PATH_RESPONSE = "../file/pduTransportLayerServerResponse.txt";
+    const string FILE_PATH_Transport_PDU_BITS = "../file/pduTransportLayerClientRequest.txt";   
     const int PORT_NO = 5000;
     string macOrigem = "";
     string macDestino = "";
@@ -28,8 +28,8 @@ namespace Pratica{
         try {
           //verifica colisao
           var colision = random.Next(0, 100);
-
           if(COLISION_PERCENTAGE <= colision){
+            //Nao houve colisao
             Log.WriteLog(Log.CLIENT_WITHOUT_COLISION);
             //Tenta estabelecer conexão.
             tcpClient.Connect(SERVER_IP, PORT_NO);
@@ -38,43 +38,31 @@ namespace Pratica{
             Console.WriteLine("\n\nConexão estabelecida:");
             //Pega Mac do destino e origem.
             macOrigem = GetClientMacAddress();
-            //macDestino = GetServerMacAddress(SERVER_IP);
+            // macDestino = GetServerMacAddress(SERVER_IP);
+            macDestino = GetServerMacAddress(TEST_IP);
             //macOrigem = "41:7f:83:e8:5e:ff";
-            macDestino = "41:7f:33:0e:65:b2";
-
-            //string content = System.IO.File.ReadAllText(FILE_PATH);
+            //macDestino = "41:7f:33:0e:65:b2";
             if(!File.Exists(FILE_PATH_Transport_PDU_BITS))
-              File.Create(FILE_PATH_Transport_PDU_BITS).Close();
+              throw new Exception("PDU da camada de transporte inválida");
             
-            var payloadText = System.IO.File.ReadAllText(FILE_PATH_Transport_PDU_BITS);
-
+            var payloadText = System.IO.File.ReadAllText(FILE_PATH_Transport_PDU_BITS).Trim();
             //Converte Head para byte.
             byte[] macOrigemByte = macOrigem.Split(':').Select(x => Convert.ToByte(x, 16)).ToArray();
             Log.WriteLog(Log.CLIENT_CONVERT_MAC_SOURCE);
-
             byte[] macDestinoByte = macDestino.Split(':').Select(x => Convert.ToByte(x, 16)).ToArray();
             Log.WriteLog(Log.CLIENT_CONVERT_MAC_DESTINY);
-            
             byte[] payloadSizeByte = BitConverter.GetBytes(Convert.ToInt16(payloadText.Length));
             Log.WriteLog(Log.CLIENT_CONVERT_PAYLOAD_SIZE);
             //Converte Payload para byte.
-            
-            byte[] payloadByte =  Encoding.ASCII.GetBytes(payloadText);
-            //byte[] payloadByte = ASCIIEncoding.ASCII.GetBytes(content);
-            //Log.WriteLog(Log.CLIENT_CONVERT_PAYLOAD);
-
+            //byte[] payloadByte =  Encoding.ASCII.GetBytes(payloadText);
             //Concatena o Head.
             byte[] bytesToSend = Concat(macOrigemByte,macDestinoByte);
-
             //Concate o Head com o Payload
-            var pduBits = string.Concat(bytesToSend.Select(b => Convert.ToString(b, 2).PadLeft(8, '0')));
-            pduBits += Convert.ToString(payloadText.Length, 2).PadLeft(16, '0') + string.Concat(payloadByte.Select(b => Convert.ToString(b, 2).PadLeft(8, '0')));
-            
-
-            if(!File.Exists(FILE_PATH_PDU_BITS))
-              File.Create(FILE_PATH_PDU_BITS).Close();
-            System.IO.File.WriteAllText(FILE_PATH_PDU_BITS, pduBits);
-
+            String pduBits = string.Concat(bytesToSend.Select(b => Convert.ToString(b, 2).PadLeft(8, '0')));
+            pduBits += Convert.ToString(payloadText.Length, 2).PadLeft(16, '0');
+            pduBits += payloadText;
+            //Armazena a PDU da camada fisica no log
+            Log.WriteLog(Log.PHYSICAL_CLIENT_PDU + pduBits);
             //Exibe PDU
             Console.WriteLine("\tMAC Origem: {0}", macOrigem);
             Console.WriteLine("\tMAC Destino: {0}", macDestino);
@@ -86,16 +74,22 @@ namespace Pratica{
             byte[] byData = System.Text.Encoding.ASCII.GetBytes(pduBits);
             nwStream.Write(byData, 0, byData.Length);
 
+            //Resposta do servidor
             byte[] buffer = new byte[tcpClient.ReceiveBufferSize];
             int bytesRead = nwStream.Read(buffer, 0, tcpClient.ReceiveBufferSize);
             string dataReceived = Encoding.ASCII.GetString(buffer, 0, bytesRead);
             byte[] bytesReceive = buffer.Take(bytesRead).ToArray();
-            string payload = binaryToString(dataReceived);
             if(!File.Exists(FILE_PATH_RESPONSE))
               File.Create(FILE_PATH_RESPONSE).Close();
-
             Log.WriteLog("Cliente salva payload recebido");
-            System.IO.File.WriteAllText(FILE_PATH_RESPONSE, payload);
+            System.IO.File.WriteAllText(FILE_PATH_RESPONSE, dataReceived);
+
+            // string payload = binaryToString(dataReceived);
+            // if(!File.Exists(FILE_PATH_RESPONSE))
+            //   File.Create(FILE_PATH_RESPONSE).Close();
+
+            // Log.WriteLog("Cliente salva payload recebido");
+            // System.IO.File.WriteAllText(FILE_PATH_RESPONSE, payload);
 
             //Encerra a conexao
             tcpClient.Close();
