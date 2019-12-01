@@ -5,6 +5,7 @@ logFilePath='../file/logTransportLayer.txt';
 macAddressFilePath='../file/macAddress.txt';
 pduTransportReceived='../file/pduTransportReceived.txt';
 pduTransportResponse='../file/pduTransportResponse.txt';
+pduApplicationResponse='../file/ipResponse.txt';
 lenght='0000000000000000';
 windowLimit=1000000000; #Decisao de projeto -> janela tem 512 bytes
 oneComplement=0000000000000001;
@@ -45,13 +46,27 @@ sum32(){
 minus(){
     sum=$(echo "ibase=2;obase=2; $1-$2" | bc);
     size=${#sum};
-    while [ $size -lt 16 ]
+    while [ $size -lt 10 ]
     do
         sum=0$sum
         size=${#sum};
     done
     
     echo $sum;
+}
+
+payloadToMacAddress(){
+    size=${#1};
+    i=0;
+    convertion="";
+    while [ $i -lt $size ]
+    do
+        bits=$(echo ${1:i:16})
+        i=$(($i+16))
+        convertion=$convertion$(echo "obase=16; ibase=2; $bits" | bc):;
+    done
+
+    echo ${convertion::-1}
 }
 
 udp(){
@@ -121,9 +136,13 @@ tcp(){
             echo $newPdu >| $pduTransportResponse;
             log "SYN / ACK enviado pela camada de transporte do servidor.";
         fi
-        if [ $ack == 1 ];
+        if [ $syn == 0 -a $ack == 1 ];
         then
             log "ACK recebido pela camada de transporte do servidor.";
+            payload=${pdu:128:(-1)};
+            converte=$(echo $payload | perl -lpe '$_=pack"B*",$_');
+            echo $converte >| $macAddressFilePath;
+            log $converte;
             #portas de origem e destino (16 bits)
             srcPortAux=$srcPort;
             srcPort=$dstPort;
@@ -131,7 +150,6 @@ tcp(){
             #numero de sequencia e confirmacao (32 bits)
             sequence=00000000000000000000000000000001;
             acknowledgement=$(sum32 $sequence $window);
-            acknowledgement=00000000000000000000000000000001;
             #janela (10 bits) - tamanho maximo que pode ser enviado
             window=$(minus $windowLimit $window);
             #flags (1 bit)
@@ -144,14 +162,24 @@ tcp(){
             #checksum (16 bits) = src + dst + lenght (resultado em bytes)
             checksum=$(sum $srcPort $dstPort);
             checksum=$(sum $checksum $oneComplement);
+            log "Camada de transporte do servidor requisita camada de aplicação."
             /usr/bin/php ../application/server.php
+
+            #permanece no loop enquanto a camada de aplicacao nao responde
+            while [ ! -f $pduApplicationResponse ]
+            do
+                sleep 2; # or less like 0.2
+            done
+            pduApplication=$(cat $pduApplicationResponse);
+            payload=$(echo $pduApplication | perl -lpe '$_=unpack"B*"');
             #monta PDU
-            newPdu=$srcPort$dstPort$sequence$acknowledgement$window$urg$ack$psh$rst$syn$fin$checksum;
+            newPdu=$srcPort$dstPort$sequence$acknowledgement$window$urg$ack$psh$rst$syn$fin$checksum$payload;
             #escreve PDU no arquivo de log
             log "PDU camada de transporte do servidor $newPdu";
             #escreve PDU no arquivo
             echo $newPdu >| $pduTransportResponse;
             log "ACK enviado pela camada de transporte do servidor.";
+            rm $pduApplicationResponse;
         fi
         rm $pduTransportReceived;
     else

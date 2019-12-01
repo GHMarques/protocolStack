@@ -2,7 +2,7 @@
 //function logMe($msg){
     // Abre ou cria o arquivo log.txt
     // "a" representa que o arquivo é aberto para ser escrito
-    $log = fopen("../file/log.txt", "a");
+    $log = fopen("../file/logApplicationLayer.txt", "a");
     
     fwrite($log, date("Y-m-d H:i:s")." - Servidor é requisitado \n");
     $configServerFile = "../file/server_config.txt";

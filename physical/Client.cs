@@ -10,8 +10,8 @@ namespace Pratica{
   class Client{
     const int COLISION_PERCENTAGE = 10;
     const string SERVER_IP = "192.168.0.104";
-    const string TEST_IP = "192.168.0.100";
-    const string CLIENT_IP = "192.168.0.100";
+    const string TEST_IP = "192.168.0.101";
+    const string CLIENT_IP = "192.168.0.101";
     const string FILE_PATH = "../file/macAddress.txt";
     const string FILE_PATH_RESPONSE = "../file/pduTransportLayerServerResponse.txt";
     const string FILE_PATH_Transport_PDU_BITS = "../file/pduTransportLayerClientRequest.txt";   

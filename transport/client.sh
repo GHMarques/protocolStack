@@ -10,6 +10,7 @@ logFilePath='../file/logTransportLayer.txt';
 pduFilePath='../file/pduTransportLayerClientRequest.txt';
 pduServerResponseFilePath='../file/pduTransportLayerServerResponse.txt';
 fileToSend='../file/fileToSend.txt';
+responseDhcp='../file/DhcpResponseIp.txt';
 
 #functions
 : '
@@ -36,6 +37,11 @@ send(){
     cd ..; 
     cd physical/; 
     mono physical.exe 2;
+}
+
+hexaToBit(){
+    convertion=$(echo "obase=10; ibase=16; $1" | bc);
+    echo ${convertDecimalTo16Bits[$convertion]}
 }
 
 udp(){
@@ -109,6 +115,7 @@ tcp(){
 
     if [ $syn == 1 -a $ack == 1 ];
     then
+        echo $(cat /sys/class/net/wlp1s0/address) >| $fileToSend;
         log "SYN / ACK recebido pela camada de transporte do cliente";
         #portas de origem e destino (16 bits)
         srcPort=${convertDecimalTo16Bits[$sourcePort]};
@@ -119,12 +126,9 @@ tcp(){
         #janela (10 bits) - tamanho maximo que pode ser enviado
         window=0000000000;
         file=$(cat $fileToSend | tr a-z A-Z);
-        IFS=':' read -ra my_array <<< "$file"
-        for i in "${my_array[@]}"
-        do
-            fileBit=$(HexaToBit $i);
-            payload=$payload$fileBit;
-        done
+        payload=$(echo $file | perl -lpe '$_=unpack"B*"');
+        log "Mac no arquivo: $file";
+        log "Conversao: $payload";
         size=$((8+$(echo $payload | wc -c)))
         length=${convertDecimalTo10Bits[$size]};
         window=$length;
@@ -153,6 +157,7 @@ tcp(){
         do
             sleep 2; # or less like 0.2
         done
+        log "Camada de transporte recebe resposta final.";
         pdu=$(cat $pduServerResponseFilePath);
         #portas de origem e destino (16 bits)
         srcPort=${pdu:0:16};
@@ -171,7 +176,10 @@ tcp(){
         fin=${pdu:111:1};
         #checksum (16 bits) = src + dst + lenght (resultado em bytes)
         checksum=${pdu:112:128};
-        payload=${pdu:128:};
+        payload=${pdu:128:(-1)};
+        log "Resposta DHCP: $payload";
+        serverAnswer=$(echo $payload | perl -lpe '$_=pack"B*",$_');
+        echo $serverAnswer >| $responseDhcp;
         #verifica se o checksum esta correto
         verifyChecksum=$(sum $srcPort $dstPort);
         verifyChecksum=$(sum $verifyChecksum $oneoneComplement);
@@ -189,11 +197,9 @@ tcp(){
 #first parameter defines connection type 
 case $1 in
     udp)
-        echo "udp";
         udp;
         ;;
     tcp)
-        echo "tcp";
         tcp;
         ;;
     *)
