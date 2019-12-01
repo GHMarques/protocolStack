@@ -9,11 +9,11 @@ using System.Threading;
 
 namespace Pratica{
   class Server{
-    const string FILE_PATH_PDU_Transport = "../file/pduTransportReceived.txt";
+    const string FILE_PATH_PDU_Network = "../file/pduNetworkReceived.txt";
     const string FILE_PATH_IP_RESPONSE = "../file/ipResponse.txt";
-    const string FILE_PATH_TRANSPORT_RESPONSE = "../file/pduTransportResponse.txt";
+    const string FILE_PATH_NETWORK_RESPONSE = "../file/pduNetworkResponse.txt";
     const int PORT_NO = 5000;
-    const string SERVER_IP = "192.168.0.104";
+    const string SERVER_IP = "192.168.25.95";
     const int BINARY_SIZE = 8;
     const int MAC_ADDRESS_SIZE = 6;
     const int PAYLOAD_SIZE = 2;
@@ -65,9 +65,9 @@ namespace Pratica{
         //Salva o arquivo
         var pduBits = string.Concat(bytesReceive.Select(b => Convert.ToString(b, 2).PadLeft(8, '0')));
         Log.WriteLog(Log.PHYSICAL_SERVER_PDU + pduBits);
-        if(!File.Exists(FILE_PATH_PDU_Transport))
-          File.Create(FILE_PATH_PDU_Transport).Close();
-        System.IO.File.WriteAllText(FILE_PATH_PDU_Transport, payload);
+        if(!File.Exists(FILE_PATH_PDU_Network))
+          File.Create(FILE_PATH_PDU_Network).Close();
+        System.IO.File.WriteAllText(FILE_PATH_PDU_Network, payload);
         
         //Exibe PDU
         Console.WriteLine("\tMAC Origem: " + macOrigem);
@@ -76,13 +76,14 @@ namespace Pratica{
         Console.WriteLine("\tPayload size: {0}", payloadSize);
         Console.WriteLine("\tPayload: {0}", payload);
 
-        ExecTransportLayer();
+        //Faz a chamada da camada de rede.
+        ExecNetworkLayer();
         //Permanece no loop ate que a camada superior envie uma resposta
-        while(!File.Exists(FILE_PATH_TRANSPORT_RESPONSE)){}
+        while(!File.Exists(FILE_PATH_NETWORK_RESPONSE)){}
 
-        string content = System.IO.File.ReadAllText(FILE_PATH_TRANSPORT_RESPONSE);
+        string content = System.IO.File.ReadAllText(FILE_PATH_NETWORK_RESPONSE);
         byte[] byData = System.Text.Encoding.ASCII.GetBytes(content);
-        File.Delete(FILE_PATH_TRANSPORT_RESPONSE);
+        File.Delete(FILE_PATH_NETWORK_RESPONSE);
         nwStream.Write(byData, 0, byData.Length);
 
         Console.WriteLine("\nTransport PDU: {0}", content);
@@ -138,6 +139,19 @@ namespace Pratica{
       System.Diagnostics.Process pProcess = new System.Diagnostics.Process();
       pProcess.StartInfo.FileName = "bash";
       pProcess.StartInfo.Arguments = "../transport/server.sh tcp";
+      pProcess.StartInfo.UseShellExecute = false;
+      pProcess.StartInfo.RedirectStandardOutput = true;
+      pProcess.StartInfo.CreateNoWindow = true;
+      pProcess.Start();
+      string strOutput = pProcess.StandardOutput.ReadToEnd().Trim(' ');
+      Console.WriteLine(strOutput);
+    }
+
+    public void ExecNetworkLayer(){
+      Log.WriteLog("Sevidor Requisita a camada de rede.");
+      System.Diagnostics.Process pProcess = new System.Diagnostics.Process();
+      pProcess.StartInfo.FileName = "ruby";
+      pProcess.StartInfo.Arguments = "../network/server.rb";
       pProcess.StartInfo.UseShellExecute = false;
       pProcess.StartInfo.RedirectStandardOutput = true;
       pProcess.StartInfo.CreateNoWindow = true;

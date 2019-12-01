@@ -64,3 +64,14 @@ C:/Users/mathe/Desktop/CamadaFisica/obj/Debug/netcoreapp2.2/Pratica.pdb
 /home/matheus/Documentos/protocolStack/physical/obj/Debug/netcoreapp2.2/Pratica.AssemblyInfo.cs
 /home/matheus/Documentos/protocolStack/physical/obj/Debug/netcoreapp2.2/Pratica.dll
 /home/matheus/Documentos/protocolStack/physical/obj/Debug/netcoreapp2.2/Pratica.pdb
+/home/matheus/Área de Trabalho/protocolStack/physical/bin/Debug/netcoreapp2.2/Pratica.deps.json
+/home/matheus/Área de Trabalho/protocolStack/physical/bin/Debug/netcoreapp2.2/Pratica.runtimeconfig.json
+/home/matheus/Área de Trabalho/protocolStack/physical/bin/Debug/netcoreapp2.2/Pratica.runtimeconfig.dev.json
+/home/matheus/Área de Trabalho/protocolStack/physical/bin/Debug/netcoreapp2.2/Pratica.dll
+/home/matheus/Área de Trabalho/protocolStack/physical/bin/Debug/netcoreapp2.2/Pratica.pdb
+/home/matheus/Área de Trabalho/protocolStack/physical/obj/Debug/netcoreapp2.2/Pratica.csprojAssemblyReference.cache
+/home/matheus/Área de Trabalho/protocolStack/physical/obj/Debug/netcoreapp2.2/Pratica.csproj.CoreCompileInputs.cache
+/home/matheus/Área de Trabalho/protocolStack/physical/obj/Debug/netcoreapp2.2/Pratica.AssemblyInfoInputs.cache
+/home/matheus/Área de Trabalho/protocolStack/physical/obj/Debug/netcoreapp2.2/Pratica.AssemblyInfo.cs
+/home/matheus/Área de Trabalho/protocolStack/physical/obj/Debug/netcoreapp2.2/Pratica.dll
+/home/matheus/Área de Trabalho/protocolStack/physical/obj/Debug/netcoreapp2.2/Pratica.pdb

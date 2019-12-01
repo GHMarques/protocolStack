@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/matheus/Documentos/protocolStack/physical/Pratica.csproj": {}
+    "/home/matheus/Área de Trabalho/protocolStack/physical/Pratica.csproj": {}
   },
   "projects": {
-    "/home/matheus/Documentos/protocolStack/physical/Pratica.csproj": {
+    "/home/matheus/Área de Trabalho/protocolStack/physical/Pratica.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/matheus/Documentos/protocolStack/physical/Pratica.csproj",
+        "projectUniqueName": "/home/matheus/Área de Trabalho/protocolStack/physical/Pratica.csproj",
         "projectName": "Pratica",
-        "projectPath": "/home/matheus/Documentos/protocolStack/physical/Pratica.csproj",
+        "projectPath": "/home/matheus/Área de Trabalho/protocolStack/physical/Pratica.csproj",
         "packagesPath": "/home/matheus/.nuget/packages/",
-        "outputPath": "/home/matheus/Documentos/protocolStack/physical/obj/",
+        "outputPath": "/home/matheus/Área de Trabalho/protocolStack/physical/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/share/dotnet/sdk/NuGetFallbackFolder"

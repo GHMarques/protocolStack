@@ -139,7 +139,8 @@ tcp(){
         if [ $syn == 0 -a $ack == 1 ];
         then
             log "ACK recebido pela camada de transporte do servidor.";
-            payload=${pdu:128:(-1)};
+            payload=${pdu:128};
+            log $payload
             converte=$(echo $payload | perl -lpe '$_=pack"B*",$_');
             echo $converte >| $macAddressFilePath;
             log $converte;

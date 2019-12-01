@@ -35,8 +35,8 @@ sum(){
 
 send(){
     cd ..; 
-    cd physical/; 
-    mono physical.exe 2;
+    cd network/; 
+    ruby client.rb;
 }
 
 hexaToBit(){
@@ -79,6 +79,7 @@ tcp(){
     #envia PDU inicial
     send;
     cd ../file; #volta para o diretorio raiz
+    
     #permanece no loop enquanto o servidor nao responde
     while [ ! -f $pduServerResponseFilePath ]
     do
@@ -88,6 +89,7 @@ tcp(){
     #portas de origem e destino (16 bits)
     srcPort=${pdu:0:16};
     dstPort=${pdu:16:16};
+    
     #numero de sequencia e confirmacao (32 bits)
     sequence=${pdu:32:32};
     acknowledgement=${pdu:64:32};
@@ -105,7 +107,9 @@ tcp(){
 
     #verifica se o checksum esta correto
     verifyChecksum=$(sum $srcPort $dstPort);
-    verifyChecksum=$(sum $verifyChecksum $oneoneComplement);
+
+    verifyChecksum=$(sum $verifyChecksum $oneComplement);
+
     if [[ $checksum == $verifyChecksum ]];
     then
         log "Checksum válido";
@@ -115,7 +119,7 @@ tcp(){
 
     if [ $syn == 1 -a $ack == 1 ];
     then
-        echo $(cat /sys/class/net/wlp1s0/address) >| $fileToSend;
+        echo $(cat /sys/class/net/enp2s0/address) >| $fileToSend;
         log "SYN / ACK recebido pela camada de transporte do cliente";
         #portas de origem e destino (16 bits)
         srcPort=${convertDecimalTo16Bits[$sourcePort]};
@@ -152,11 +156,13 @@ tcp(){
         echo $pdu >| $pduFilePath;
         send;
         cd ../file; #volta para o diretorio raiz
+
         #permanece no loop enquanto o servidor nao responde
         while [ ! -f $pduServerResponseFilePath ]
         do
             sleep 2; # or less like 0.2
         done
+
         log "Camada de transporte recebe resposta final.";
         pdu=$(cat $pduServerResponseFilePath);
         #portas de origem e destino (16 bits)
@@ -176,13 +182,13 @@ tcp(){
         fin=${pdu:111:1};
         #checksum (16 bits) = src + dst + lenght (resultado em bytes)
         checksum=${pdu:112:128};
-        payload=${pdu:128:(-1)};
+        payload=${pdu:128};
         log "Resposta DHCP: $payload";
         serverAnswer=$(echo $payload | perl -lpe '$_=pack"B*",$_');
         echo $serverAnswer >| $responseDhcp;
         #verifica se o checksum esta correto
         verifyChecksum=$(sum $srcPort $dstPort);
-        verifyChecksum=$(sum $verifyChecksum $oneoneComplement);
+        verifyChecksum=$(sum $verifyChecksum $oneComplement);
         if [[ $checksum == $verifyChecksum ]];
         then
             log "Checksum válido";

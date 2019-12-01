@@ -9,12 +9,12 @@ using System.Reflection;
 namespace Pratica{
   class Client{
     const int COLISION_PERCENTAGE = 10;
-    const string SERVER_IP = "192.168.0.104";
-    const string TEST_IP = "192.168.0.101";
-    const string CLIENT_IP = "192.168.0.101";
+    const string SERVER_IP = "192.168.25.95";
+    const string TEST_IP = "192.168.25.1";
+    const string CLIENT_IP = "192.168.25.1";
     const string FILE_PATH = "../file/macAddress.txt";
-    const string FILE_PATH_RESPONSE = "../file/pduTransportLayerServerResponse.txt";
-    const string FILE_PATH_Transport_PDU_BITS = "../file/pduTransportLayerClientRequest.txt";   
+    const string FILE_PATH_RESPONSE = "../file/networkResponse.txt";
+    const string FILE_PATH_Network_PDU_BITS = "../file/pduNetwork.txt";   
     const int PORT_NO = 5000;
     string macOrigem = "";
     string macDestino = "";
@@ -42,10 +42,10 @@ namespace Pratica{
             macDestino = GetServerMacAddress(TEST_IP);
             //macOrigem = "41:7f:83:e8:5e:ff";
             //macDestino = "41:7f:33:0e:65:b2";
-            if(!File.Exists(FILE_PATH_Transport_PDU_BITS))
-              throw new Exception("PDU da camada de transporte inválida");
+            if(!File.Exists(FILE_PATH_Network_PDU_BITS))
+              throw new Exception("PDU da camada de rede inválida");
             
-            var payloadText = System.IO.File.ReadAllText(FILE_PATH_Transport_PDU_BITS).Trim();
+            var payloadText = System.IO.File.ReadAllText(FILE_PATH_Network_PDU_BITS).Trim();
             //Converte Head para byte.
             byte[] macOrigemByte = macOrigem.Split(':').Select(x => Convert.ToByte(x, 16)).ToArray();
             Log.WriteLog(Log.CLIENT_CONVERT_MAC_SOURCE);
