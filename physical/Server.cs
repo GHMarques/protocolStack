@@ -13,7 +13,7 @@ namespace Pratica{
     const string FILE_PATH_IP_RESPONSE = "../file/ipResponse.txt";
     const string FILE_PATH_NETWORK_RESPONSE = "../file/pduNetworkResponse.txt";
     const int PORT_NO = 5000;
-    const string SERVER_IP = "192.168.25.95";
+    const string SERVER_IP = "192.168.43.110";
     const int BINARY_SIZE = 8;
     const int MAC_ADDRESS_SIZE = 6;
     const int PAYLOAD_SIZE = 2;
@@ -71,7 +71,6 @@ namespace Pratica{
         
         //Exibe PDU
         Console.WriteLine("\tMAC Origem: " + macOrigem);
-        Console.WriteLine("\tBits: {0}", payload);
         Console.WriteLine("\tMAC Destino: " + macDestino);
         Console.WriteLine("\tPayload size: {0}", payloadSize);
         Console.WriteLine("\tPayload: {0}", payload);
@@ -86,11 +85,11 @@ namespace Pratica{
         File.Delete(FILE_PATH_NETWORK_RESPONSE);
         nwStream.Write(byData, 0, byData.Length);
 
-        Console.WriteLine("\nTransport PDU: {0}", content);
+        //Console.WriteLine("\nTransport PDU: {0}", content);
         //Encerra conexao
         client.Close();
         listener.Stop();
-        Console.WriteLine("\nConexão encerrada.");
+        Console.WriteLine("\nConexão encerrada na camada física.");
         Log.WriteLog(Log.SERVER_CLOSE_CLIENT);
       }
     }

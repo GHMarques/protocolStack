@@ -78,6 +78,7 @@ tcp(){
     then
         log "Camada de transporte do servidor recebe PDU.";
         pdu=$(cat $pduTransportReceived);
+        echo -e "\nTransport PDU: " $pdu;
         #portas de origem e destino (16 bits)
         srcPort=${pdu:0:16};
         dstPort=${pdu:16:16};
@@ -94,11 +95,12 @@ tcp(){
         syn=${pdu:110:1};
         fin=${pdu:111:1};
         #checksum (16 bits) = src + dst + lenght (resultado em bytes)
-        checksum=${pdu:112:128}; #lenght inicial = 16 bytes
+        checksumReceive=${pdu:112:16}; #lenght inicial = 16 bytes
         #verifica se o checksum esta correto
         verifyChecksum=$(sum $srcPort $dstPort);
+        verifyChecksum=$(sum $verifyChecksum $window);
         verifyChecksum=$(sum $verifyChecksum $oneComplement);
-        if [ $checksum == $verifyChecksum ];
+        if [ $checksumReceive == $verifyChecksum ];
         then
             log "Checksum válido";
         else
@@ -106,7 +108,8 @@ tcp(){
         fi
         if [ $syn == 1 ];
         then
-            log "SYN recebido pela camada de transporte do servidor.";
+            log "SYN recebido pela camada de transporte do servidor. Seq: " $sequence " Ack: " $acknowledgement;
+            echo -e "\nSYN recebido pela camada de transporte do servidor. Seq: " $sequence " Ack: " $acknowledgement;
             #recebeu o primeiro SYN
             #portas de origem e destino (16 bits)
             srcPortAux=$srcPort;
@@ -132,13 +135,16 @@ tcp(){
             newPdu=$srcPort$dstPort$sequence$acknowledgement$window$urg$ack$psh$rst$syn$fin$checksum;
             #escreve PDU no arquivo de log
             log "PDU camada de transporte do servidor $newPdu";
+            echo -e "\nTransport PDU: " $newPdu;
             #escreve PDU no arquivo
             echo $newPdu >| $pduTransportResponse;
-            log "SYN / ACK enviado pela camada de transporte do servidor.";
+            log "SYN / ACK enviado pela camada de transporte do servidor. Seq: " $sequence " Ack: " $acknowledgement;
+            echo -e "\nSYN / ACK enviado pela camada de transporte do servidor. Seq: " $sequence " Ack: " $acknowledgement;
         fi
         if [ $syn == 0 -a $ack == 1 ];
         then
-            log "ACK recebido pela camada de transporte do servidor.";
+            log "ACK recebido pela camada de transporte do servidor. Seq: " $sequence " Ack: " $acknowledgement;
+            echo -e "\nACK recebido pela camada de transporte do servidor. Seq: " $sequence " Ack: " $acknowledgement;
             payload=${pdu:128};
             log $payload
             converte=$(echo $payload | perl -lpe '$_=pack"B*",$_');
@@ -177,9 +183,11 @@ tcp(){
             newPdu=$srcPort$dstPort$sequence$acknowledgement$window$urg$ack$psh$rst$syn$fin$checksum$payload;
             #escreve PDU no arquivo de log
             log "PDU camada de transporte do servidor $newPdu";
+            echo -e "\nTransport PDU: " $newPdu;
             #escreve PDU no arquivo
             echo $newPdu >| $pduTransportResponse;
-            log "ACK enviado pela camada de transporte do servidor.";
+            log "ACK enviado pela camada de transporte do servidor. Seq: " $sequence " Ack: " $acknowledgement;
+            echo -e "\nACK enviado pela camada de transporte do servidor. Seq: " $sequence " Ack: " $acknowledgement;
             rm $pduApplicationResponse;
         fi
         rm $pduTransportReceived;

@@ -20,6 +20,7 @@
         $macAddressFile = @file($macAddressFilePath);
         if($macAddressFile != null){
             $macAddress = trim($macAddressFile[0]);
+            echo "\nMAC recebido: " . $macAddress;
             unlink($macAddressFilePath);
             //read dhcp file
             $dhcpFile = @fopen("../file/dhcp.txt","r");
@@ -64,6 +65,7 @@
             fwrite($fileResponse, "\n");
             fwrite($fileResponse, trim($ipToReturn));
             fclose($fileResponse);
+            echo "\nIp atribuído pelo servidor: " . $ipToReturn; 
         } else {
             //file does not exist
             fwrite($log, date("Y-m-d H:i:s")." - Servidor não consegue obter endereço MAC \n");

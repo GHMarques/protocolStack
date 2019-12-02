@@ -119,7 +119,7 @@ tcp(){
 
     if [ $syn == 1 -a $ack == 1 ];
     then
-        echo $(cat /sys/class/net/enp2s0/address) >| $fileToSend;
+        echo $(cat /sys/class/net/wlp1s0/address) >| $fileToSend;
         log "SYN / ACK recebido pela camada de transporte do cliente";
         #portas de origem e destino (16 bits)
         srcPort=${convertDecimalTo16Bits[$sourcePort]};

@@ -62,9 +62,9 @@ Log("Diminui time to live.");
 ttl = ConvertBinary((ConvertBinarytoDecimal(ttl) - 1), 8);
 
 ipHeader = version+ihl+type+totalLengh+identification+flag+ttl+protocol+checksum+ipSource+ipDestination+options
-
 Log("Servidor da camada de rede requisita a camada de transporte")
 #Chama a camada de transporte.
+puts "\nNetwork PDU: " + received;
 CallTransport();
 
 while File.open("../file/pduTransportResponse.txt").read() == nil
@@ -78,4 +78,5 @@ if !File.exist?("../file/pduNetworkResponse.txt")
 end
 
 File.write("../file/pduNetworkResponse.txt", ipHeader+TransportResponse);
+puts "\nNetwork PDU: " + ipHeader + TransportResponse;
 
