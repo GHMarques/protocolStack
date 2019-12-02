@@ -4,20 +4,22 @@ using System.Net.Sockets;
 using System.Text;
 using System.Threading;
 using System.IO;
-using System.Reflection;
+using System.Collections.Generic;
+
 
 namespace Pratica{
   class Client{
     const int COLISION_PERCENTAGE = 10;
-    const string SERVER_IP = "192.168.43.110";
-    const string CLIENT_IP = "192.168.43,228";
     const string FILE_PATH = "../file/macAddress.txt";
     const string FILE_PATH_RESPONSE = "../file/networkResponse.txt";
     const string FILE_PATH_Network_PDU_BITS = "../file/pduNetwork.txt";   
     const int PORT_NO = 5000;
     string macOrigem = "";
     string macDestino = "";
+    private string SERVER_IP;
+    private string CLIENT_IP;
     public void send(){
+      this.LoadCofig();
       Random random = new Random(); 
       //Tentar fazer a conexão
       TcpClient tcpClient = new TcpClient();
@@ -38,9 +40,8 @@ namespace Pratica{
             //Pega Mac do destino e origem.
             macOrigem = GetClientMacAddress();
             macDestino = GetServerMacAddress(SERVER_IP);
-            //macDestino = GetServerMacAddress(TEST_IP);
-            //macOrigem = "41:7f:83:e8:5e:ff";
-            //macDestino = "41:7f:33:0e:65:b2";
+            //macDestino = GetServerMacAddress("192.168.25.1");
+
             if(!File.Exists(FILE_PATH_Network_PDU_BITS))
               throw new Exception("PDU da camada de rede inválida");
             
@@ -189,5 +190,24 @@ namespace Pratica{
         output[a.Length+j] = b[j];
       return output;           
     }
+
+    //Carrega as configurações de ip.
+    private void LoadCofig()
+    {
+      using(var sr = new StreamReader("../config.txt"))
+      {
+          string line = String.Empty;
+          var config = new List<string>();
+
+          while ((line = sr.ReadLine()) != null)
+          {
+            config.Add(line);
+          }
+
+          this.CLIENT_IP = config.FirstOrDefault(f => f.Contains("IPCLIENT"))?.Split('=')?.Last().Trim();
+          this.SERVER_IP = config.FirstOrDefault(f => f.Contains("IPSERVER"))?.Split('=')?.Last().Trim();
+      };
+    }
+    
   }
 }

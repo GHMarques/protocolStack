@@ -11,6 +11,8 @@ pduFilePath='../file/pduTransportLayerClientRequest.txt';
 pduServerResponseFilePath='../file/pduTransportLayerServerResponse.txt';
 fileToSend='../file/fileToSend.txt';
 responseDhcp='../file/DhcpResponseIp.txt';
+configFile='../config.txt';
+interface='';
 
 #functions
 : '
@@ -44,11 +46,16 @@ hexaToBit(){
     echo ${convertDecimalTo16Bits[$convertion]}
 }
 
+config(){
+    interface=$(grep "INTERFACE" $configFile | awk -F  "=" '{print $2}' | sed 's/ //g');
+}
+
 udp(){
     echo "udp function";
 }
 
 tcp(){
+    config;
     log "Início da comunicação orientada a conexão";
     #portas de origem e destino (16 bits)
     srcPort=${convertDecimalTo16Bits[$sourcePort]};
@@ -121,7 +128,7 @@ tcp(){
 
     if [ $syn == 1 -a $ack == 1 ];
     then
-        echo $(cat /sys/class/net/wlp3s0/address) >| $fileToSend;
+        echo $(cat /sys/class/net/$interface/address) >| $fileToSend;
         log "SYN / ACK recebido pela camada de transporte do cliente";
         echo -e "\nSYN / ACK recebido pela camada de transporte do cliente." "Seq: " $sequence "Ack: " $acknowledgement;
         echo -e "\nTransport PDU: " $pdu;
@@ -137,7 +144,7 @@ tcp(){
         log "Conversao: $payload";
         size=$((8+$(echo $payload | wc -c)))
         length=${convertDecimalTo10Bits[$size]};
-        if [[ $window >= $length ]];
+        if [[ $window -ge $length ]];
         then
             log "Tamanho válido";
         else

@@ -1,0 +1,5 @@
+2019-12-02 20:55:02 - Cliente solicita requisição ao DHCP 
+2019-12-02 20:55:02 - Servidor é requisitado 
+2019-12-02 20:55:02 - Servidor obtém os valores associados a máscara, DNS e router 
+2019-12-02 20:55:02 - Servidor obtém IP associado ao cliente
+2019-12-02 20:55:02 - Ciente recebe a resposta da requisição 

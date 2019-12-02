@@ -4,8 +4,7 @@ using System.Net;
 using System.Net.Sockets;
 using System.Text;
 using System.IO;
-using System.Reflection;
-using System.Threading;
+using System.Collections.Generic;
 
 namespace Pratica{
   class Server{
@@ -13,11 +12,12 @@ namespace Pratica{
     const string FILE_PATH_IP_RESPONSE = "../file/ipResponse.txt";
     const string FILE_PATH_NETWORK_RESPONSE = "../file/pduNetworkResponse.txt";
     const int PORT_NO = 5000;
-    const string SERVER_IP = "192.168.43.110";
     const int BINARY_SIZE = 8;
     const int MAC_ADDRESS_SIZE = 6;
     const int PAYLOAD_SIZE = 2;
+    private string SERVER_IP;
     public void receive(){
+      this.LoadCofig();
       IPHostEntry ipHostInfo = Dns.GetHostEntry(Dns.GetHostName());  
       IPAddress ipAddress = IPAddress.Parse(SERVER_IP);
       Log.WriteLog(Log.SERVER_START);
@@ -158,7 +158,22 @@ namespace Pratica{
       string strOutput = pProcess.StandardOutput.ReadToEnd().Trim(' ');
       Console.WriteLine(strOutput);
     }
-  }
 
-  
+    //Carrega as configurações de ip.
+    private void LoadCofig()
+    {
+      using(var sr = new StreamReader("../config.txt"))
+      {
+          string line = String.Empty;
+          var config = new List<string>();
+
+          while ((line = sr.ReadLine()) != null)
+          {
+            config.Add(line);
+          }
+
+          this.SERVER_IP = config.FirstOrDefault(f => f.Contains("IPSERVER")).Split('=').Last().Trim();
+      };
+    }
+  }
 }
