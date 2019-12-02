@@ -1,85 +1,223 @@
-2019-12-01 17:17:50 - Verifica se o destino está contido na tabela de roteamento.
-2019-12-01 17:17:50 - Ip de destino encontrado na tabela de roteamento.
-2019-12-01 17:17:50 - Camada de rede requisita a camada fisica
-2019-12-01 17:17:50 - Camada de rede recebe resposta
-2019-12-01 17:17:50 - Verifica se o destino está contido na tabela de roteamento.
-2019-12-01 17:17:50 - Ip de destino encontrado na tabela de roteamento.
-2019-12-01 17:17:50 - Camada de rede requisita a camada fisica
-2019-12-01 17:17:51 - Camada de rede recebe resposta
-2019-12-01 17:32:43 - Verifica se o destino está contido na tabela de roteamento.
-2019-12-01 17:32:43 - Ip de destino encontrado na tabela de roteamento.
-2019-12-01 17:32:43 - Camada de rede requisita a camada fisica
-2019-12-01 17:32:43 - Servidor da camada de rede requisita a camada de transporte
-2019-12-01 17:32:43 - Servidor da camada de rede obtém a resposta da camada de transporte.
-2019-12-01 17:32:43 - Camada de rede recebe resposta
-2019-12-01 17:32:43 - Verifica se o destino está contido na tabela de roteamento.
-2019-12-01 17:32:43 - Ip de destino encontrado na tabela de roteamento.
-2019-12-01 17:32:43 - Camada de rede requisita a camada fisica
-2019-12-01 17:32:44 - Servidor da camada de rede requisita a camada de transporte
-2019-12-01 17:32:44 - Servidor da camada de rede obtém a resposta da camada de transporte.
-2019-12-01 17:32:44 - Camada de rede recebe resposta
-2019-12-01 17:35:04 - Verifica se o destino está contido na tabela de roteamento.
-2019-12-01 17:35:04 - Ip de destino encontrado na tabela de roteamento.
-2019-12-01 17:35:04 - Camada de rede requisita a camada fisica
-2019-12-01 17:35:05 - Servidor da camada de rede requisita a camada de transporte
-2019-12-01 17:35:05 - Servidor da camada de rede obtém a resposta da camada de transporte.
-2019-12-01 17:35:05 - Camada de rede recebe resposta
-2019-12-01 17:35:05 - Verifica se o destino está contido na tabela de roteamento.
-2019-12-01 17:35:05 - Ip de destino encontrado na tabela de roteamento.
-2019-12-01 17:35:05 - Camada de rede requisita a camada fisica
-2019-12-01 17:35:05 - Servidor da camada de rede requisita a camada de transporte
-2019-12-01 17:35:05 - Servidor da camada de rede obtém a resposta da camada de transporte.
-2019-12-01 17:35:05 - Camada de rede recebe resposta
-2019-12-01 17:39:54 - Verifica se o destino está contido na tabela de roteamento.
-2019-12-01 17:39:54 - Ip de destino encontrado na tabela de roteamento.
-2019-12-01 17:39:54 - Camada de rede requisita a camada fisica
-2019-12-01 17:39:54 - Checksum válido
-2019-12-01 17:39:54 - Servidor da camada de rede requisita a camada de transporte
-2019-12-01 17:39:54 - Servidor da camada de rede obtém a resposta da camada de transporte.
-2019-12-01 17:39:54 - Camada de rede recebe resposta
-2019-12-01 17:40:07 - Verifica se o destino está contido na tabela de roteamento.
-2019-12-01 17:40:07 - Ip de destino encontrado na tabela de roteamento.
-2019-12-01 17:40:07 - Camada de rede requisita a camada fisica
-2019-12-01 17:40:07 - Checksum válido
-2019-12-01 17:40:07 - Servidor da camada de rede requisita a camada de transporte
-2019-12-01 17:40:07 - Servidor da camada de rede obtém a resposta da camada de transporte.
-2019-12-01 17:40:07 - Camada de rede recebe resposta
-2019-12-01 17:40:07 - Checksum válido
-2019-12-01 17:40:07 - Verifica se o destino está contido na tabela de roteamento.
-2019-12-01 17:40:07 - Ip de destino encontrado na tabela de roteamento.
-2019-12-01 17:40:07 - Camada de rede requisita a camada fisica
-2019-12-01 17:40:07 - Checksum válido
-2019-12-01 17:40:07 - Servidor da camada de rede requisita a camada de transporte
-2019-12-01 17:40:07 - Servidor da camada de rede obtém a resposta da camada de transporte.
-2019-12-01 17:40:07 - Camada de rede recebe resposta
-2019-12-01 17:40:07 - Checksum válido
-2019-12-01 17:42:07 - Verifica se o destino está contido na tabela de roteamento.
-2019-12-01 17:42:07 - Ip de destino encontrado na tabela de roteamento.
-2019-12-01 17:42:07 - Camada de rede requisita a camada fisica
-2019-12-01 17:42:07 - Checksum válido
-2019-12-01 17:42:25 - Verifica se o destino está contido na tabela de roteamento.
-2019-12-01 17:42:25 - Ip de destino encontrado na tabela de roteamento.
-2019-12-01 17:42:25 - Camada de rede requisita a camada fisica
-2019-12-01 17:42:25 - Checksum válido
-2019-12-01 17:42:36 - Camada de rede recebe resposta
-2019-12-01 17:42:55 - Verifica se o destino está contido na tabela de roteamento.
-2019-12-01 17:42:55 - Ip de destino encontrado na tabela de roteamento.
-2019-12-01 17:42:55 - Camada de rede requisita a camada fisica
-2019-12-01 17:42:55 - Checksum válido
-2019-12-01 17:43:00 - Camada de rede recebe resposta
-2019-12-01 17:43:33 - Verifica se o destino está contido na tabela de roteamento.
-2019-12-01 17:43:33 - Ip de destino encontrado na tabela de roteamento.
-2019-12-01 17:43:33 - Camada de rede requisita a camada fisica
-2019-12-01 17:43:33 - Checksum válido
-2019-12-01 17:43:33 - Servidor da camada de rede requisita a camada de transporte
-2019-12-01 17:43:33 - Servidor da camada de rede obtém a resposta da camada de transporte.
-2019-12-01 17:43:33 - Camada de rede recebe resposta
-2019-12-01 17:43:33 - Checksum válido
-2019-12-01 17:43:33 - Verifica se o destino está contido na tabela de roteamento.
-2019-12-01 17:43:33 - Ip de destino encontrado na tabela de roteamento.
-2019-12-01 17:43:33 - Camada de rede requisita a camada fisica
-2019-12-01 17:43:33 - Checksum válido
-2019-12-01 17:43:33 - Servidor da camada de rede requisita a camada de transporte
-2019-12-01 17:43:33 - Servidor da camada de rede obtém a resposta da camada de transporte.
-2019-12-01 17:43:33 - Camada de rede recebe resposta
-2019-12-01 17:43:33 - Checksum válido
+2019-12-02 09:14:23 - Verifica se o destino está contido na tabela de roteamento.
+2019-12-02 09:14:23 - Ip de destino encontrado na tabela de roteamento.
+2019-12-02 09:14:23 - Camada de rede requisita a camada fisica
+2019-12-02 09:14:23 - Camada de rede recebe resposta
+2019-12-02 09:14:23 - Checksum válido
+2019-12-02 09:14:24 - Verifica se o destino está contido na tabela de roteamento.
+2019-12-02 09:14:24 - Ip de destino encontrado na tabela de roteamento.
+2019-12-02 09:14:24 - Camada de rede requisita a camada fisica
+2019-12-02 09:14:24 - Camada de rede recebe resposta
+2019-12-02 09:14:24 - Checksum válido
+2019-12-02 09:23:27 - Verifica se o destino está contido na tabela de roteamento.
+2019-12-02 09:23:27 - Ip de destino encontrado na tabela de roteamento.
+2019-12-02 09:23:27 - Camada de rede requisita a camada fisica
+2019-12-02 09:23:27 - Camada de rede recebe resposta
+2019-12-02 09:23:27 - Checksum válido
+2019-12-02 09:23:27 - Verifica se o destino está contido na tabela de roteamento.
+2019-12-02 09:23:27 - Ip de destino encontrado na tabela de roteamento.
+2019-12-02 09:23:27 - Camada de rede requisita a camada fisica
+2019-12-02 09:23:28 - Camada de rede recebe resposta
+2019-12-02 09:23:28 - Checksum válido
+2019-12-02 09:24:46 - Verifica se o destino está contido na tabela de roteamento.
+2019-12-02 09:24:46 - Ip de destino encontrado na tabela de roteamento.
+2019-12-02 09:24:46 - Camada de rede requisita a camada fisica
+2019-12-02 09:24:46 - Camada de rede recebe resposta
+2019-12-02 09:24:46 - Checksum válido
+2019-12-02 09:24:46 - Verifica se o destino está contido na tabela de roteamento.
+2019-12-02 09:24:46 - Ip de destino encontrado na tabela de roteamento.
+2019-12-02 09:24:46 - Camada de rede requisita a camada fisica
+2019-12-02 09:24:47 - Camada de rede recebe resposta
+2019-12-02 09:24:47 - Checksum válido
+2019-12-02 09:25:33 - Verifica se o destino está contido na tabela de roteamento.
+2019-12-02 09:25:33 - Ip de destino encontrado na tabela de roteamento.
+2019-12-02 09:25:33 - Camada de rede requisita a camada fisica
+2019-12-02 09:25:34 - Camada de rede recebe resposta
+2019-12-02 09:25:34 - Checksum válido
+2019-12-02 09:25:34 - Verifica se o destino está contido na tabela de roteamento.
+2019-12-02 09:25:34 - Ip de destino encontrado na tabela de roteamento.
+2019-12-02 09:25:34 - Camada de rede requisita a camada fisica
+2019-12-02 09:25:35 - Camada de rede recebe resposta
+2019-12-02 09:25:35 - Checksum válido
+2019-12-02 09:27:35 - Verifica se o destino está contido na tabela de roteamento.
+2019-12-02 09:27:35 - Ip de destino encontrado na tabela de roteamento.
+2019-12-02 09:27:35 - Camada de rede requisita a camada fisica
+2019-12-02 09:27:36 - Camada de rede recebe resposta
+2019-12-02 09:27:36 - Checksum válido
+2019-12-02 09:27:36 - Verifica se o destino está contido na tabela de roteamento.
+2019-12-02 09:27:36 - Ip de destino encontrado na tabela de roteamento.
+2019-12-02 09:27:36 - Camada de rede requisita a camada fisica
+2019-12-02 09:27:36 - Camada de rede recebe resposta
+2019-12-02 09:27:36 - Checksum válido
+2019-12-02 09:29:39 - Verifica se o destino está contido na tabela de roteamento.
+2019-12-02 09:29:39 - Ip de destino encontrado na tabela de roteamento.
+2019-12-02 09:29:39 - Camada de rede requisita a camada fisica
+2019-12-02 09:29:39 - Camada de rede recebe resposta
+2019-12-02 09:29:39 - Checksum válido
+2019-12-02 09:29:40 - Verifica se o destino está contido na tabela de roteamento.
+2019-12-02 09:29:40 - Ip de destino encontrado na tabela de roteamento.
+2019-12-02 09:29:40 - Camada de rede requisita a camada fisica
+2019-12-02 09:29:40 - Camada de rede recebe resposta
+2019-12-02 09:29:40 - Checksum válido
+2019-12-02 09:30:17 - Verifica se o destino está contido na tabela de roteamento.
+2019-12-02 09:30:17 - Ip de destino encontrado na tabela de roteamento.
+2019-12-02 09:30:17 - Camada de rede requisita a camada fisica
+2019-12-02 09:30:18 - Camada de rede recebe resposta
+2019-12-02 09:30:18 - Checksum válido
+2019-12-02 09:30:18 - Verifica se o destino está contido na tabela de roteamento.
+2019-12-02 09:30:18 - Ip de destino encontrado na tabela de roteamento.
+2019-12-02 09:30:18 - Camada de rede requisita a camada fisica
+2019-12-02 09:30:18 - Camada de rede recebe resposta
+2019-12-02 09:30:18 - Checksum válido
+2019-12-02 09:31:10 - Verifica se o destino está contido na tabela de roteamento.
+2019-12-02 09:31:10 - Ip de destino encontrado na tabela de roteamento.
+2019-12-02 09:31:10 - Camada de rede requisita a camada fisica
+2019-12-02 09:31:11 - Camada de rede recebe resposta
+2019-12-02 09:31:11 - Checksum válido
+2019-12-02 09:31:11 - Verifica se o destino está contido na tabela de roteamento.
+2019-12-02 09:31:11 - Ip de destino encontrado na tabela de roteamento.
+2019-12-02 09:31:11 - Camada de rede requisita a camada fisica
+2019-12-02 09:31:11 - Camada de rede recebe resposta
+2019-12-02 09:31:11 - Checksum válido
+2019-12-02 09:32:11 - Verifica se o destino está contido na tabela de roteamento.
+2019-12-02 09:32:11 - Ip de destino encontrado na tabela de roteamento.
+2019-12-02 09:32:11 - Camada de rede requisita a camada fisica
+2019-12-02 09:32:11 - Camada de rede recebe resposta
+2019-12-02 09:32:11 - Checksum válido
+2019-12-02 09:32:12 - Verifica se o destino está contido na tabela de roteamento.
+2019-12-02 09:32:12 - Ip de destino encontrado na tabela de roteamento.
+2019-12-02 09:32:12 - Camada de rede requisita a camada fisica
+2019-12-02 09:32:12 - Camada de rede recebe resposta
+2019-12-02 09:32:12 - Checksum válido
+2019-12-02 09:33:05 - Verifica se o destino está contido na tabela de roteamento.
+2019-12-02 09:33:05 - Ip de destino encontrado na tabela de roteamento.
+2019-12-02 09:33:05 - Camada de rede requisita a camada fisica
+2019-12-02 09:33:05 - Camada de rede recebe resposta
+2019-12-02 09:33:05 - Checksum válido
+2019-12-02 09:33:05 - Verifica se o destino está contido na tabela de roteamento.
+2019-12-02 09:33:05 - Ip de destino encontrado na tabela de roteamento.
+2019-12-02 09:33:05 - Camada de rede requisita a camada fisica
+2019-12-02 09:33:06 - Camada de rede recebe resposta
+2019-12-02 09:33:06 - Checksum válido
+2019-12-02 09:38:08 - Verifica se o destino está contido na tabela de roteamento.
+2019-12-02 09:38:08 - Ip de destino encontrado na tabela de roteamento.
+2019-12-02 09:38:08 - Camada de rede requisita a camada fisica
+2019-12-02 09:38:09 - Camada de rede recebe resposta
+2019-12-02 09:38:09 - Checksum válido
+2019-12-02 09:38:09 - Verifica se o destino está contido na tabela de roteamento.
+2019-12-02 09:38:09 - Ip de destino encontrado na tabela de roteamento.
+2019-12-02 09:38:09 - Camada de rede requisita a camada fisica
+2019-12-02 09:38:10 - Camada de rede recebe resposta
+2019-12-02 09:38:10 - Checksum válido
+2019-12-02 09:39:10 - Verifica se o destino está contido na tabela de roteamento.
+2019-12-02 09:39:10 - Ip de destino encontrado na tabela de roteamento.
+2019-12-02 09:39:10 - Camada de rede requisita a camada fisica
+2019-12-02 09:39:11 - Camada de rede recebe resposta
+2019-12-02 09:39:11 - Checksum válido
+2019-12-02 09:39:11 - Verifica se o destino está contido na tabela de roteamento.
+2019-12-02 09:39:11 - Ip de destino encontrado na tabela de roteamento.
+2019-12-02 09:39:11 - Camada de rede requisita a camada fisica
+2019-12-02 09:39:11 - Camada de rede recebe resposta
+2019-12-02 09:39:11 - Checksum válido
+2019-12-02 09:54:30 - Verifica se o destino está contido na tabela de roteamento.
+2019-12-02 09:54:30 - Ip de destino encontrado na tabela de roteamento.
+2019-12-02 09:54:30 - Camada de rede requisita a camada fisica
+2019-12-02 09:54:42 - Verifica se o destino está contido na tabela de roteamento.
+2019-12-02 09:54:42 - Ip de destino encontrado na tabela de roteamento.
+2019-12-02 09:54:42 - Camada de rede requisita a camada fisica
+2019-12-02 09:54:43 - Camada de rede recebe resposta
+2019-12-02 09:54:43 - Checksum válido
+2019-12-02 09:54:43 - Verifica se o destino está contido na tabela de roteamento.
+2019-12-02 09:54:43 - Ip de destino encontrado na tabela de roteamento.
+2019-12-02 09:54:43 - Camada de rede requisita a camada fisica
+2019-12-02 09:54:44 - Camada de rede recebe resposta
+2019-12-02 09:54:44 - Checksum válido
+2019-12-02 09:56:01 - Verifica se o destino está contido na tabela de roteamento.
+2019-12-02 09:56:01 - Ip de destino encontrado na tabela de roteamento.
+2019-12-02 09:56:01 - Camada de rede requisita a camada fisica
+2019-12-02 09:56:01 - Camada de rede recebe resposta
+2019-12-02 09:56:01 - Checksum válido
+2019-12-02 09:56:01 - Verifica se o destino está contido na tabela de roteamento.
+2019-12-02 09:56:01 - Ip de destino encontrado na tabela de roteamento.
+2019-12-02 09:56:01 - Camada de rede requisita a camada fisica
+2019-12-02 09:56:02 - Camada de rede recebe resposta
+2019-12-02 09:56:02 - Checksum válido
+2019-12-02 10:00:11 - Verifica se o destino está contido na tabela de roteamento.
+2019-12-02 10:00:11 - Ip de destino encontrado na tabela de roteamento.
+2019-12-02 10:00:11 - Camada de rede requisita a camada fisica
+2019-12-02 10:00:12 - Camada de rede recebe resposta
+2019-12-02 10:00:12 - Checksum válido
+2019-12-02 10:00:12 - Verifica se o destino está contido na tabela de roteamento.
+2019-12-02 10:00:12 - Ip de destino encontrado na tabela de roteamento.
+2019-12-02 10:00:12 - Camada de rede requisita a camada fisica
+2019-12-02 10:00:12 - Camada de rede recebe resposta
+2019-12-02 10:00:12 - Checksum válido
+2019-12-02 10:01:34 - Verifica se o destino está contido na tabela de roteamento.
+2019-12-02 10:01:34 - Ip de destino encontrado na tabela de roteamento.
+2019-12-02 10:01:34 - Camada de rede requisita a camada fisica
+2019-12-02 10:01:34 - Camada de rede recebe resposta
+2019-12-02 10:01:34 - Checksum válido
+2019-12-02 10:01:35 - Verifica se o destino está contido na tabela de roteamento.
+2019-12-02 10:01:35 - Ip de destino encontrado na tabela de roteamento.
+2019-12-02 10:01:35 - Camada de rede requisita a camada fisica
+2019-12-02 10:01:35 - Camada de rede recebe resposta
+2019-12-02 10:01:35 - Checksum válido
+2019-12-02 10:03:06 - Verifica se o destino está contido na tabela de roteamento.
+2019-12-02 10:03:06 - Ip de destino encontrado na tabela de roteamento.
+2019-12-02 10:03:06 - Camada de rede requisita a camada fisica
+2019-12-02 10:03:06 - Camada de rede recebe resposta
+2019-12-02 10:03:06 - Checksum válido
+2019-12-02 10:03:06 - Verifica se o destino está contido na tabela de roteamento.
+2019-12-02 10:03:06 - Ip de destino encontrado na tabela de roteamento.
+2019-12-02 10:03:06 - Camada de rede requisita a camada fisica
+2019-12-02 10:03:07 - Camada de rede recebe resposta
+2019-12-02 10:03:07 - Checksum válido
+2019-12-02 10:05:23 - Verifica se o destino está contido na tabela de roteamento.
+2019-12-02 10:05:23 - Ip de destino encontrado na tabela de roteamento.
+2019-12-02 10:05:23 - Camada de rede requisita a camada fisica
+2019-12-02 10:05:23 - Camada de rede recebe resposta
+2019-12-02 10:05:23 - Checksum válido
+2019-12-02 10:05:23 - Verifica se o destino está contido na tabela de roteamento.
+2019-12-02 10:05:23 - Ip de destino encontrado na tabela de roteamento.
+2019-12-02 10:05:23 - Camada de rede requisita a camada fisica
+2019-12-02 10:05:23 - Camada de rede recebe resposta
+2019-12-02 10:05:23 - Checksum válido
+2019-12-02 10:09:44 - Verifica se o destino está contido na tabela de roteamento.
+2019-12-02 10:09:44 - Ip de destino encontrado na tabela de roteamento.
+2019-12-02 10:09:44 - Camada de rede requisita a camada fisica
+2019-12-02 10:09:44 - Camada de rede recebe resposta
+2019-12-02 10:09:44 - Checksum válido
+2019-12-02 10:09:44 - Verifica se o destino está contido na tabela de roteamento.
+2019-12-02 10:09:44 - Ip de destino encontrado na tabela de roteamento.
+2019-12-02 10:09:44 - Camada de rede requisita a camada fisica
+2019-12-02 10:09:45 - Camada de rede recebe resposta
+2019-12-02 10:09:45 - Checksum válido
+2019-12-02 10:14:01 - Verifica se o destino está contido na tabela de roteamento.
+2019-12-02 10:14:01 - Ip de destino encontrado na tabela de roteamento.
+2019-12-02 10:14:01 - Camada de rede requisita a camada fisica
+2019-12-02 10:14:02 - Camada de rede recebe resposta
+2019-12-02 10:14:02 - Checksum válido
+2019-12-02 10:14:02 - Verifica se o destino está contido na tabela de roteamento.
+2019-12-02 10:14:02 - Ip de destino encontrado na tabela de roteamento.
+2019-12-02 10:14:02 - Camada de rede requisita a camada fisica
+2019-12-02 10:14:02 - Camada de rede recebe resposta
+2019-12-02 10:14:02 - Checksum válido
+2019-12-02 10:19:16 - Verifica se o destino está contido na tabela de roteamento.
+2019-12-02 10:19:16 - Ip de destino encontrado na tabela de roteamento.
+2019-12-02 10:19:16 - Camada de rede requisita a camada fisica
+2019-12-02 10:19:17 - Camada de rede recebe resposta
+2019-12-02 10:19:17 - Checksum válido
+2019-12-02 10:19:17 - Verifica se o destino está contido na tabela de roteamento.
+2019-12-02 10:19:17 - Ip de destino encontrado na tabela de roteamento.
+2019-12-02 10:19:17 - Camada de rede requisita a camada fisica
+2019-12-02 10:19:17 - Camada de rede recebe resposta
+2019-12-02 10:19:17 - Checksum válido
+2019-12-02 10:21:00 - Verifica se o destino está contido na tabela de roteamento.
+2019-12-02 10:21:00 - Ip de destino encontrado na tabela de roteamento.
+2019-12-02 10:21:00 - Camada de rede requisita a camada fisica
+2019-12-02 10:21:00 - Camada de rede recebe resposta
+2019-12-02 10:21:00 - Checksum válido
+2019-12-02 10:21:00 - Verifica se o destino está contido na tabela de roteamento.
+2019-12-02 10:21:00 - Ip de destino encontrado na tabela de roteamento.
+2019-12-02 10:21:00 - Camada de rede requisita a camada fisica
+2019-12-02 10:21:01 - Camada de rede recebe resposta
+2019-12-02 10:21:01 - Checksum válido

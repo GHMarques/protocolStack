@@ -76,6 +76,8 @@ tcp(){
     #escreve PDU no arquivo
     echo $pdu >| $pduFilePath;
     log "SYN enviado pela camada de transporte do cliente";
+    echo -e "\nSYN enviado pela camada de transporte do cliente." "Seq: " $sequence "Ack: " $acknowledgement;
+    echo -e "\nTransport PDU: " $pdu;
     #envia PDU inicial
     send;
     cd ../file; #volta para o diretorio raiz
@@ -119,22 +121,28 @@ tcp(){
 
     if [ $syn == 1 -a $ack == 1 ];
     then
-        echo $(cat /sys/class/net/enp2s0/address) >| $fileToSend;
+        echo $(cat /sys/class/net/wlp3s0/address) >| $fileToSend;
         log "SYN / ACK recebido pela camada de transporte do cliente";
+        echo -e "\nSYN / ACK recebido pela camada de transporte do cliente." "Seq: " $sequence "Ack: " $acknowledgement;
+        echo -e "\nTransport PDU: " $pdu;
         #portas de origem e destino (16 bits)
         srcPort=${convertDecimalTo16Bits[$sourcePort]};
         dstPort=${convertDecimalTo16Bits[$destinyPort]};
         #numero de sequencia e confirmacao (32 bits)
         sequence=00000000000000000000000000000001;
         acknowledgement=00000000000000000000000000000001;
-        #janela (10 bits) - tamanho maximo que pode ser enviado
-        window=0000000000;
         file=$(cat $fileToSend | tr a-z A-Z);
         payload=$(echo $file | perl -lpe '$_=unpack"B*"');
         log "Mac no arquivo: $file";
         log "Conversao: $payload";
         size=$((8+$(echo $payload | wc -c)))
         length=${convertDecimalTo10Bits[$size]};
+        if [[ $window >= $length ]];
+        then
+            log "Tamanho válido";
+        else
+            log "Tamanho inválido";
+        fi
         window=$length;
         #flags (1 bit)
         urg=0;
@@ -150,8 +158,11 @@ tcp(){
         
         #monta PDU
         pdu=$srcPort$dstPort$sequence$acknowledgement$window$urg$ack$psh$rst$syn$fin$checksum$payload;
+        
         #escreve PDU no arquivo de log
         log "PDU camada de transporte do cliente $pdu";
+        echo -e "\nACK enviado pela camada de transporte do cliente." "Seq: " $sequence "Ack: " $acknowledgement;
+        echo -e "\nTransport PDU: " $pdu;
         #escreve PDU no arquivo
         echo $pdu >| $pduFilePath;
         send;
@@ -181,9 +192,11 @@ tcp(){
         syn=${pdu:110:1};
         fin=${pdu:111:1};
         #checksum (16 bits) = src + dst + lenght (resultado em bytes)
-        checksum=${pdu:112:128};
+        checksum=${pdu:112:16};
         payload=${pdu:128};
         log "Resposta DHCP: $payload";
+        echo -e "\nACK recebido pela camada de transporte do cliente." "Seq: " $sequence "Ack: " $acknowledgement;
+        echo -e "\nTransport PDU: " $pdu;
         serverAnswer=$(echo $payload | perl -lpe '$_=pack"B*",$_');
         echo $serverAnswer >| $responseDhcp;
         #verifica se o checksum esta correto

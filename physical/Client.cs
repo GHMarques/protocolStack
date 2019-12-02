@@ -9,9 +9,8 @@ using System.Reflection;
 namespace Pratica{
   class Client{
     const int COLISION_PERCENTAGE = 10;
-    const string SERVER_IP = "192.168.25.95";
-    const string TEST_IP = "192.168.25.1";
-    const string CLIENT_IP = "192.168.25.1";
+    const string SERVER_IP = "192.168.43.110";
+    const string CLIENT_IP = "192.168.43,228";
     const string FILE_PATH = "../file/macAddress.txt";
     const string FILE_PATH_RESPONSE = "../file/networkResponse.txt";
     const string FILE_PATH_Network_PDU_BITS = "../file/pduNetwork.txt";   
@@ -38,8 +37,8 @@ namespace Pratica{
             Console.WriteLine("\n\nConexão estabelecida:");
             //Pega Mac do destino e origem.
             macOrigem = GetClientMacAddress();
-            // macDestino = GetServerMacAddress(SERVER_IP);
-            macDestino = GetServerMacAddress(TEST_IP);
+            macDestino = GetServerMacAddress(SERVER_IP);
+            //macDestino = GetServerMacAddress(TEST_IP);
             //macOrigem = "41:7f:83:e8:5e:ff";
             //macDestino = "41:7f:33:0e:65:b2";
             if(!File.Exists(FILE_PATH_Network_PDU_BITS))

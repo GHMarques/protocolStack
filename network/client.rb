@@ -69,6 +69,7 @@ if  table.any?{ |f| f == ipDestination }
         File.new("../file/pduNetwork.txt", "w")
     end
     File.write('../file/pduNetwork.txt', ipHeader+pduTransportLayer);
+    puts "\nNetwork PDU: " + ipHeader + pduTransportLayer;
 
     Log("Camada de rede requisita a camada fisica");
     #Faz requisição
@@ -79,7 +80,8 @@ if  table.any?{ |f| f == ipDestination }
     end
     Log("Camada de rede recebe resposta");
     response = File.open("../file/networkResponse.txt").read();
-
+    puts "\nNetwork PDU: " + response;
+    
     totalLengh = response[16..31];
     checksum = response[80..95];
     verifyChecksum = ConvertBinarytoDecimal(totalLengh) + 1;
