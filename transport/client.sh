@@ -23,6 +23,10 @@ log(){
     echo $(date +'%Y-%m-%d %r') '-' $1 >> $logFilePath;
 }
 
+udp(){
+    echo "udp function";
+}
+
 sum(){
     sum=$(echo "ibase=2;obase=2; $1+$2" | bc);
     size=${#sum};
@@ -48,10 +52,6 @@ hexaToBit(){
 
 config(){
     interface=$(grep "INTERFACE" $configFile | awk -F  "=" '{print $2}' | sed 's/ //g');
-}
-
-udp(){
-    echo "udp function";
 }
 
 tcp(){

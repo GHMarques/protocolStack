@@ -11,6 +11,12 @@ def ConvertBinarytoDecimal(number)
     return number.to_i(2);
 end
 
+def LoadConfig(name)    
+    table = File.open("../config.txt").readlines.map(&:chomp);
+
+    return table.find{ |f| f.include? name }.split("=").last().delete(" ");
+end
+
 def Log(message)
     data = Time.now.strftime("%Y-%m-%d %H:%M:%S");
     if !File.exist?("../file/logNetworkLayer.txt")
@@ -24,8 +30,10 @@ end
 
 #----Main----
 #Define o cabeçalho.
-ipSource = "192.168.0.1";
-ipDestination = "192.168.0.2";
+ipSource = LoadConfig("IPCLIENT");
+ipDestination = LoadConfig("IPSERVER");
+Log(ipSource);
+Log(ipDestination);
 version = "4";
 ihl = "0101";
 type = "00000000";
@@ -99,4 +107,8 @@ if  table.any?{ |f| f == ipDestination }
     
 else
     Log("Ip de destino não foi encontrado na tabela de roteamento");
+    if !File.exist?("../file/DhcpResponseIp.txt")
+        File.new("../file/DhcpResponseIp.txt", "w")
+    end
+    File.write('../file/DhcpResponseIp.txt', 0);
 end
